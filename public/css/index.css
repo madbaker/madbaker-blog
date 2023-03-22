@@ -1,6 +1,7 @@
 /* Defaults */
+/*--font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family: -apple-system, system-ui, sans-serif; 
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -52,8 +53,14 @@ body {
 html {
 	overflow-y: scroll;
 }
-body {
+body, img {
 	max-width: 40em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+  
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */

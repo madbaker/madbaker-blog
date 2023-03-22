@@ -1,4 +1,13 @@
 /*
+*
+*  Note:  PrismJS CSS is a syntax highlighter.  So all these styles apply to code blocks inserted in my markdown posts. 
+*  It's highly unlikely that I will ever use code blocks, since I'm not a tech blogger.
+*  but it came with the starter pack so I'm leaving this in for now.
+*  If I remove it, note that the main prism styles are inserted in  the layouts/post.njk, so remove that too.
+*
+*/
+
+/*
  * New diff- syntax
  */
 
