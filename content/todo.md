@@ -10,9 +10,16 @@ eleventyNavigation:
 
 - Fluid typefaces
 - Display typeface and Base typeface
+- bring over favicons from 'andy' site
+- - youtube embed
+- libsyn embed
+
+## Home Page
+
+- do I add an excerpt for each post?  
   
 ## Blog Archives
-- generate pages by year and month
+~~- generate pages by year and month~~
 
 /blog/yy/mm
 
@@ -21,17 +28,13 @@ blog.njk
 
 ~~- put images in a container the same size as the text~~
 
-- add captions to images for existing posts
+~~add captions to images for existing posts~~
 
-- style captions
+ ~~- style captions~~
   
 ## image plugin
 
 ~~refactor to include captions~~
-
-## Home Page
-
-- do I add an excerpt for each post?  
 
 
     

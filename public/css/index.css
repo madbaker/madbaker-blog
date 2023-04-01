@@ -238,6 +238,10 @@ img {
 	object-fit: contain;
   
 }
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
@@ -412,6 +416,7 @@ ol.post-list .content-type{
 
 /* blog posts */
 
+
 .blog img {
 	width: 100%;
 	height: auto;
@@ -437,6 +442,7 @@ ol.post-list .content-type{
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	padding-bottom: 1em;
 }
 .post-metadata time {
 	margin-right: 1em;

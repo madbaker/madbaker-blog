@@ -31,6 +31,7 @@ eleventyNavigation:
                 <h2>{{ year }}</h2>
                 <nav>
                     {% set postsByMonth = items | groupByMonth %}
+                    
                     {% set year = year %}
                     {% include '../_includes/monthsOfYear.njk' %}
                 </nav>

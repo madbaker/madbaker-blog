@@ -1,0 +1,23 @@
+---
+pagination:
+  data: collections.contentPaginatedByYearMonth
+  size: 1
+  alias: yearMonth
+layout: layouts/home.njk
+permalink: /blog/{{ yearMonth.slug }}/index.html
+---
+{# this entire idea is from photogabble #}
+
+<h1>{{yearMonth.title}}</h1>
+
+{% block pageContent %}
+  <section>
+    {% set displayContentType = true %}
+    {% set postslist = yearMonth.items %}
+    {% include "../_includes/postslist.njk" %}
+  </section>
+
+    {% include '../_includes/plantingTimes.njk' %}
+
+{% endblock %}
+

@@ -36,8 +36,8 @@ We walked around the market and snapped a few pictures, including a stamp and po
 {% imagePlaceholder "./images/tram-on-tight-corner.jpg", "a tram navigating a very tight corner" %}
 
 
-{% imagePlaceholder "./images/car-wedged-in-alley.jpg", "a car wedged in a tight alley" %}
- _And Filipe wanted me to rent a car!_ 
+{% imagePlaceholder "./images/car-wedged-in-alley.jpg", "a car wedged in a tight alley","And Filipe wanted me to rent a car!", "And Filipe wanted me to rent a car!"  %}
+
 
 Being in such tight quarters let us take a good look at some of the buildings.  As can be expected in an area that tight, it's a continuous line of 3-4 story row houses, with the walls coming to within 12-18 inches of the street.  Most of the time you couldn't walk two abreast without one person having to walk on the street.  But the best part was the tiles!  Many of the buildings were covered in traditional ceramic tiles making a colourful pattern on the wall.  Mostly they were just patterns but we saw one building with tiles making a scene across the whole wall.  I guess this is traditional Portuguese decoration for buildings, and it's beautiful.
 
@@ -45,26 +45,25 @@ Being in such tight quarters let us take a good look at some of the buildings. �
 
 After stopping for a quick lunch (sandwiches and fresh lemonade) we walked to the metro station and took the train up to Parque Eduardo VII.
 
-{% imagePlaceholder "./images/cobblestone-mosaic.jpg", "patterned cobblestones with monuments in the distance" %}
- _View from right outside the train station_
+{% imagePlaceholder "./images/cobblestone-mosaic.jpg", "patterned cobblestones with monuments in the distance", "View from right outside the train station" %}
+
 
 This is a very fancy area, with five star hotels all over the place, but we went to see the park.  It starts with a huge statue in the middle of a roundabout, then a massive green space with a tree lined promenade on either side. 
 
-{% imagePlaceholder "./images/promenade-lisbon.jpg", "tree lined promenade along Parque Eduardo VII" %}
- _Promenades like this just scream "Europe" to me!_
+{% imagePlaceholder "./images/promenade-lisbon.jpg", "tree lined promenade along Parque Eduardo VII" , "Promenades like this just scream 'Europe' to me!" %}
 
-{% imagePlaceholder "./images/lawn-at-parque-eduardo-vii.jpg", "wide lawn leading up to sculpture at top of Parque Eduardo VII]" %}
- _Halfway up the park_
+{% imagePlaceholder "./images/lawn-at-parque-eduardo-vii.jpg", "wide lawn leading up to sculpture at top of Parque Eduardo VII", "Halfway up the park" %}
+
 
 The promenade has a substantial slope to it.  We walked and walked to the very top, where there are four large pillars and a big fountain.  The view from the top of the park was amazing!  You could see all the way to the river and  see the castle where we were for lunch just a couple of hours earlier.  It was stunning.
 
-{% imagePlaceholder "./images/view-from-top-of-lawn.jpg", "View from the top of the park lawn" %}
- _View from the top! Water in the distance, castle on the hill in the distant left_
+{% imagePlaceholder "./images/view-from-top-of-lawn.jpg", "View from the top of the park lawn", "View from the top! Water in the distance, castle on the hill in the distant left" %}
+ 
 
 We rested at the top of the park for a while then hiked off to find another, smaller park nearby.  Cindy had read about this park in her guidebook - it was right in the shadow of an ancient aqueduct that runs through Lisbon.  What a site!  The park was well treed and shady (nice as we were getting toasted in the sun,) there was a coffee bar at one end and little playground for the kids beside it.  Now we're talking!  We need one of these park/coffee bars in my neighbourhood!
 
 {% imagePlaceholder "./images/playground-under-aqueduct.jpg", "children's playground under an aqueduct" %}
-[![](../../img//.jpg)](https://madbaker.smugmug.com/Travel/Europe-2016/Lisbon-March-1/i-Gbf4FMt/A)
+
 
 Cindy wanted to see more of the aqueduct so we followed it as best we could till we found a park dedicated to it, about a kilometre or so up the road.  For a small fee you can walk along the top of the aqueduct and get some cool views.  We didn't really want to get any higher but we walked along it for a few more blocks and got some great snapshots of the aqueduct crossing a freeway and curving off to another hill in the distance.
 
@@ -72,8 +71,8 @@ Cindy wanted to see more of the aqueduct so we followed it as best we could till
 
 Then it was a long, twisty, mostly downhill (unless I screwed up the directions) walk back to our flat.  We decided to eat in so after we cooled off a bit we walked down to a nearby market for some vegetables and tried our best to get the oven to work.  We got it figured out and made a nice, simple meal.  And we only blew the main breaker once!
 
-{% imagePlaceholder "./images/steep-descent-sidewalk-lisbon.jpg", "View looking down a very steep sidewalk" %}
-_This isn't even the steepest alley. At least there's a railing!_
+{% imagePlaceholder "./images/steep-descent-sidewalk-lisbon.jpg", "View looking down a very steep sidewalk", "This isn't even the steepest alley. At least there's a railing!" %}
+
 
 Tip of the Day:  A huge thank you to our friend Deborah, who recommended we download the [maps.me](http://maps.me/en/home) app for our phones.  I had a map of Portugal on the phone that I could access off-line.  And it could route walking directions!  It saved us in the Alfama.  We never would've found the market and for sure we wouldn't have found the aqueducts without it.  Thanks Deborah!
 

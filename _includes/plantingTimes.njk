@@ -1,0 +1,22 @@
+{# this entire idea is from photogabble #}
+
+<nav class="dates-list">
+    <h2>Planted throughout the seasons</h2>
+
+    {% set allPosts = collections.posts | reverse %}
+    {% set postsByYear = allPosts | groupByYear %}
+
+    <ol class="post-list">
+    {% for year, items in postsByYear %}
+        <li>
+            <strong>{{ year }}</strong>
+            <hr/>
+            {% set postsByMonth = items | groupByMonth %}
+            {% set year = year %}
+            <small>
+                {% include './monthsOfYear.njk' %}
+            </small>
+        </li>
+    {% endfor %}
+    </ol>
+</nav>
