@@ -40,5 +40,10 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
 		"luxon": "^3.2.1",
 		"markdown-it-anchor": "^8.6.6"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.7",
+		"html-minifier-terser": "^7.1.0",
+		"lodash": "^4.17.21"
 	}
 }

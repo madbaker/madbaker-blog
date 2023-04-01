@@ -1,10 +1,46 @@
 ---
 layout: layouts/home.njk
+title: Journal
 eleventyNavigation:
   key: Journal
   order: 2
 ---
-<h1>Archive</h1>
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+<header class=" ">
+  <div class=" ">
+    <div class=" ">
+      <section class=" ">
+        <h1 class=" ">{{ title }}</h1>
+
+           <p><strong>{{collections.posts | length }}</strong> items published since {{collections.posts[0].data.date | readableDate("DDD")}}</p>
+      </section>
+    </div>
+  </div>
+
+</header>
+
+<article class="writing-index">
+
+{% set allPosts = collections.posts | reverse %}
+
+{% set postsByYear = allPosts | groupByYear %}
+
+    {% for year, items in postsByYear %}
+        <section>
+            <header>
+                <h2>{{ year }}</h2>
+                <nav>
+                    {% set postsByMonth = items | groupByMonth %}
+                    {% set year = year %}
+                    {% include '../_includes/monthsOfYear.njk' %}
+                </nav>
+            </header>
+
+            {% set postslist = items %}
+            {% include "../_includes/postslist.njk" %}
+        </section>
+    {% endfor %}
+
+</article>
+
+

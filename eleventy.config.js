@@ -7,6 +7,15 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
+const {
+	groupByYear,
+	groupByMonth,
+	padStart
+  } = require('./_config/filters.js');
+
+// module import shortcodes
+const imageShortcodePlaceholder = require('./_config/images.js');
+
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/
@@ -24,7 +33,7 @@ module.exports = function(eleventyConfig) {
 
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
-	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
+//	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -36,6 +45,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginBundle);
 
 	// Filters
+
+	eleventyConfig.addFilter('groupByYear', groupByYear);
+	eleventyConfig.addFilter('groupByMonth', groupByMonth);
+	eleventyConfig.addFilter('padStart', padStart);
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
@@ -75,6 +89,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
+
+// Custom Shortcodes
+
+	eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
