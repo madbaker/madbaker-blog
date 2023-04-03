@@ -1,6 +1,7 @@
 ---
 
 title: "A Magical Meeting In Palmela"
+summary: "Where we climb a castle and make friends"
 date: "2016-03-06"
 tags: ['Europe 2016', 'Travel'] 
 

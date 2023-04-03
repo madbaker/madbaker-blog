@@ -10,13 +10,15 @@ eleventyNavigation:
 
 - Fluid typefaces
 - Display typeface and Base typeface
-- bring over favicons from 'andy' site
+~~- bring over favicons from 'andy' site~~
 - - youtube embed
 - libsyn embed
+- opengraph shit
+- get the blog posts in the same order in Journal / Summaries, home page, yy/mm pages
 
 ## Home Page
 
-- do I add an excerpt for each post?  
+~~- do I add an excerpt for each post?~~
   
 ## Blog Archives
 ~~- generate pages by year and month~~

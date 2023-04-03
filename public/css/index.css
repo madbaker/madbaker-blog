@@ -1,44 +1,35 @@
 @font-face {
+	font-family: 'newsreader';
+	src: url('/fonts/newsreader/newsreader-variablefont_opszwght-webfont.woff2') format('woff2'),
+		 url('/fonts/newsreader/newsreader-variablefont_opszwght-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
     font-family: 'newsreader';
-    src: url('newsreader-italic-variablefont_opszwght-webfont.woff2') format('woff2'),
-         url('newsreader-italic-variablefont_opszwght-webfont.woff') format('woff');
+    src: url('/fonts/newsreader/newsreader-italic-variablefont_opszwght-webfont.woff2') format('woff2'),
+         url('/fonts/newsreader/newsreader-italic-variablefont_opszwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 
 }
 
-
-
 @font-face {
-    font-family: 'newsreader';
-    src: url('newsreader-variablefont_opszwght-webfont.woff2') format('woff2'),
-         url('newsreader-variablefont_opszwght-webfont.woff') format('woff');
+	font-family: 'Bitter';
+    src: url('fonts/bitter/bitter-variablefont_wght-webfont.woff2') format('woff2'),
+	     url('fonts/bitter/bitter-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}
-
+}	
 @font-face {
-    font-family: 'newsreaderitalic';
-    src: url('newsreader-italic-variablefont_opszwght-webfont.woff2') format('woff2'),
-         url('newsreader-italic-variablefont_opszwght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'Bitter';
+	src: url('fonts/bitter/bitter-italic-variablefont_wght-webfont.woff2') format('woff2'),
+		 url('fonts/bitter/bitter-italic-variablefont_wght-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
 }
-
-
-
-@font-face {
-    font-family: 'newsreaderregular';
-    src: url('newsreader-variablefont_opszwght-webfont.woff2') format('woff2'),
-         url('newsreader-variablefont_opszwght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
+	
   @font-face {
 	font-family: 'atkinson_hyperlegible';
 	font-weight: normal;
@@ -92,92 +83,14 @@
 	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
   }
 
-  
-  @font-face {
-	font-family: 'Quattrocento';
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocento/quattrocento-regular-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocento/quattrocento-regular-webfont.woff) format('woff');
-  }
-  
-  @font-face {
-	font-family: 'Quattrocento';
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocento/quattrocento-bold-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocento/quattrocento-bold-webfont.woff) format('woff');
-  }
-  
-  @font-face {
-	font-family: 'Quattrocento';
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocento/quattrocento-italic-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocento/quattrocento-italic-webfont.woff) format('woff');
-  }
-  
-  @font-face {
-	font-family: 'Quattrocento-Sans';
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocentosans/quattrocentosans-regular-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocentosans/quattrocentosans-regular-webfont.woff) format('woff');
-  }
-  
-  
-  
-  @font-face {
-	font-family: 'Quattrocento-Sans';
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocentosans/quattrocentosans-italic-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocentosans/quattrocentosans-italic-webfont.woff) format('woff');
-  }
-  
-  @font-face {
-	font-family: 'Quattrocento-Sans';
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocentosans/quattrocentosans-bold-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocentosans/quattrocentosans-bold-webfont.woff) format('woff');
-  }
-  
-  @font-face {
-	font-family: 'Quattrocento-Sans';
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/quattrocentosans/quattrocentosans-bolditalic-webfont.woff2)
-		format('woff2'),
-	  url(/fonts/quattrocentosans/quattrocentosans-bolditalic-webfont.woff) format('woff');
-  }
+
   
 
 /* Defaults */
 /*--font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol */
-/*--font-family: newsreader, -apple-system, system-ui, sans-serif; */
+/*--font-family: "Quattrocento-Sans", Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol */
 :root {
-	--font-family: Quattrocento, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol 
+	--font-family: Atkinson-Hyperlegible, -apple-system, system-ui, sans-serif;
 	--font-family-monospace: RobotoMono, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
