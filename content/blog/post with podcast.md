@@ -2,9 +2,8 @@
 title: 'Post with podcast embed'
 summary: 'where I try to embed a podcast episode'
 tags: podcast
-podcast: true
 date: 2023-04-01
-episodeId: '26373927'
+podcastEpisodeId: '26373927'
 ---
 
 ## The iFrame

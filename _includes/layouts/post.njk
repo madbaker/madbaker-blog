@@ -15,10 +15,9 @@ layout: layouts/base.njk
 </ul>
 <article class='blog'>
 {{ content | safe }}
-{{podcast | log}}
-{% if podcast === true %}
-<p>It's a podcast!</p>
-{% include "../podcastplayer.njk" %}
+
+{% if podcastEpisodeId %}
+	{% include "../podcastplayer.njk" %}
 {% endif %}
 </article>
 
