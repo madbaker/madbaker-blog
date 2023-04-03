@@ -17,6 +17,9 @@ const {post, contentPaginatedByYearMonth} = require ('./_config/collections.js')
 
 // module import shortcodes
 const imageShortcodePlaceholder = require('./_config/images.js');
+const liteYoutube = require('./_config/youtube-lite.js')
+
+
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -100,6 +103,7 @@ module.exports = function(eleventyConfig) {
 // Custom Shortcodes
 
 	eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
+	eleventyConfig.addShortcode('youtube', liteYoutube);
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {

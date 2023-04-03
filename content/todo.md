@@ -6,13 +6,17 @@ eleventyNavigation:
   order: 4
 ---
 
+## Enhancements
+- make the libsyn embed a plugin, as part of the embed-everything package.  If I use the oEmbed standard is it a universal plugin?
+
+
 ## Overall
 
 - Fluid typefaces
 ~~- Display typeface and Base typeface~~
 ~~- bring over favicons from 'andy' site~~
-- - youtube embed
-- libsyn embed
+~~youtube embed~~
+~~libsyn embed~~
 - opengraph shit
 ~~get the blog posts in the same order in Journal / Summaries, home page, yy/mm pages~~
 
