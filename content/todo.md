@@ -9,12 +9,12 @@ eleventyNavigation:
 ## Overall
 
 - Fluid typefaces
-- Display typeface and Base typeface
+~~- Display typeface and Base typeface~~
 ~~- bring over favicons from 'andy' site~~
 - - youtube embed
 - libsyn embed
 - opengraph shit
-- get the blog posts in the same order in Journal / Summaries, home page, yy/mm pages
+~~get the blog posts in the same order in Journal / Summaries, home page, yy/mm pages~~
 
 ## Home Page
 

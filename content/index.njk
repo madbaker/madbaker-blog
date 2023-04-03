@@ -3,7 +3,7 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
+numberOfLatestPostsToShow: 4
 ---
 <h1>Mark Dyck is a baker who writes.</h1>
 
@@ -12,8 +12,13 @@ numberOfLatestPostsToShow: 3
 
 <h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
+
+{% set recentposts = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+
+{% set postslist = recentposts | reverse %}  {# postslists.njk displays posts in the order you provide them#}
+
+{% set postslistCounter = postsCount %}  {# used to number the posts being listed #}
+
 {% include "postslist.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}

@@ -1,16 +1,20 @@
 @font-face {
 	font-family: 'Bitter';
-    src: url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
 		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
-	font-weight: normal;
-    font-style: normal;
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
 }	
 @font-face {
 	font-family: 'Bitter';
-	src: url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
 	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
 	font-weight: normal;
 	font-style: italic;
+	font-display: swap;
 }
 	
   @font-face {
@@ -70,10 +74,10 @@
   
 
 /* Defaults */
-/*--font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol */
-/*--font-family: "Quattrocento-Sans", Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol */
+
 :root {
-	--font-family: Bitter, -apple-system, system-ui, sans-serif;
+	--font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ;
+	--font-family-display: 'atkinson_hyperlegible', -apple-system, system-ui, sans-serif;
 	--font-family-monospace: RobotoMono, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -118,7 +122,7 @@ html,
 body {
 	padding: 0;
 	margin: 0 auto;
-	font-family: var(--font-family);
+	font-family: var(--font-family-base);
 	font-variation-settings: "wght" 400;
 	color: var(--text-color);
 	background-color: var(--background-color);
@@ -133,11 +137,10 @@ img {
 	
 	height: min-content;
 	object-fit: contain;
-  
+	
 }
 figcaption {
 	font-style: italic;
-	font-weight: 400;
 	text-align: center;
 }
 
@@ -184,9 +187,17 @@ main :first-child {
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
+
 header:after {
 	display: table;
 	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
 }
 
 .links-nextprev {
@@ -238,7 +249,9 @@ header {
 	font-size: 1em; /* 16px /16 */
 	font-weight: 700;
 	margin-right: 2em;
+	text-transform: uppercase;
 }
+
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
@@ -276,6 +289,10 @@ article.writing-index header > h2 {
 
 
 ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
     list-style: none;
     padding:0;
 }
