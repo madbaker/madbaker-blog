@@ -75,10 +75,12 @@
 
 /* Defaults */
 
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
 :root {
-	--font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ;
-	--font-family-display: 'atkinson_hyperlegible', -apple-system, system-ui, sans-serif;
-	--font-family-monospace: RobotoMono, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
 }
 
 /* Theme colors */
@@ -87,7 +89,7 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: #f6e8c6;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -123,7 +125,6 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family-base);
-	font-variation-settings: "wght" 400;
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
@@ -294,15 +295,23 @@ ol.post-list {
 }
 ol.post-list-summary {
     list-style: none;
-    padding:0;
+    padding:1em;
+	margin: 0;
+	
 }
 
-ol.post-list li{
+ol.post-list-summary li{
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
 }
 
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #999;
+}
 ol.post-list hr{
     display: none;
 }
@@ -337,6 +346,9 @@ ol.post-list .content-type{
 	height: auto;
   }
 
+article.blog li {
+padding-bottom: 0.9em;
+}
 /* Tags */
 .post-tag {
 	display: inline-flex;

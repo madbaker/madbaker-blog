@@ -4,10 +4,9 @@
 <ol reversed class="post-list-summary" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist  %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+        <time class="postlist-summary-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("DDD") }}</time>
 		<a href="{{ post.url }}" class="postlist-link" title="Read {{ post.data.title }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 		<summary>{{post.data.summary}}</summary>
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("DDD") }}</time>
-
     </li>
 {% endfor %}
 </ol>
