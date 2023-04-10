@@ -65,6 +65,11 @@ module.exports = function(eleventyConfig) {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
 	});
+
+	eleventyConfig.addFilter('toIsoString', (dateObj) => {
+		// convert to an ISO 8601 string for schema 
+		return DateTime.fromJSDate(dateObj).toISO();
+	})
 	
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {

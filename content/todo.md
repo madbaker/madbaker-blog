@@ -17,7 +17,17 @@ eleventyNavigation:
 ~~- bring over favicons from 'andy' site~~
 ~~youtube embed~~
 ~~libsyn embed~~
-- opengraph shit
+~~add schemas and opengraph meta-content to base.njk~~
+- make a default opengraph image:  1280x672
+
+- refactor filters, shortcodes and includes to come closer to Lena's model
+
+- refactor css to implement simple.css 
+  
+- remove extra font-faces and possibly pre-load the ones I'm keeping?
+
+- design and style the footer content
+
 ~~get the blog posts in the same order in Journal / Summaries, home page, yy/mm pages~~
 
 ## Home Page

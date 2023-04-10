@@ -1,7 +1,7 @@
 ---
 title: "To Belem and Back Again"
 summary: "A day trip to the home of Pasteis de Nata"
-date: "2016-03-02"
+date: 2016-03-02
 tags: ['Europe 2016', 'Travel']
 ---
 

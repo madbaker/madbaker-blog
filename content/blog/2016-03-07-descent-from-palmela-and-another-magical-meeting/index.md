@@ -1,7 +1,7 @@
 ---
 title: "Descent From Palmela And Another Magical Meeting"
 summary: "Where we get lost but eat very well."
-date: "2016-03-07"
+date: 2016-03-07
 tags: ['Europe 2016', 'Travel']
 ---
 

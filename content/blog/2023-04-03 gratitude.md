@@ -1,7 +1,7 @@
 ---
 title: 'Five Bits of Gratitude'
 summary: "Monday's good vibes"
-tags: ['Notes', 'Gratitude']
+tags: ['Notes', 'Daily']
 ---
 
 Yet another habit that needs reinforcing.  It's too easy to slide into dark talk when in actual fact, there is much good in the world, and much good inside me.

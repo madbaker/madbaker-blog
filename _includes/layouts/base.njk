@@ -6,6 +6,17 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	{% include "base-schema.njk" %} 
+    	{% if schema == 'blog' %}
+    		<!-- include blogpost schema  -->
+   			 {%- include "blogpost-schema.njk" %} 
+	    {% endif %}
+
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
@@ -30,6 +41,9 @@
 
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    {% include "meta-info.njk" %}
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -56,17 +70,23 @@
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
+		<footer>
+			<hr>
+    		<nav>
+         		<ol>
+            		<li><a href="/colophon/">Colophon</a></li>
+            		<li><a href="/todo/">Todo</a></li>
+        		</ol> 
+    		</nav>
+		</footer>
 
 		    <!-- youtube if actvated in yaml -->
     	{% if youtube %}
-    	<script
-      	type="module"
-      	src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
-    	></script>
-    {% endif %}
-
-
+    		<script
+      		type="module"
+      		src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
+    		></script>
+    	{% endif %}
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>

@@ -1,6 +1,6 @@
 ---
 title: "Estremoz:  To Market, To Market"
-date: "2016-03-10"
+date: 2016-03-10
 categories: 
   - "europe-2016"
 tags: 

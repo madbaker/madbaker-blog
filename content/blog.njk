@@ -1,22 +1,16 @@
 ---
 layout: layouts/home.njk
-title: Journal
+title: Writing
 eleventyNavigation:
-  key: Journal
+  key: Writing
   order: 2
 ---
 
-<header class=" ">
-  <div class=" ">
-    <div class=" ">
-      <section class=" ">
-        <h1 class=" ">{{ title }}</h1>
-
-           <p><strong>{{collections.posts | length }}</strong> items published since {{collections.posts[0].data.date | readableDate("DDD")}}</p>
-      </section>
-    </div>
-  </div>
-
+<header>
+  <section>
+    <h1>{{ title }}</h1>
+    <p><strong>{{collections.posts | length }}</strong> items published since {{collections.posts[0].data.date | readableDate("DDD")}}</p>
+  </section>
 </header>
 
 <article class="writing-index">
@@ -25,22 +19,21 @@ eleventyNavigation:
 
 {% set postsByYear = allPosts | groupByYear %}
 
-    {% for year, items in postsByYear %}
-        <section>
-            <header>
-                <h2>{{ year }}</h2>
-                <nav>
-                    {% set postsByMonth = items | groupByMonth %}
-                    
-                    {% set year = year %}
-                    {% include '../_includes/monthsOfYear.njk' %}
-                </nav>
-            </header>
+{% for year, items in postsByYear %}
+  <section>
+    <header>
+      <h2>{{ year }}</h2>
+      <nav>
+        {% set postsByMonth = items | groupByMonth %}                 
+        {% set year = year %}
+        {% include '../_includes/monthsOfYear.njk' %}
+      </nav>
+    </header>
 
-            {% set postslist = items %}
-            {% include "../_includes/postslist.njk" %}
-        </section>
-    {% endfor %}
+    {% set postslist = items %}
+    {% include "../_includes/postslist.njk" %}
+  </section>
+{% endfor %}
 
 </article>
 
