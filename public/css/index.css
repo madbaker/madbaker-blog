@@ -87,7 +87,7 @@
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	--color-gray-90: #212121;
 
 	--background-color: #f8f5d7;
 
@@ -310,7 +310,7 @@ time.postlist-summary-date {
 	font-size: 0.8em;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #999;
+	color: #666;
 }
 ol.post-list hr{
     display: none;
