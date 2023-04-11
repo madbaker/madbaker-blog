@@ -82,14 +82,14 @@
 	--font-family-display: 'atkinson_hyperlegible', sans-serif;
 	--font-family-monospace: monospace;
 }
-
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
 /* Theme colors */
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #f6e8c6;
+	--background-color: #f8f5d7;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;

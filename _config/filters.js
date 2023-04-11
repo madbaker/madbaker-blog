@@ -1,8 +1,58 @@
+const { DateTime } = require("luxon");
+
 /**
  * Filters
  * @link https://www.11ty.dev/docs/filters/
  * @see https://github.com/11ta/11ta-template/blob/main/utils/filters.js
  */
+
+const readableDate = (dateObj, format, zone) => {
+  // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+  return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+};
+
+const htmlDateString = (dateObj) => {
+  // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+};
+
+const toIsoString = (dateObj) => {
+  // convert to an ISO 8601 string for schema 
+  return DateTime.fromJSDate(dateObj).toISO();
+};
+
+// Get the first `n` elements of a collection.
+const head = (array, n) => {
+  if(!Array.isArray(array) || array.length === 0) {
+    return [];
+  }
+  if( n < 0 ) {
+    return array.slice(n);
+  }
+  
+  return array.slice(0, n);
+};
+
+// Return the smallest number argument
+const min = (...numbers) => {
+  return Math.min.apply(null, numbers);
+};
+
+// Return all the tags used in a collection
+
+const getAllTags = collection => {
+  let tagSet = new Set();
+  for(let item of collection) {
+    (item.data.tags || []).forEach(tag => tagSet.add(tag));
+  }
+  return Array.from(tagSet);
+};
+
+// remove 'internal' tags
+
+const filterTagList = (tags) => {
+  return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+};
 
   /**
    * Group a collection by year.
@@ -36,6 +86,13 @@
 const padStart =  (str, len, filler) => String(str).padStart(len, filler);
 
 module.exports = {
+    readableDate,
+    htmlDateString,
+    toIsoString,
+    head,
+    min,
+    getAllTags,
+    filterTagList,
     groupByYear,
     groupByMonth,
     padStart
