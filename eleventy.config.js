@@ -7,6 +7,18 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
+/**
+ * From Lena: I strive to keep the `.eleventy.js` file clean and uncluttered. Most adjustments must be made in:
+ *  - `./config/collections/index.js`
+ *  - `./config/filters/index.js`
+ *  - `./config/plugins/index.js`
+ *  - `./config/shortcodes/index.js`
+ *  - `./config/transforms/index.js`
+ */
+
+// get package.json
+const packageVersion = require('./package.json').version;
+
 const {
     readableDate,
     htmlDateString,
@@ -76,11 +88,13 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection('post', post);
 	eleventyConfig.addCollection('contentPaginatedByYearMonth', contentPaginatedByYearMonth);
-	
+
 // Custom Shortcodes
 
 	eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
 	eleventyConfig.addShortcode('youtube', liteYoutube);
+	eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
+	eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {

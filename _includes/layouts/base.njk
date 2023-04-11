@@ -69,15 +69,7 @@
 			{{ content | safe }}
 		</main>
 
-		<footer>
-			<hr>
-    		<nav>
-         		<ol>
-            		<li><a href="/colophon/">Colophon</a></li>
-            		<li><a href="/todo/">Todo</a></li>
-        		</ol> 
-    		</nav>
-		</footer>
+		{% include "footer.njk"%}
 
 		    <!-- youtube if actvated in yaml -->
     	{% if youtube %}

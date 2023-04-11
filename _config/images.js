@@ -15,7 +15,13 @@ const imageShortcodePlaceholder = async function (src, alt, caption, sizes = '10
 		return path.resolve(split.join(path.sep), relativeFilePath);
 	}
 
-  let file = relativeToInputPath(this.page.inputPath, src)
+  let file = "";
+  if (src.startsWith('https')) {
+    file = src;
+  } else {
+
+    file = relativeToInputPath(this.page.inputPath, src);
+  }
 
   let metadata = await Image(file, {
     widths: [400, 700, 1280],
