@@ -16,9 +16,18 @@
 	# optional, fails build when a category is below a threshold
 	[plugins.inputs.thresholds]
 		performance = 1.0
-		accessibility = 0.9
-		best-practices = 0.9
+		accessibility = 0.95
+		best-practices = 0.95
 		seo = 1.0
 
 	[plugins.inputs]
 		output_path = "reports/lighthouse/index.html"
+
+[[plugins]]
+
+# cacheing plugin so I don't rebuild all the images on each load
+
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  # Optional (but highly recommended). Defaults to [".cache"].
+  paths = ["img"]
