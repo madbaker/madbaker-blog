@@ -25,9 +25,12 @@
 
 [[plugins]]
 
-# cacheing plugin so I don't rebuild all the images on each load
+# caching plugin so I don't rebuild all the images on each load
 
 package = "netlify-plugin-cache"
   [plugins.inputs]
   # Optional (but highly recommended). Defaults to [".cache"].
-  paths = ["img"]
+  paths = [
+	"_site/img/", # Eleventy Image Disk Cache
+    ".cache" # Remote Asset Cache
+	]

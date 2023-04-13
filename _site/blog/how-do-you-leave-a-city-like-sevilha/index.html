@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>How Do You Leave A City Like Sevilha?</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "How Do You Leave A City Like Sevilha?",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-03-24T17:00:00.000-07:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/how-do-you-leave-a-city-like-sevilha/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/how-do-you-leave-a-city-like-sevilha/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/how-do-you-leave-a-city-like-sevilha/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="How Do You Leave A City Like Sevilha?"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>How Do You Leave A City Like Sevilha?</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-03-25">25 March 2016</time></li>
+	<li><a href="/tags/flamenco/" class="post-tag">flamenco</a>, </li>
+	<li><a href="/tags/seville/" class="post-tag">seville</a>, </li>
+	<li><a href="/tags/spain/" class="post-tag">spain</a>, </li>
+	<li><a href="/tags/tapas/" class="post-tag">tapas</a>, </li>
+	<li><a href="/tags/travel/" class="post-tag">Travel</a>, </li>
+	<li><a href="/tags/europe-2016/" class="post-tag">Europe 2016</a></li>
+</ul>
+<article class='blog'>
+<p>We bid a fond farewell to Portugal in Tavira and climbed on the ALSA bus to Seville. There are no trains between Portugal and Spain this far south, so a four hour bus ride was required. But the ALSA buses are comfortable and they have electrical outlets between the seats so all was good.</p>
+<p>We've been getting pretty good at these 3-4 hour bus journeys by now. A perfect travel day starts with a 7:30AM alarm. Shower, pack and head off for a breakfast of coffee, orange juice and toast (tostas or toastadas.) If we like the pastelaria we are in, we'll buy a couple of sandwiches to eat on the bus. Otherwise, we'll stop somewhere else on the way back to our room.</p>
+<p>Once in our room, it's a quick bathroom break, then pick up our bags and head to the bus station. The perfect departure time is 12 noon, so we aren't rushed. Then we arrive at our destination by 3 or 4 pm, which is plenty of time to find our room, meet our host, and go for a first walk around town. Especially with Spanish time, this gives us a half day in our new town. Although our hosts think we're crazy to waken before 10AM for any reason.</p>
+<p>The bus ride into Spain was quite an adventure. We were stopped at the border for over 30 minutes. Inspectors came on board, looked at us sternly, then took the driver off for a while. No passports were checked, but when we stopped for a break in Huelva, a Norwegian passenger I was chatting with said the border inspectors were upset that there were not fasten seat belts signs on the back of every seat. Our bus only had them every six inches and on the window. So the driver was fined 300€ on the spot.</p>
+<figure><picture><source type="image/avif" srcset="/img/H1yKn0sIC6-400.avif 400w, /img/H1yKn0sIC6-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/H1yKn0sIC6-400.webp 400w, /img/H1yKn0sIC6-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/H1yKn0sIC6-400.jpeg 400w, /img/H1yKn0sIC6-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/H1yKn0sIC6-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>There isn't much of a change in landscape between the eastern Algarve and western Andalucia, but there is a change in agriculture. The orange orchards are replaced by mile after mile of plastic hoop houses. We were too far from the fields to make out what was growing under these greenhouses, but the plants looked happy. With the spacing of the plants my best guess is that they housed young orange trees.</p>
+<figure><picture><source type="image/avif" srcset="/img/BdjQcIF72E-400.avif 400w, /img/BdjQcIF72E-700.avif 700w, /img/BdjQcIF72E-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/BdjQcIF72E-400.webp 400w, /img/BdjQcIF72E-700.webp 700w, /img/BdjQcIF72E-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/BdjQcIF72E-400.jpeg 400w, /img/BdjQcIF72E-700.jpeg 700w, /img/BdjQcIF72E-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/BdjQcIF72E-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>After the tranquility of the Algarve, entering Seville was a big culture shock. We exited the bus station on a massive eight lane road, completely jammed with cars, people packing the sidewalks and city busses buzzing by. And the maps.me app gave what seemed like crazy directions to our apartment. We left the busy boulevard soon enough, and seemed to be directed around in circles, twisting and turning through progressively narrower alley ways. At one point we even went through the inner courtyard of a row of buildings, or so it seemed (to be fair, there was a street sign on the wall leading into the courtyard.) But suddenly we popped out into a delightful little square ringed with food shops, walked down a busy street with sidewalks narrower than our suitcases, turned left and were at our apartment.</p>
+<figure><picture><source type="image/avif" srcset="/img/z83PttjNkF-400.avif 400w, /img/z83PttjNkF-700.avif 700w, /img/z83PttjNkF-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/z83PttjNkF-400.webp 400w, /img/z83PttjNkF-700.webp 700w, /img/z83PttjNkF-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/z83PttjNkF-400.jpeg 400w, /img/z83PttjNkF-700.jpeg 700w, /img/z83PttjNkF-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/z83PttjNkF-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>It was heaven. Pure heaven I tell you. Seville is the most amazing city, and if we hadn't agreed in advance to visit other places I would still be there. I don't think I could see it all in twenty years. Our flat was right near the Plaza Alfalfa (ah, memories of home) and if I never left the square I would still be happy. There were no less than three pastelarias on the square! I know! Plus three restaurants, a charcuterie place, a pharmacy and a playground in the middle. Then in the block between the square and our flat, there was a killer artisan bread bakery (also with coffee, orange juice and amazing pastries), two killer tapas bars (one so small and so constantly busy we never did get a table), a fruit market, a mini super market, and a florist. I'm not exaggerating even a little bit.</p>
+<figure><picture><source type="image/avif" srcset="/img/h3wuQTYPm2-400.avif 400w, /img/h3wuQTYPm2-700.avif 700w, /img/h3wuQTYPm2-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/h3wuQTYPm2-400.webp 400w, /img/h3wuQTYPm2-700.webp 700w, /img/h3wuQTYPm2-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/h3wuQTYPm2-400.jpeg 400w, /img/h3wuQTYPm2-700.jpeg 700w, /img/h3wuQTYPm2-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/h3wuQTYPm2-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>This fellow rides his motorbike to restaurants to sharpen the chef's knives. The sharpener is on the back of his bike</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/b-kChTwebO-400.avif 400w, /img/b-kChTwebO-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/b-kChTwebO-400.webp 400w, /img/b-kChTwebO-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/b-kChTwebO-400.jpeg 400w, /img/b-kChTwebO-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/b-kChTwebO-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>The corner right by our apartment. In the foreground, Cindy's favourite orange juice / gelato stand. Then a market. In the distance, the best bread bakery. Beside me, out of the shot, is a cozy tapas bar. Plaza Alfalfa is directly behind me.</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/eC4W9-ikYW-400.avif 400w, /img/eC4W9-ikYW-700.avif 700w, /img/eC4W9-ikYW-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/eC4W9-ikYW-400.webp 400w, /img/eC4W9-ikYW-700.webp 700w, /img/eC4W9-ikYW-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/eC4W9-ikYW-400.jpeg 400w, /img/eC4W9-ikYW-700.jpeg 700w, /img/eC4W9-ikYW-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/eC4W9-ikYW-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/jas0YFE1d3-400.avif 400w, /img/jas0YFE1d3-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/jas0YFE1d3-400.webp 400w, /img/jas0YFE1d3-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/jas0YFE1d3-400.jpeg 400w, /img/jas0YFE1d3-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/jas0YFE1d3-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>The streets in Seville, at least in the central area, are very narrow and winding. We were continually getting lost, walking for an hour then popping up at Plaza Alfalfa again, or ending up at the Cathedral when we thought we were heading away from the Cathedral. But the great thing is that every single street, and I mean every, single, street is beautiful and interesting and packed with beautiful people. Sevillains (as we called them) are extremely fashion conscious and yet again we felt like frumpy foreigners around them. Had we wanted to, and had the 1000€ it required, we could've changed our look in an afternoon. The streets were lined with the most fashionable shops imaginable. Beautiful, colourful, stylish dresses and more suits, in more colours, than I have ever seen. There were many, many specialty clothing stores just for kids too - you can never start too young in Seville.</p>
+<figure><picture><source type="image/avif" srcset="/img/JNZZyExXRI-400.avif 400w, /img/JNZZyExXRI-700.avif 700w, /img/JNZZyExXRI-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/JNZZyExXRI-400.webp 400w, /img/JNZZyExXRI-700.webp 700w, /img/JNZZyExXRI-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/JNZZyExXRI-400.jpeg 400w, /img/JNZZyExXRI-700.jpeg 700w, /img/JNZZyExXRI-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/JNZZyExXRI-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Sevillians hate this modern structure over a new plaza, but I like it.</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/BdiJcaCFC4-400.avif 400w, /img/BdiJcaCFC4-700.avif 700w, /img/BdiJcaCFC4-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/BdiJcaCFC4-400.webp 400w, /img/BdiJcaCFC4-700.webp 700w, /img/BdiJcaCFC4-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/BdiJcaCFC4-400.jpeg 400w, /img/BdiJcaCFC4-700.jpeg 700w, /img/BdiJcaCFC4-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/BdiJcaCFC4-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/uWTp6n8c7d-400.avif 400w, /img/uWTp6n8c7d-700.avif 700w, /img/uWTp6n8c7d-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/uWTp6n8c7d-400.webp 400w, /img/uWTp6n8c7d-700.webp 700w, /img/uWTp6n8c7d-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/uWTp6n8c7d-400.jpeg 400w, /img/uWTp6n8c7d-700.jpeg 700w, /img/uWTp6n8c7d-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/uWTp6n8c7d-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/HbnhXl-5rB-400.avif 400w, /img/HbnhXl-5rB-700.avif 700w, /img/HbnhXl-5rB-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/HbnhXl-5rB-400.webp 400w, /img/HbnhXl-5rB-700.webp 700w, /img/HbnhXl-5rB-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/HbnhXl-5rB-400.jpeg 400w, /img/HbnhXl-5rB-700.jpeg 700w, /img/HbnhXl-5rB-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/HbnhXl-5rB-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/bj6IVmRE8r-400.avif 400w, /img/bj6IVmRE8r-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/bj6IVmRE8r-400.webp 400w, /img/bj6IVmRE8r-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/bj6IVmRE8r-400.jpeg 400w, /img/bj6IVmRE8r-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/bj6IVmRE8r-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/oWf0bpS6G5-400.avif 400w, /img/oWf0bpS6G5-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/oWf0bpS6G5-400.webp 400w, /img/oWf0bpS6G5-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/oWf0bpS6G5-400.jpeg 400w, /img/oWf0bpS6G5-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/oWf0bpS6G5-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>The problem with Seville is that it's tough on photographers. Everything is just so bloody big, it's impossible to get things in the frame. Seville's Cathedral is the largest by volume in the world. It took over 100 years to build and let me tell you, it's a big 'un. It took forever to walk around, and would have even if the streets weren't clogged with tourists. Big, gothic and gaudy.</p>
+<figure><picture><source type="image/avif" srcset="/img/bkpqOwSAPw-400.avif 400w, /img/bkpqOwSAPw-700.avif 700w, /img/bkpqOwSAPw-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/bkpqOwSAPw-400.webp 400w, /img/bkpqOwSAPw-700.webp 700w, /img/bkpqOwSAPw-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/bkpqOwSAPw-400.jpeg 400w, /img/bkpqOwSAPw-700.jpeg 700w, /img/bkpqOwSAPw-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/bkpqOwSAPw-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Seville was the richest city in the world for a time, and it shows. When the Spanish colonized the Americas, Seville was awarded the contract to administer all the wealth coming from the New World. Ships laden with riches made their way up the Guadalquivir River to unload at Seville. So the city is full, and I mean full, of palaces, cathedrals and statues. The University of Seville is also right downtown and the main building is full of marble halls surrounding a massive courtyard.</p>
+<p>But for me, the most opulent structure in the city is the Plaza de España in Maria Luisa Park, and it's rather new. The park itself is huge and right downtown, full of statues and fountains and trees and formal pathways. But the Plaza is simply massive. Built in 1928, the plaza is a massive semi circle of connected buildings with a canal in the middle. Bridges connect the centre of the plaza and the outer ring, over the canal. Around the outer ring are a number of alcoves with scenes of Spanish provinces done in tile. We didn't know anything about the plaza before we stumbled on to it, and let me tell you it was quite a surprise.</p>
+<figure><picture><source type="image/avif" srcset="/img/COF8qpCD51-400.avif 400w, /img/COF8qpCD51-700.avif 700w, /img/COF8qpCD51-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/COF8qpCD51-400.webp 400w, /img/COF8qpCD51-700.webp 700w, /img/COF8qpCD51-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/COF8qpCD51-400.jpeg 400w, /img/COF8qpCD51-700.jpeg 700w, /img/COF8qpCD51-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/COF8qpCD51-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/JCT59nNGIL-400.avif 400w, /img/JCT59nNGIL-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/JCT59nNGIL-400.webp 400w, /img/JCT59nNGIL-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/JCT59nNGIL-400.jpeg 400w, /img/JCT59nNGIL-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/JCT59nNGIL-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/N4Ah9Kz3ah-400.avif 400w, /img/N4Ah9Kz3ah-700.avif 700w, /img/N4Ah9Kz3ah-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/N4Ah9Kz3ah-400.webp 400w, /img/N4Ah9Kz3ah-700.webp 700w, /img/N4Ah9Kz3ah-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/N4Ah9Kz3ah-400.jpeg 400w, /img/N4Ah9Kz3ah-700.jpeg 700w, /img/N4Ah9Kz3ah-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/N4Ah9Kz3ah-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Most of our time in Seville was spent wandering the streets, looking in shop windows, eating picnic lunches in parks, eating tapas in the evening and generally getting lost. One afternoon we took a pedestrian bridge across the river to the suburb of Triana. At the base of the bridge on the Triana side was a wonderful indoor farmers market (perfect for picking up fruit, bread and Jamon Iberico for our picnic) and a park beside. Lunchtime!</p>
+<figure><picture><source type="image/avif" srcset="/img/p7v9Pmc-u2-400.avif 400w, /img/p7v9Pmc-u2-700.avif 700w, /img/p7v9Pmc-u2-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/p7v9Pmc-u2-400.webp 400w, /img/p7v9Pmc-u2-700.webp 700w, /img/p7v9Pmc-u2-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/p7v9Pmc-u2-400.jpeg 400w, /img/p7v9Pmc-u2-700.jpeg 700w, /img/p7v9Pmc-u2-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/p7v9Pmc-u2-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/P-Upa5dt5h-400.avif 400w, /img/P-Upa5dt5h-700.avif 700w, /img/P-Upa5dt5h-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/P-Upa5dt5h-400.webp 400w, /img/P-Upa5dt5h-700.webp 700w, /img/P-Upa5dt5h-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/P-Upa5dt5h-400.jpeg 400w, /img/P-Upa5dt5h-700.jpeg 700w, /img/P-Upa5dt5h-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/P-Upa5dt5h-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>The streets of Triana are laid out in a grid, and it seems when the Spanish have room for a grid, they also have room for extra wide plazas. A massive roundabout at the base of another bridge forked into three wide avenues, one of which was pedestrian only. We walked for at least a mile from the roundabout to a fountain at the other end of the plaza, window shopping and finding the perfect gelato along the way. The street was full of happy people, most of which were locals enjoying the sunny afternoon.</p>
+<figure><picture><source type="image/avif" srcset="/img/wSZChztWcD-400.avif 400w, /img/wSZChztWcD-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/wSZChztWcD-400.webp 400w, /img/wSZChztWcD-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/wSZChztWcD-400.jpeg 400w, /img/wSZChztWcD-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/wSZChztWcD-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/geyateWmey-400.avif 400w, /img/geyateWmey-700.avif 700w, /img/geyateWmey-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/geyateWmey-400.webp 400w, /img/geyateWmey-700.webp 700w, /img/geyateWmey-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/geyateWmey-400.jpeg 400w, /img/geyateWmey-700.jpeg 700w, /img/geyateWmey-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/geyateWmey-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/GAAWdysEB0-400.avif 400w, /img/GAAWdysEB0-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/GAAWdysEB0-400.webp 400w, /img/GAAWdysEB0-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/GAAWdysEB0-400.jpeg 400w, /img/GAAWdysEB0-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/GAAWdysEB0-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Very cool bread delivery bike.</p></figcaption></figure>
+<p>We did more window shopping in Triana than we planned, since it was now 3pm and we were fully into the afternoon siesta time. Most shops in Spain close in the afternoons. They'll be open from 10AM - 1:30 or 2pm, then close until 5pm or 5:30. Then they'll stay open till 8 or 9pm. So we gazed in the shop windows and thought of how much money we saved.</p>
+<p>But the plaza didn't empty. Oh, no. The stores closed but the bars were entering into their busiest time of the day. Along the plaza and the side streets were tiny bars full of people, standing shoulder to shoulder and spilling into the street. Businessmen, old ladies, moms with strollers, construction workers. Everyone. And they all had a glass of beer or wine in their hand and a small plate of tapas on the table. Sardines, olives, cheese, ham. Heavenly.</p>
+<p>We opted for a gelato stand and sat out on the street, watching the world go by. Then we made sure to get a little more to eat too; after two days in Seville we had learned that we wouldn't be eating supper any time soon. You see, the bars and cafes are for little bites only. For supper you need a restaurant. And restaurants don't even open until 8pm! The bar/restaurant combo places close from 6-8 too, so make sure you aren't hungry during the Canadian supper hour, or be sure to pack a snack.</p>
+<p>We were enjoying the local areas more than the tourist areas, so in our last day in Seville we headed in the opposite direction from our beloved Plaza Alfalfa toward the Alemeda de Hercules. Legend has it Seville was founded by Hercules and this long, wide Avenue celebrates the legend. It took us a while to find it, but the avenue was worth the hunt. Two tall pillars stand at either end of this long pedestrian walkway, with people walking down the middle, cars along the outside, and shops and cafes the whole way along it. It was a smaller version of the Avenue de Liberdores in Lisbon, and not as chic, but we loved it.</p>
+<figure><picture><source type="image/avif" srcset="/img/PSWOc9u97k-400.avif 400w, /img/PSWOc9u97k-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/PSWOc9u97k-400.webp 400w, /img/PSWOc9u97k-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/PSWOc9u97k-400.jpeg 400w, /img/PSWOc9u97k-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/PSWOc9u97k-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Then we walked back down toward the river, around the bull ring and back toward the Cathedral for the evening. Our waiter at breakfast had recommended some places to eat and hear flamenco. We had a long night ahead.</p>
+<p>Our first stop was a restaurant near the Cathedral that offered a private flamenco concert in the back. A drink, tapas and front row seats. This was a professional quartet; a man playing guitar, a young woman and young man who danced, and a matron (who was in reality quite young) who sang. It was an amazing show. Lively, exciting, colourful and full of passion. We were blown away. It was a wonderful show in an intimate venue, but it was quite polished compared to what we saw next.</p>
+<p>Our second stop was a small bar closer to our apartment. We nearly missed it. There was a tiny sign over the door that was difficult to notice, but the fact that people kept going in two by two was a hint that something was happening. But inside was empty. Just a grizzled old man in a heavy wool sweater, tending an ancient fireplace just inside the door.</p>
+<p>We walked past the man and turned down the hallway, following the faint sound of guitar. Then we came into a large, low room, more like a garage out back, with long benches filled with people and a bar off to the side. Flamenco music and male singing was coming from somewhere in this mess but I couldn't see where it came from.</p>
+<p>Then we found it. Over in the corner, where only a few people could really see, were three men. They were all seated. The oldest man was about 60 and he played guitar. The man in the middle was younger, say 40 years old and sang. And the man on the left, small, clad all in black, with a pony tail and beard like in a tequila ad, clapped, chanted, then got up and danced.</p>
+<p>They played and danced for 20 minutes or more, while people jockeyed around them for a better view or jockeyed to the bar for another drink. Where the first show was polished and electric, this performance was dark and smoky and passionate. We were swept away by the romance of the whole thing. I should be back there still, sweeping floors, washing glasses and listening to that haunting music.</p>
+<p>But I'm a family guy at heart so after the performance we left that bar, arm in arm, and just wandered the streets of Seville one last time. It was getting on to midnight now and we started thinking about finding our way home. But then we'd see some people on the corner and would wander by to check out that bar. Or we'd hear music and head down to the next corner. Finally we heard more guitars and more singing, and walked down one more block to a square with three restaurants beside each other. In front of the middle restaurant was a long table with a dozen or more men, all with guitars or mandolins. It looked like a meeting of a local guitar club and they had decided it was time to play.</p>
+<figure><picture><source type="image/avif" srcset="/img/-a9UbiY6DD-400.avif 400w, /img/-a9UbiY6DD-700.avif 700w, /img/-a9UbiY6DD-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/-a9UbiY6DD-400.webp 400w, /img/-a9UbiY6DD-700.webp 700w, /img/-a9UbiY6DD-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/-a9UbiY6DD-400.jpeg 400w, /img/-a9UbiY6DD-700.jpeg 700w, /img/-a9UbiY6DD-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/-a9UbiY6DD-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>I don't know how long they had been playing before we got there, but they played for an hour longer at least. One man would sing. One would play a solo. Everyone sang the chorus, with gusto. A few men would come out into the gathered crowd and ask women to dance. Another passed the hat and bought beer for the players wth the proceeds.</p>
+<figure><picture><source type="image/avif" srcset="/img/xyBiHmU13d-400.avif 400w, /img/xyBiHmU13d-700.avif 700w, /img/xyBiHmU13d-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/xyBiHmU13d-400.webp 400w, /img/xyBiHmU13d-700.webp 700w, /img/xyBiHmU13d-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/xyBiHmU13d-400.jpeg 400w, /img/xyBiHmU13d-700.jpeg 700w, /img/xyBiHmU13d-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/xyBiHmU13d-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>And it seemed like it wouldn't end. One or two men would pack up, then 10 would perform a song. The lead singer would come back out from the bar for one more song. Then there were 8 players, then 6, then 4.</p>
+<p>Slowly, oh so slowly, the mini-concert ended and we wandered back to Plaza Alfalfa, wishing we could stay in Seville forever. Get cleaned up, buy some fashionable clothes, get jobs in a pastelaria and spend our nights singing and dancing and holding hands in a plaza we never knew existed before and may never find again.</p>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/brussels/">Brussels</a></li><li>Next: <a href="/blog/granada-hints-of-arabia-in-andalucia/">Granada:  Hints of Arabia in Andalucia</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/how-do-you-leave-a-city-like-sevilha/ -->
+	</body>
+</html>

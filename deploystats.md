@@ -12,6 +12,10 @@ copied 42 files / wrote 65 files in 2.24 seconds (34.5ms each, v2.0.0)
 
 #4: edit the blog post (no new images)
 
+[11ty] Benchmark     64ms  11%   161× (Configuration) "slugify" Nunjucks Filter
+[11ty] Benchmark    167ms  30%    54× (Configuration) "transformWithHtmlBase" Nunjucks Async Filter
+[11ty] Copied 42 files / Wrote 66 files in 0.56 seconds (8.5ms each, v2.0.0)
+
 Netlify (deploying via github)
 
 Initial Deploy:
@@ -35,3 +39,7 @@ Note: A cache of 'img' does not exist (yet). Makes sense.
 
 Deploy #4 (new blog post w/ 24 new images, cache _should_ be there)
 
+9 generated pages and 138 assets changed.
+Build time: 5m 27s
+Time between npx @11ty/eleventy and first write: 4m 38s
+Note: A cache of 'img' does not exist (yet). Argh.  What happened?

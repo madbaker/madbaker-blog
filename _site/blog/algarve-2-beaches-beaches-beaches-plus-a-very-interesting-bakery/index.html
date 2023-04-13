@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Algarve #2:  Beaches, Beaches, Beaches.  Plus, a very interesting bakery.</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Algarve #2:  Beaches, Beaches, Beaches.  Plus, a very interesting bakery.",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-03-19T17:00:00.000-07:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/algarve-2-beaches-beaches-beaches-plus-a-very-interesting-bakery/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/algarve-2-beaches-beaches-beaches-plus-a-very-interesting-bakery/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/algarve-2-beaches-beaches-beaches-plus-a-very-interesting-bakery/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Algarve #2:  Beaches, Beaches, Beaches.  Plus, a very interesting bakery."
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>Algarve #2:  Beaches, Beaches, Beaches.  Plus, a very interesting bakery.</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-03-20">20 March 2016</time></li>
+	<li><a href="/tags/europe-2016/" class="post-tag">Europe 2016</a>, </li>
+	<li><a href="/tags/travel/" class="post-tag">Travel</a></li>
+</ul>
+<article class='blog'>
+<p>After a wondeful evening in Odeceixe, we slept very well and slowly got packed up to continue our trip down the west coast of Portugal. It was Saturday morning, so we figured there must be some pastelarias open even in a village as tiny as this. I was very pleasantly surprised to see a Paderia (bread bakery) sign on a side street, however.</p>
+<figure><picture><source type="image/avif" srcset="/img/hMNyqdN2pM-400.avif 400w, /img/hMNyqdN2pM-700.avif 700w, /img/hMNyqdN2pM-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/hMNyqdN2pM-400.webp 400w, /img/hMNyqdN2pM-700.webp 700w, /img/hMNyqdN2pM-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/hMNyqdN2pM-400.jpeg 400w, /img/hMNyqdN2pM-700.jpeg 700w, /img/hMNyqdN2pM-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/hMNyqdN2pM-400.jpeg" width="400" height="300" alt="Bread bakery down a narrow side street" loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>You need to check every side street. Magic awaits!</p></figcaption></figure>
+<p>The inside of the bakery was very small but the shelves were full of bread, buns and croissants. I had my morning coffee and pastry and tried, in my best Portuguese, to explain that I was a baker and their bread looked very good. I made some sense, because the clerk called over the owner (who spoke very good english) and she invited us next door to the bakery.</p>
+<p>The owner's mother, a delightful elderly lady who only spoke Portuguese gave us a tour of the shop. Two huge mixers, a big work bench, and a massive deck oven. The bakery was spotless; the bakers came in at 8pm Friday night to do the baking so by 10am Saturday, all the work was done.</p>
+<p>Then she surprised the heck out of me. She took us around the side of the oven and showed me a room with wood stacked floor to ceiling. The deck oven was wood fired! There was a small firebox beside the deck oven which held the fire. I don't really know how she regulated the heat, but I think the fire heats a boiler and the oven is heated by circulating hot water (you can buy gas fired 'steam tube' ovens in North America.) Still, I don't know how they could adjust things in a wood fired oven that large.</p>
+<p>And then we were back on the road, heading south along the coast to Arrifana. It's an area that came highly recommended by the lady at the Faro tourist office and it did not disappoint in any way. We parked high up on the top of a cliff, far too scared to drive down to the beach, then walked along the top, through a small village, to a point overlooking the Atlantic. Sheer cliffs and broken rocks were all around us, with the surf pounding the rocks below.</p>
+<figure><picture><source type="image/avif" srcset="/img/e1WIKg5oii-400.avif 400w, /img/e1WIKg5oii-700.avif 700w, /img/e1WIKg5oii-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/e1WIKg5oii-400.webp 400w, /img/e1WIKg5oii-700.webp 700w, /img/e1WIKg5oii-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/e1WIKg5oii-400.jpeg 400w, /img/e1WIKg5oii-700.jpeg 700w, /img/e1WIKg5oii-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/e1WIKg5oii-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/Bw_lCh1i5O-400.avif 400w, /img/Bw_lCh1i5O-700.avif 700w, /img/Bw_lCh1i5O-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/Bw_lCh1i5O-400.webp 400w, /img/Bw_lCh1i5O-700.webp 700w, /img/Bw_lCh1i5O-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/Bw_lCh1i5O-400.jpeg 400w, /img/Bw_lCh1i5O-700.jpeg 700w, /img/Bw_lCh1i5O-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/Bw_lCh1i5O-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>It looked dangerous and it was. We saw a steady stream of locals walking and driving north to the edge of the cliff. When we looked out past them, we saw a rescue helicopter and two boats alongside some particularly nasty looking rocks. We couldn't make out their objective, but the helicopter flew so low, and hovered for so long, that I'm certain they were performing a rescue. After 20 minutes or so the helicopter left and the locals went home. I hope whoever they were helping are alright today.</p>
+<figure><picture><source type="image/avif" srcset="/img/6LHJWmJFWn-400.avif 400w, /img/6LHJWmJFWn-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/6LHJWmJFWn-400.webp 400w, /img/6LHJWmJFWn-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/6LHJWmJFWn-400.jpeg 400w, /img/6LHJWmJFWn-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/6LHJWmJFWn-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/aGR4TI4bP9-400.avif 400w, /img/aGR4TI4bP9-700.avif 700w, /img/aGR4TI4bP9-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/aGR4TI4bP9-400.webp 400w, /img/aGR4TI4bP9-700.webp 700w, /img/aGR4TI4bP9-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/aGR4TI4bP9-400.jpeg 400w, /img/aGR4TI4bP9-700.jpeg 700w, /img/aGR4TI4bP9-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/aGR4TI4bP9-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Then we went down to the beach, along a narrow, twisting road with three switchbacks and a steady line of camper vans and surfer dudes. Arrifana is a surfing hotspot it seems. There were surf lessons going on at one end of the beach, and a stream of fit and sexy surfers along the rest of the beach.</p>
+<figure><picture><source type="image/avif" srcset="/img/a3TAZllCzx-400.avif 400w, /img/a3TAZllCzx-700.avif 700w, /img/a3TAZllCzx-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/a3TAZllCzx-400.webp 400w, /img/a3TAZllCzx-700.webp 700w, /img/a3TAZllCzx-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/a3TAZllCzx-400.jpeg 400w, /img/a3TAZllCzx-700.jpeg 700w, /img/a3TAZllCzx-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/a3TAZllCzx-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>The view of the beach from the point. Time to get down to the water!</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/SHelIk1VPd-400.avif 400w, /img/SHelIk1VPd-700.avif 700w, /img/SHelIk1VPd-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/SHelIk1VPd-400.webp 400w, /img/SHelIk1VPd-700.webp 700w, /img/SHelIk1VPd-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/SHelIk1VPd-400.jpeg 400w, /img/SHelIk1VPd-700.jpeg 700w, /img/SHelIk1VPd-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/SHelIk1VPd-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/QAWyu-8WGs-400.avif 400w, /img/QAWyu-8WGs-700.avif 700w, /img/QAWyu-8WGs-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/QAWyu-8WGs-400.webp 400w, /img/QAWyu-8WGs-700.webp 700w, /img/QAWyu-8WGs-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/QAWyu-8WGs-400.jpeg 400w, /img/QAWyu-8WGs-700.jpeg 700w, /img/QAWyu-8WGs-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/QAWyu-8WGs-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>We didn't surf, but we did walk along the beach, wade into the water and marvel at the cliffs around us. This beach especially was extremely shallow close to shore, so we could walk out a long way without getting to wet.</p>
+<figure><picture><source type="image/avif" srcset="/img/OTcviEl6AD-400.avif 400w, /img/OTcviEl6AD-700.avif 700w, /img/OTcviEl6AD-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/OTcviEl6AD-400.webp 400w, /img/OTcviEl6AD-700.webp 700w, /img/OTcviEl6AD-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/OTcviEl6AD-400.jpeg 400w, /img/OTcviEl6AD-700.jpeg 700w, /img/OTcviEl6AD-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/OTcviEl6AD-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/CPRJJqsjGk-400.avif 400w, /img/CPRJJqsjGk-700.avif 700w, /img/CPRJJqsjGk-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/CPRJJqsjGk-400.webp 400w, /img/CPRJJqsjGk-700.webp 700w, /img/CPRJJqsjGk-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/CPRJJqsjGk-400.jpeg 400w, /img/CPRJJqsjGk-700.jpeg 700w, /img/CPRJJqsjGk-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/CPRJJqsjGk-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>After an leg burning hike back to our car, we drove for an hour further down the coast to the very tip of Portugal and the European continent, Cabo St. Vincente. It's the western most point in Europe, and if I looked really, really hard in the west I'm sure I could see New Jersey. Perhaps not. But we scrambled over the rocks as close to the edge as we dared (we were still very high up above the water) watched the fishermen bobbing violently in their boats near the cliff walls, had a nice conversation with two travellers from Minnesota, then headed east, back into Portugal, to another beach we had passed on the drive to the tip.</p>
+<figure><picture><source type="image/avif" srcset="/img/N9xz-G0o6m-400.avif 400w, /img/N9xz-G0o6m-700.avif 700w, /img/N9xz-G0o6m-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/N9xz-G0o6m-400.webp 400w, /img/N9xz-G0o6m-700.webp 700w, /img/N9xz-G0o6m-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/N9xz-G0o6m-400.jpeg 400w, /img/N9xz-G0o6m-700.jpeg 700w, /img/N9xz-G0o6m-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/N9xz-G0o6m-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/6oAUj6fDTY-400.avif 400w, /img/6oAUj6fDTY-700.avif 700w, /img/6oAUj6fDTY-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/6oAUj6fDTY-400.webp 400w, /img/6oAUj6fDTY-700.webp 700w, /img/6oAUj6fDTY-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/6oAUj6fDTY-400.jpeg 400w, /img/6oAUj6fDTY-700.jpeg 700w, /img/6oAUj6fDTY-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/6oAUj6fDTY-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/bdikCbe275-400.avif 400w, /img/bdikCbe275-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/bdikCbe275-400.webp 400w, /img/bdikCbe275-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/bdikCbe275-400.jpeg 400w, /img/bdikCbe275-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/bdikCbe275-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>I'm not exactly sure of the name of our final beach of the day, but it was just east of Cabo St. Vincente. It didn't seem possible, but the water was clearer, the surf was livlier, and the cliffs more spectacular than any of the beaches we had been to so far. Perhaps it was because the hike down was steeper and more treacherous than any other; no cobblestones here, just irregular steps with many of the rocks broken away. Or maybe it was because there were no more than a dozen people on the entire beach. But it was thrilling, and we dawdled along for over an hour here.</p>
+<figure><picture><source type="image/avif" srcset="/img/i4oo-kI8Gv-400.avif 400w, /img/i4oo-kI8Gv-700.avif 700w, /img/i4oo-kI8Gv-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/i4oo-kI8Gv-400.webp 400w, /img/i4oo-kI8Gv-700.webp 700w, /img/i4oo-kI8Gv-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/i4oo-kI8Gv-400.jpeg 400w, /img/i4oo-kI8Gv-700.jpeg 700w, /img/i4oo-kI8Gv-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/i4oo-kI8Gv-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/mvKUdXBL6--400.avif 400w, /img/mvKUdXBL6--700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/mvKUdXBL6--400.webp 400w, /img/mvKUdXBL6--700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/mvKUdXBL6--400.jpeg 400w, /img/mvKUdXBL6--700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/mvKUdXBL6--400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>At the very end of the beach, were the sand, surf and rocks met, there was a little cave that we could just get to without swimming. It opened into a huge cavern, open to the sky above. We imagined that this is where we could hang out if we were abandoned on a desert island. We'd survive in the cave, until the tide came in at least.</p>
+<figure><picture><source type="image/avif" srcset="/img/AaELShtu4Z-400.avif 400w, /img/AaELShtu4Z-700.avif 700w, /img/AaELShtu4Z-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/AaELShtu4Z-400.webp 400w, /img/AaELShtu4Z-700.webp 700w, /img/AaELShtu4Z-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/AaELShtu4Z-400.jpeg 400w, /img/AaELShtu4Z-700.jpeg 700w, /img/AaELShtu4Z-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/AaELShtu4Z-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/7NHCs4XBXv-400.avif 400w, /img/7NHCs4XBXv-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/7NHCs4XBXv-400.webp 400w, /img/7NHCs4XBXv-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/7NHCs4XBXv-400.jpeg 400w, /img/7NHCs4XBXv-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/7NHCs4XBXv-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>And then it was one more hike back to the car and a final push along the highway. Through Sagres, Lagos and Portimao, stopping beside the highway for another bag of oranges. East past Faro and Olhao, and on to our final stop in Portugal, Tavira. Here the guidebooks, Cindy's research and the Faro tourist office lady all agreed - Tavira is a delightful place to finish a tour of the Algarve. But that's for another post.</p>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/a-temporary-photo-fix/">A Temporary Photo Fix</a></li><li>Next: <a href="/blog/algarve-3-chilling-out-in-tavira/">Algarve #3: Chilling Out In Tavira</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/algarve-2-beaches-beaches-beaches-plus-a-very-interesting-bakery/ -->
+	</body>
+</html>

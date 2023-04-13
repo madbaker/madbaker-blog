@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Granada:  Hints of Arabia in Andalucia</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Granada:  Hints of Arabia in Andalucia",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-03-30T17:00:00.000-07:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/granada-hints-of-arabia-in-andalucia/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/granada-hints-of-arabia-in-andalucia/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/granada-hints-of-arabia-in-andalucia/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Granada:  Hints of Arabia in Andalucia"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>Granada:  Hints of Arabia in Andalucia</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-03-31">31 March 2016</time></li>
+	<li><a href="/tags/europe-2016/" class="post-tag">Europe 2016</a>, </li>
+	<li><a href="/tags/travel/" class="post-tag">Travel</a></li>
+</ul>
+<article class='blog'>
+<p>We left Seville with a touch of sadness, a feeling that will no doubt be a part of many departures on this trip. It was off to the bus station for a 3-4 hour trip east and south to Granada.</p>
+<p>Granada is one of the three jewels of Andalucia (the others being Seville and Cordoba) and is the most remote. Well, remote isn't really accurate, since Granada is a major city and tourist destination, but it is the last major destination still to be served by high speed trains. We passed the new track, still under construction, several times on the trip. But for now it was buses and that was fine with me.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-wHCcw2h/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>The landscape along the trip was dramatic once again. Gone were the orange orchards of Portugal and western Spain. Now it was miles and miles of olive trees, stretching as far as we could see in all directions, through rolling hills and gently twisting roads. Every once in a while, we'd see an especially tall hill. In those cases, there was always a cluster of white walled houses up the side of the hill and a castle and walls on top. I scanned the distant hills for knights on horseback but could never pick them out.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-V4fM3j7/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>As we got closer to Granada we started to climb. Bare rocky outcrops thrust out of the ground. First a single mountain, then a group, and then we were fully in the mountains. Granada lies in the foothills of the Sierra Nevada mountains and as we pulled into the city we could see snow covered peaks off in the distance. I learned that there's quite a nice ski resort off in those mountains, even though it was 15c in the city.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-wNpcRps/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>Our room for the next three nights was the barest of the trip so far. It was basically a spare bedroom and access to the bathroom, in the house of Rafa and David, two young artists. They were very nice, the room was warm and the bed comfortable, and the location, right beside the main cathedral, was excellent. Even though we didn't really see them very much, we didn't feel comfortable hanging out in their house. So we were out on the street from morning till bedtime most days. When we came back to our room to dry off and warm up, we were often visited by their skinny black cat, who quite enjoyed my backpack for some reason. I have claw marks as a souvenir.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-CjcdDB6/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>Granada is a very interesting city in that it was the last stronghold of Moorish (Muslim) rule in Spain. When the Christian crusaders invaded the Iberian peninsula around 1200AD, they came from the north and conquered cities like Seville and Córdoba, but took much longer to get south and east to Granada. In fact, it seems like there was acceptance of joint rule of the area for a time. When we were in Seville, I read of a palace in the centre of the city where the ruler hired artisans from all over Spain to work on the building, including Muslim artisans from Granada.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-pVWwmvh/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>Evidence of Muslim/Arabic culture is throughout the city but is especially strong in the Arabic quarter, a ghetto of narrow, hilly, twisting streets close to the main avenues. The area is full of tea rooms, hookah lounges and stores selling gorgeous glass lamps, leather goods and silver tea sets. We went to eat in this area twice during our stay, grateful for the delicious vegetable couscous and clay bowls with chicken tajin. But our big discovery was the array of delicious tea in these restaurants. Sweet, creamy concoctions with all kinds of spices. Our favourite was called 'sol y nieve', a strawberry and cinnamon tea with a mountain of whipped cream on top. It was an excellent after dinner selection that I fully intend to make at home somehow.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-gNxkdQ2/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-WT4SqnV/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>Leaving the Arabic quarter we strolled along the river, along cobblestone plazas full of restaurants and bars. Then we turned left and began to climb up a very steep hillside until we came to a lookout with great views of the city, the main cathedral (right by our room) and the fields and mountains beyond. And a spectacular view of the jewel of Granada, the Alhambra. This amazing palace, castle and garden sits high on the hill on the other side of the river, looming proudly over the city below. It was the last stronghold of Muslim rule in Europe and we were going to tour it tomorrow. But for now, we just looked across the valley and admired the grand structure.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-3cLJFR3/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-TCbfTPk/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-S9NZT8S/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-Cwg6dM9/A"><img src="images/image-XL.jpg" alt=""></a> <em>A communal oven!!</em></p>
+<p>Because the Alhambra is a major attraction, the authorities control how many people get in each day. They accept 6000 visitors per day and you can buy either a morning ticket or an afternoon ticket. And each ticket has a specific time where you can visit the Nazrid Palace, the high point of the trip. So on the bus ride into town, we bought 'morning' tickets for the next day, with a 1:30PM entry into the Nazrid Palace. We didn't know it at the time, but we were very lucky. All tickets for the entire weekend we were in Granada were sold out by the time we went to the tourist office to pick up our tickets, three hours after we booked them!</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-7hfdbzG/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>In the morning we grabbed an early breakfast and hiked up to the entrance of the Alhambra, trying to get a jump on the tour busses. It was a steep hike, but thanks to a tip from the lady at the ticket office yesterday, we did all our climbing at the start. We begin the tour at the Generalife Garden at the high point of the grounds, and strolled pretty much downhill from there. The massive formal garden was built as a place for the sultans to relax when life in the palace got too hectic. So long as we paced ourselves well between the Italian tour and the Japanese tour, we could get a sense of the tranquil nature of the place. I also got a thrill looking at the vegetable gardens that were neatly laid out on terraces below the formal garden. After days of orange-red or white soil, it was nice to see some deeper colour in the ground.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-J5Hq5pH/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>From the gardens it was a nice stroll through a tiny village within the walls. There were some restaurants and souvenir shops but also a small shop where two men made very elegant and ornate boxes, platters, chess sets and backgammon boards. The were all intricately inlaid with different types of wood and then heavily lacquered. They were gorgeous and priced to reflect the hours of work that went into each piece. Beautiful but outside my budget, alas.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-VJZLxVn/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>We walked past a small, nondescript building then backtracked to read the small sign and finally went in. I'm glad we did, since the building was the remains of a hammam, or Muslim bathhouse. It was a cluster of small rooms with curved doorways and with start shaped holes cut through the roof to let the light in. Deep, dark and mysterious.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-x4mhzqL/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-PrFMnk5/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>Then we were into our first example of the layering of history. When the Christians finally defeated the Moors in Granada, they took over the Alhambra complex and started converting it to a Christian palace. The first addition was a large cathedral in the middle of the site. Later it was followed by a massive palace, built for King Carlos V, in the middle of the main square. Our guidebook mentioned that the palace has divided opinion over the years. It's either an excellent example of 18th century architecture or an abomination in the middle of the Moorish aesthetic. Well, it doesn't look like anything else around it, that's for sure.</p>
+<p>There's a pattern evolving here that is interesting and a little sad. It's one of conquest and re-conquest all over this part of Europe, but is really apparent with structures like the Alhambra. Romans - Goths - Moors - Christians, and in the case of the Christian re-conquest, a need to rework the architecture to get rid of, or at least downplay, the Moorish influence. And then there's Napoleon. When the French invaded Spain they used the Alhambra as a barracks and nearly blew it up in the end.</p>
+<p>This comes up again and again in this region. When the Moors are conquered their architecture is changed, then Napoleon comes and nearly wrecks everything. Then, thankfully, someone recognizes the historical (and touristical) importance of these treasures and they are restored and a ticket office put in front. And I don't mind the ticket offices one bit because these are beautiful, beautiful places and deserve to be restored and celebrated.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-MtWT2PN/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>Getting back to the Alhambra, it was the American Washington Irving who is credited for opening people's eyes to the amazing Alhambra. He lived in Granada for a while after Napoleon left and the Alhambra was falling into disrepair. His writing about the place inspired the restoration work. Hopefully this writing inspires you to visit.</p>
+<p>The final tour before our time in the palace was the Alcazaba. This castle / walled area was the oldest part of the complex and afforded more incredible views of the city as well as the lookout we sat on last night.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-3VLkKgb/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>As we stood in line we met a foursome from Ontario who were travelling through Spain in the reverse order we were, but they were driving the whole way. I was amazed and a little dumbfounded, especially as they told me about taking wrong turns through the centre of Seville. Why anyone would choose to drive through these places when you could walk or take the transit is beyond me. They also told me they booked their tickets to Alhambra over a month ago, so I guess we were lucky to get ours the day before!</p>
+<p>And then it was our time to visit the Nazrid Palace. What a stunner. It was more elaborate and ornate than I imagined, but subdued too. When I think of a palace I think of precious metals or gems (I've not seen many palaces, but that's what I think!) but the Nazrid is amazing for different reasons. It's more about the artisans that built it. Every square inch of some walls are covered in ornate plaster carvings and Arabic script. Some ceilings have even more elaborate plaster domes, giving the impression of a starry night. Other halls had domed ceilings of stretched leather, which was then painted into elaborate patterns. The palace tour was an incredible climax to an already amazing tour of the grounds. It's well worth the trip to Granada to see.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-ZgRwzch/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-VjppkDL/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-XBgRPvS/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-gjmXWCp/A"><img src="images/image-XL.jpg" alt=""></a></p>
+<p>Our last full day in Granada was Palm Sunday, the start of Holy Week or Semana Santa in Spain. The entire week is a huge holiday in Spain, a combination of mourning and partying at the same time. The week starts off with a big procession, mourning the death of Jesus and Mary's sorrow. We had heard about these processions and were very excited to see one in person. Although, truth be told, it was a bit of a mystery as to where and when the procession would happen. Many of the central squares had been blocked off and large sets of bleachers installed, but as the day went on an we walked around the city, we never saw anyone sitting in the bleachers.</p>
+<p>Then at around 4pm, we saw more and more people heading off in the same direction, away from the bleachers, so we followed along. Soon we came to a different cathedral, with hundreds of people packed tight around the cathedral doors and sort of making a path down the block. I say 'sort of' because there's no such thing as an orderly line in Spain. But it seemed possible that we had made it to the procession route. Laughable attempts to communicate with the man standing next to me confirmed that the procession would start at the cathedral in about an hour. We had stumbled on front row seats!</p>
+<p>As we stood there, more and more people squeezed past us, even though I was sure there was no way more people could fit in this square. Our colourful Canadian outerwear must've screamed &quot;This Way Through&quot; because everyone seemed to pass beside or between us, even if we linked arms. A gaggle of teenage girls. Teenage boys with the most incredible Justin Beiber pompadours. Mothers with strollers. Old men with walkers. I'm not kidding.</p>
+<p>And then it started to rain. Out came 1000 umbrellas, or in our case, up went hoods. We would've stayed dry except that, without umbrellas, we were in the drip line of all our neighbours. Then slowly people started leaving. The procession was suspended, for how long nobody new, due to the rain.</p>
+<p>We were disappointed, but also wet and cold so we went back to our room to change clothes and warm up. We were just about to head out for supper when we heard drums and horns and followed the music to the main cathedral. There it was! The procession! We hurried over and found a place to stand behind a pair of strollers.</p>
+<p>Even though the procession is supposed to be for mourning, the entire event is quite the celebration. Everyone is dressed up, especially the little children. Vendors with carts selling drinks, candy, snacks (especially sunflower seeds - everyone was eating them, from the schoolchildren to young women to the elderly), balloons and toy drums lined each street. There was a huge amount of anticipation as we waited for the procession to pass.</p>
+<p>It really was quite a production. First, several dozen marchers disguised in robes and pointed hoods, carrying candles. Then a huge &quot;float&quot; of Jesus, carried by 20-25 young men, hidden underneath. The float was so heavy that every few minutes they'd have to set it down and have a rest, or trade with other men who followed the float.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-3ZnjgRQ/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-tLftNZb/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>Behind the float were ladies of all ages in black mourning dresses and vails, followed by a marching band. Whenever the float was in the air, the band played. When the bearers rested, the drummers kept time. It was a very slow, solemn procession.</p>
+<p>The floats were so large that it was a real challenge to navigate through the narrow streets. Turning corners was especially dramatic. The bearers took two full minutes to slowly rock back, forth and forward to shimmy the huge float 90 degrees. When the job was complete, the crowd clapped and cheered in appreciation as the float headed off down the street.</p>
+<p>A few minutes later, a second procession came by. Hooded figures, then an even larger float of the Virgin Mary, surrounded by dozens of large candles. It was very dramatic in the twilight.</p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-56KXf3r/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p><a href="https://madbaker.smugmug.com/Travel/Europe-2016/Granada-Post/i-QLP6ZKp/A"><img src="images/image-X2.jpg" alt=""></a></p>
+<p>And as the Mary float made its way around the corner, we left the crowd and went in the opposite direction to find some supper. Our time in Granada was coming to an end. It's a beautiful city. The mix of cultures and traditions is very interesting and the history, like everywhere else we've been so far, is thick. I just want to sit down with some history books and really get the background on these places. But we keep moving on. Time to pop a few Gravol and head to the bus station...</p>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/how-do-you-leave-a-city-like-sevilha/">How Do You Leave A City Like Sevilha?</a></li><li>Next: <a href="/blog/quick-update-i-m-having-too-much-fun-to-write/">Quick Update: I&#39;m Having Too Much Fun To Write!</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/granada-hints-of-arabia-in-andalucia/ -->
+	</body>
+</html>

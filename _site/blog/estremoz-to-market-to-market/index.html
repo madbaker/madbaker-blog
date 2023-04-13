@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Estremoz:  To Market, To Market</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Estremoz:  To Market, To Market",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-03-09T16:00:00.000-08:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/estremoz-to-market-to-market/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/estremoz-to-market-to-market/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/estremoz-to-market-to-market/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Estremoz:  To Market, To Market"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>Estremoz:  To Market, To Market</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-03-10">10 March 2016</time></li>
+	<li><a href="/tags/estremoz/" class="post-tag">estremoz</a>, </li>
+	<li><a href="/tags/farmers-market/" class="post-tag">farmers-market</a>, </li>
+	<li><a href="/tags/market/" class="post-tag">market</a></li>
+</ul>
+<article class='blog'>
+<p>Although there was much more to see around Lisbon, it was Friday so it was time to move on.  We found our way along the metro to the bus station and booked our tickets to Estremoz.</p>
+<p>Estremoz is a very small town in the Alentejo region of Portugal, that is, the south central region of Portugal that borders Spain to the east and the Algarve to the south.  &quot;Alentejo&quot; means &quot;beyond&quot; and refers to the area beyond Lisbon and the Tagus river.  It is an extremely beautiful area, especially for a Saskatchewan boy who has been dealing with the crowds of Lisbon.  Rolling hills, fields surrounded by stone walls, farmhouses with white walls and courtyards and grassland dotted with cork trees.  Open space but with lots to gaze upon too.</p>
+<p>I didn't get the history of it, but Estremoz must have lots and lots of marble nearby.  The entire town is beautiful, pink marble.  The cobblestone sidewalks are small pieces of pink marble.  The curbs are small slabs of marble.  Heck, the bus station is all marble!  Harbour Landing homeowners would be seeing kitchen countertops at every intersection.</p>
+<figure><picture><source type="image/avif" srcset="/img/umr52abPhE-400.avif 400w, /img/umr52abPhE-700.avif 700w, /img/umr52abPhE-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/umr52abPhE-400.webp 400w, /img/umr52abPhE-700.webp 700w, /img/umr52abPhE-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/umr52abPhE-400.jpeg 400w, /img/umr52abPhE-700.jpeg 700w, /img/umr52abPhE-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/umr52abPhE-400.jpeg" width="400" height="300" alt="the bus depot, showing lots of pink marble" loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Marble Bus Depot, Estremoz</p></figcaption></figure>
+<p>Estremoz is a compact town on top of a hill with great views of the surrounding farmland.  And what does one put on top of a hill with great views of the surrounding territory?  A castle, of course!  Estremoz castle isn't as big as Castelo Palmela, but it's got all one needs; narrow, winding streets weaving their way up to the castle, walls surrounding the castle and church with a nice walking path around most of the hill, and a gorgeous set of steps down to the town centre.</p>
+<figure><picture><source type="image/avif" srcset="/img/3pULa2wGNK-400.avif 400w, /img/3pULa2wGNK-700.avif 700w, /img/3pULa2wGNK-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/3pULa2wGNK-400.webp 400w, /img/3pULa2wGNK-700.webp 700w, /img/3pULa2wGNK-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/3pULa2wGNK-400.jpeg 400w, /img/3pULa2wGNK-700.jpeg 700w, /img/3pULa2wGNK-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/3pULa2wGNK-400.jpeg" width="400" height="300" alt="View of the steps leading up to the castle" loading="lazy" decoding="async"></picture></figure>
+<p>Most of the castle and church has been turned into a <em>pousada</em>, a state run hotel and restaurant complex for people much wealthier than I.  Many of the castles and churches in the country have been converted to pousadas in order to fund their upkeep.  It's certainly a different way to see the country than our Airbnb apartments and guest houses.  I don't begrudge the wealthy their comforts, because the pousadas were nice to look at on our way to the town square and our modest room for the night.</p>
+<figure><picture><source type="image/avif" srcset="/img/HpXslRWFmV-400.avif 400w, /img/HpXslRWFmV-700.avif 700w, /img/HpXslRWFmV-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/HpXslRWFmV-400.webp 400w, /img/HpXslRWFmV-700.webp 700w, /img/HpXslRWFmV-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/HpXslRWFmV-400.jpeg 400w, /img/HpXslRWFmV-700.jpeg 700w, /img/HpXslRWFmV-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/HpXslRWFmV-400.jpeg" width="400" height="300" alt="View of fields below the castle walls " loading="lazy" decoding="async"></picture></figure>
+<p>We booked a room at the Hotel O Gahdana, a two star hotel just off the main square which was recommended in Cindy's guide book.  At 40€ for the night it was a tiny splurge but was well worth it.  It was a mansion compared to our tiny flat in Lisbon; wide hallway, spacious room and a shower that let me stand upright.  And the staff were amazing.  Only the night supervisor spoke any English, but we listened hard, played a bit of charades and worked everything out with the day crew.</p>
+<figure><picture><source type="image/avif" srcset="/img/T75-gDFy1C-400.avif 400w, /img/T75-gDFy1C-700.avif 700w, /img/T75-gDFy1C-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/T75-gDFy1C-400.webp 400w, /img/T75-gDFy1C-700.webp 700w, /img/T75-gDFy1C-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/T75-gDFy1C-400.jpeg 400w, /img/T75-gDFy1C-700.jpeg 700w, /img/T75-gDFy1C-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/T75-gDFy1C-400.jpeg" width="400" height="300" alt="View of our hotel in Estremoz, with a water fountain in foreground." loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Imagine getting off the bus, crossing the square, and realizing there is your hotel. Wonderful!</p></figcaption></figure>
+<p>We also got to play charades at the tiny restaurant down the street where we went for supper.  We held out till 7:30PM but were still the first customers of the night, although the five other tables filled up soon after.  We did our best to navigate the Portuguese menu; Cindy knew she was getting fish and I knew I ordered pork, but beyond that we had no idea.  It didn't matter.  Both plates were huge and delicious.  Two big plates, plus bread and wine, plus the desert of the house (which was delicious) for under 25€.  Incredible.   I'm pretty sure a 1/2 litre of local wine was 3€, which is so cheap I wish I could handle a litre.</p>
+<figure><picture><source type="image/avif" srcset="/img/sIzMyIZleg-400.avif 400w, /img/sIzMyIZleg-700.avif 700w, /img/sIzMyIZleg-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/sIzMyIZleg-400.webp 400w, /img/sIzMyIZleg-700.webp 700w, /img/sIzMyIZleg-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/sIzMyIZleg-400.jpeg 400w, /img/sIzMyIZleg-700.jpeg 700w, /img/sIzMyIZleg-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/sIzMyIZleg-400.jpeg" width="400" height="300" alt="cobblestone footpath, passing under a stone arch, along a narrow side street." loading="lazy" decoding="async"></picture></figure>
+<p>But, the real reason we came to Estremoz wasn't for the castle, or the wine.  It was for the market!  Each Saturday, Estremoz is home to one of the largest farmer's markets in all of Portugal.  Cindy set an alarm for this one.  We weren't going to miss it.</p>
+<figure><picture><source type="image/avif" srcset="/img/Ya52vtYzEJ-400.avif 400w, /img/Ya52vtYzEJ-700.avif 700w, /img/Ya52vtYzEJ-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/Ya52vtYzEJ-400.webp 400w, /img/Ya52vtYzEJ-700.webp 700w, /img/Ya52vtYzEJ-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/Ya52vtYzEJ-400.jpeg 400w, /img/Ya52vtYzEJ-700.jpeg 700w, /img/Ya52vtYzEJ-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/Ya52vtYzEJ-400.jpeg" width="400" height="300" alt="a market stall; barrels of nuts and almonds, fresh produce, on a footpath made of broken pieces of pink marble. " loading="lazy" decoding="async"></picture></figure>
+<p>Now you have to remember, early March is still late winter in Portugal.  There's not much on offer, or so they told us.  But I'll tell you what, there was more selection at the Estremoz market than most Regina farmers markets.  Huge bins of oranges, lemons, potatoes, carrots, almonds, hazelnuts and walnuts. Strawberries!  Peppers! Winter squash so big that they sold them buy the chunk.  One fellow even had a basket of huge avocados from his two trees.</p>
+<figure><picture><source type="image/avif" srcset="/img/Wplu-SV0W_-400.avif 400w, /img/Wplu-SV0W_-700.avif 700w, /img/Wplu-SV0W_-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/Wplu-SV0W_-400.webp 400w, /img/Wplu-SV0W_-700.webp 700w, /img/Wplu-SV0W_-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/Wplu-SV0W_-400.jpeg 400w, /img/Wplu-SV0W_-700.jpeg 700w, /img/Wplu-SV0W_-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/Wplu-SV0W_-400.jpeg" width="400" height="300" alt="a market stall featuring long, orange sections of winter squash." loading="lazy" decoding="async"></picture></figure>
+<p>There were baskets of eggs that you could pick out and put in the carton yourself.  Some grandmas just sat on a bench with a basket of eggs to sell.  They didn't even need a stall.</p>
+<figure><picture><source type="image/avif" srcset="/img/BFL3ZlrxgL-400.avif 400w, /img/BFL3ZlrxgL-700.avif 700w, /img/BFL3ZlrxgL-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/BFL3ZlrxgL-400.webp 400w, /img/BFL3ZlrxgL-700.webp 700w, /img/BFL3ZlrxgL-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/BFL3ZlrxgL-400.jpeg 400w, /img/BFL3ZlrxgL-700.jpeg 700w, /img/BFL3ZlrxgL-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/BFL3ZlrxgL-400.jpeg" width="400" height="267" alt="old ladies visting on a bench, beside baskets full of market purchases." loading="lazy" decoding="async"></picture></figure>
+<p>There were several stands selling local sausages and cheese.  One fellow had large slabs of pork fat and was cutting chunks for the ladies to take home.</p>
+<figure><picture><source type="image/avif" srcset="/img/PknlsjPUVz-400.avif 400w, /img/PknlsjPUVz-700.avif 700w, /img/PknlsjPUVz-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/PknlsjPUVz-400.webp 400w, /img/PknlsjPUVz-700.webp 700w, /img/PknlsjPUVz-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/PknlsjPUVz-400.jpeg 400w, /img/PknlsjPUVz-700.jpeg 700w, /img/PknlsjPUVz-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/PknlsjPUVz-400.jpeg" width="400" height="300" alt="a table loaded down with cured sausages." loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/W50xC5nn9t-400.avif 400w, /img/W50xC5nn9t-700.avif 700w, /img/W50xC5nn9t-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/W50xC5nn9t-400.webp 400w, /img/W50xC5nn9t-700.webp 700w, /img/W50xC5nn9t-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/W50xC5nn9t-400.jpeg 400w, /img/W50xC5nn9t-700.jpeg 700w, /img/W50xC5nn9t-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/W50xC5nn9t-400.jpeg" width="400" height="300" alt="a row of hanging cured ham legs" loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/OFsUsvCc-P-400.avif 400w, /img/OFsUsvCc-P-700.avif 700w, /img/OFsUsvCc-P-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/OFsUsvCc-P-400.webp 400w, /img/OFsUsvCc-P-700.webp 700w, /img/OFsUsvCc-P-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/OFsUsvCc-P-400.jpeg 400w, /img/OFsUsvCc-P-700.jpeg 700w, /img/OFsUsvCc-P-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/OFsUsvCc-P-400.jpeg" width="400" height="300" alt="a long market table with hundreds of cheese wheels." loading="lazy" decoding="async"></picture></figure>
+<p>And some of it was live!  There was a row of sellers with chickens, ducks, geese and rabbits in cages.  We learned this is prime rabbit season and were a little scared of one old gentleman who gave his rabbit a good looking over before agreeing to take him home.  I thought he was going to ring its neck right then and there. Over the course of the morning dozens of people took their Sunday dinner home in a cardboard box with airholes cut out.</p>
+<figure><picture><source type="image/avif" srcset="/img/kLpznd6iq7-400.avif 400w, /img/kLpznd6iq7-700.avif 700w, /img/kLpznd6iq7-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/kLpznd6iq7-400.webp 400w, /img/kLpznd6iq7-700.webp 700w, /img/kLpznd6iq7-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/kLpznd6iq7-400.jpeg 400w, /img/kLpznd6iq7-700.jpeg 700w, /img/kLpznd6iq7-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/kLpznd6iq7-400.jpeg" width="400" height="300" alt="live birds in stacked cages; from ducks to budgies." loading="lazy" decoding="async"></picture></figure>
+<p>Midway through the morning, we got another treat. There was an off-road racing event just out of town, so all the trucks in the event held a parade through town.  Three laps of honour around the square.  I thought it was an incredible racket, but lots of the old fellows stopped to have a look.  (In the afternoon, there was a second parade of muddy trucks, but not near as many people stayed to see that one.)</p>
+<figure><picture><source type="image/avif" srcset="/img/yDDhYd5ej--400.avif 400w, /img/yDDhYd5ej--700.avif 700w, /img/yDDhYd5ej--1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/yDDhYd5ej--400.webp 400w, /img/yDDhYd5ej--700.webp 700w, /img/yDDhYd5ej--1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/yDDhYd5ej--400.jpeg 400w, /img/yDDhYd5ej--700.jpeg 700w, /img/yDDhYd5ej--1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/yDDhYd5ej--400.jpeg" width="400" height="300" alt="a long row of off-road trucks parading up the street." loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/9MDVERkTjd-400.avif 400w, /img/9MDVERkTjd-700.avif 700w, /img/9MDVERkTjd-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/9MDVERkTjd-400.webp 400w, /img/9MDVERkTjd-700.webp 700w, /img/9MDVERkTjd-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/9MDVERkTjd-400.jpeg 400w, /img/9MDVERkTjd-700.jpeg 700w, /img/9MDVERkTjd-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/9MDVERkTjd-400.jpeg" width="400" height="300" alt="several dozen men watching the truck parade. " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/e6ZmXsKSI4-400.avif 400w, /img/e6ZmXsKSI4-700.avif 700w, /img/e6ZmXsKSI4-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/e6ZmXsKSI4-400.webp 400w, /img/e6ZmXsKSI4-700.webp 700w, /img/e6ZmXsKSI4-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/e6ZmXsKSI4-400.jpeg 400w, /img/e6ZmXsKSI4-700.jpeg 700w, /img/e6ZmXsKSI4-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/e6ZmXsKSI4-400.jpeg" width="400" height="300" alt="three women, dressed in aprons, watch the truck parade from a balcony above a restaurant. " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>It wasn't just the fellows watching the trucks!</p></figcaption></figure>
+<p>We discovered our new favourite market snack.  It's called Fartura and is the Portuguese version of a churro, or beaver tail, or elephant ear.  Fried dough in sugar.  What could be better?</p>
+<p>There were two Fartura stands.  One run by an old couple (Sir fried the dough while Madam mixed the batter, portioned out the Fartura and took the money.) This booth had a line all day long.  We waited 10 minutes and we were lucky.  The other stand was run by a young man and I never saw a single person go to that stand.  There's an interesting story there but my Portuguese isn't strong enough to get the scoop.</p>
+<p>The unique trick to Fartura is the batter is squeezed out in a continuous, circular spiral, flipped as a single unit, then cut (by madam) into long sticks and then rolled in cinnamon and sugar. Two sticks made up one portion and most people bought two or three portions to take home. We tucked into ours before we had even left the line. Delicious!</p>
+<figure><picture><source type="image/avif" srcset="/img/PZW3Tjs0Il-400.avif 400w, /img/PZW3Tjs0Il-700.avif 700w, /img/PZW3Tjs0Il-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/PZW3Tjs0Il-400.webp 400w, /img/PZW3Tjs0Il-700.webp 700w, /img/PZW3Tjs0Il-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/PZW3Tjs0Il-400.jpeg 400w, /img/PZW3Tjs0Il-700.jpeg 700w, /img/PZW3Tjs0Il-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/PZW3Tjs0Il-400.jpeg" width="400" height="300" alt="the Fartura vendor removing a large coil of deep fried dough from the oil, using a long metal rod." loading="lazy" decoding="async"></picture></figure>
+<p>There was so much more to the market.  One seller specialized in pet birds, from tiny chickadees to peacocks.  There were many plant growers selling bedding plants (they'd pull 20 plugs of lettuce or carrot or tomato seedlings, put them all in a plastic bag and sell them for 1€) and fruit trees.  I would've bought an orange tree for 7.50€ but it wouldn't fit in my suitcase.</p>
+<figure><picture><source type="image/avif" srcset="/img/WaDeENX_gJ-400.avif 400w, /img/WaDeENX_gJ-700.avif 700w, /img/WaDeENX_gJ-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/WaDeENX_gJ-400.webp 400w, /img/WaDeENX_gJ-700.webp 700w, /img/WaDeENX_gJ-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/WaDeENX_gJ-400.jpeg 400w, /img/WaDeENX_gJ-700.jpeg 700w, /img/WaDeENX_gJ-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/WaDeENX_gJ-400.jpeg" width="400" height="300" alt="a market stall selling live citrus trees." loading="lazy" decoding="async"></picture></figure>
+<p>And finally, beside the farmer's market was a flea market; row after row of antiques, used books, pottery and clothes.  There was even a man selling a table full of Russian cameras and Soviet military hats.</p>
+<figure><picture><source type="image/avif" srcset="/img/8UtfcZ0NU2-400.avif 400w, /img/8UtfcZ0NU2-700.avif 700w, /img/8UtfcZ0NU2-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/8UtfcZ0NU2-400.webp 400w, /img/8UtfcZ0NU2-700.webp 700w, /img/8UtfcZ0NU2-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/8UtfcZ0NU2-400.jpeg 400w, /img/8UtfcZ0NU2-700.jpeg 700w, /img/8UtfcZ0NU2-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/8UtfcZ0NU2-400.jpeg" width="400" height="300" alt="a flea market stall of colourfully painted ceramic bowls." loading="lazy" decoding="async"></picture></figure>
+<p>But my favourite sellers, bar none, were the three young girls selling cake by the slice.  They had baked three cakes at home and had them displayed on a wooden table.  For 1€, you got a slice of the cake of your choice, cut to order and wrapped in a napkin.  The Regina health inspector would pass a large stone at the thought, but I'll tell you what, we put the paper wrapped cake in Cindy's pack and ate it a day or so later.  I'm still able to write about it and never even got the shakes.</p>
+<figure><picture><source type="image/avif" srcset="/img/VeeRpHngxj-400.avif 400w, /img/VeeRpHngxj-700.avif 700w, /img/VeeRpHngxj-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/VeeRpHngxj-400.webp 400w, /img/VeeRpHngxj-700.webp 700w, /img/VeeRpHngxj-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/VeeRpHngxj-400.jpeg 400w, /img/VeeRpHngxj-700.jpeg 700w, /img/VeeRpHngxj-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/VeeRpHngxj-400.jpeg" width="400" height="300" alt="three young girls posing in front of their cakes they are selling as a fundraiser." loading="lazy" decoding="async"></picture></figure>
+<p>By around 12:30 it had started to rain, so all the sellers packed up and headed to the bars, pastelarias and snack bars around the square for a drink and bite to eat.  We ducked into a pastelaria too, for coffee, hot chocolate, a pastry and a box of cookies for the afternoon bus to Evora.  It's only a one hour ride, but you can never be too prepared.  Emergency cookies are an important component of every traveler's kit.</p>
+<figure><picture><source type="image/avif" srcset="/img/qeslcq5lgm-400.avif 400w, /img/qeslcq5lgm-700.avif 700w, /img/qeslcq5lgm-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/qeslcq5lgm-400.webp 400w, /img/qeslcq5lgm-700.webp 700w, /img/qeslcq5lgm-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/qeslcq5lgm-400.jpeg 400w, /img/qeslcq5lgm-700.jpeg 700w, /img/qeslcq5lgm-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/qeslcq5lgm-400.jpeg" width="400" height="533" alt="An elderly lady, walking with a crutch-cane in her left arm, pulling a basket full of groceries with her right arm. " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Good day at the market!</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/8iSJZP-AYf-400.avif 400w, /img/8iSJZP-AYf-700.avif 700w, /img/8iSJZP-AYf-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/8iSJZP-AYf-400.webp 400w, /img/8iSJZP-AYf-700.webp 700w, /img/8iSJZP-AYf-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/8iSJZP-AYf-400.jpeg 400w, /img/8iSJZP-AYf-700.jpeg 700w, /img/8iSJZP-AYf-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/8iSJZP-AYf-400.jpeg" width="400" height="300" alt="A final view of Estremoz; rows of white houses with red roofs, climbing to the base of the castle walls at the top of the hill." loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Farewell Estremoz. Already one of our favourite places.</p></figcaption></figure>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/descent-from-palmela-and-another-magical-meeting/">Descent From Palmela And Another Magical Meeting</a></li><li>Next: <a href="/blog/evora-step-back-way-back/">Evora:  Step Back.  Way Back.</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/estremoz-to-market-to-market/ -->
+	</body>
+</html>

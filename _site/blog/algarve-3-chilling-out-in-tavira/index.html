@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Algarve #3: Chilling Out In Tavira</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Algarve #3: Chilling Out In Tavira",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-03-20T17:00:00.000-07:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/algarve-3-chilling-out-in-tavira/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/algarve-3-chilling-out-in-tavira/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/algarve-3-chilling-out-in-tavira/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Algarve #3: Chilling Out In Tavira"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>Algarve #3: Chilling Out In Tavira</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-03-21">21 March 2016</time></li>
+	<li><a href="/tags/europe-2016/" class="post-tag">Europe 2016</a>, </li>
+	<li><a href="/tags/travel/" class="post-tag">Travel</a></li>
+</ul>
+<article class='blog'>
+<p>Imagine if you will: Driving around the southern coast of Portugal, sampling some of the most fantastic beaches in the world; subsisting on oranges, strawberries and dark chocolate for most of the day; arriving in the eastern Algarve town of Tavira and parking in the first lot we could find (as is our habit); then trying to book a guest room for the next three days on your smartphone. By the time we had finally secured a room, it was late, my stomach was growling and I was sunburnt and worn out from all the driving and cliff climbing. So then imagine heading out to find dinner, turning the corner and seeing this:</p>
+<figure><picture><source type="image/avif" srcset="/img/JvVdZqJEps-400.avif 400w, /img/JvVdZqJEps-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/JvVdZqJEps-400.webp 400w, /img/JvVdZqJEps-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/JvVdZqJEps-400.jpeg 400w, /img/JvVdZqJEps-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/JvVdZqJEps-400.jpeg" width="400" height="400" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Nothing like a beautiful square, Roman bridge over a still river and a narrow street lined with restaurants to get your blood flowing again!</p>
+<figure><picture><source type="image/avif" srcset="/img/1F3qRYuAIR-400.avif 400w, /img/1F3qRYuAIR-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/1F3qRYuAIR-400.webp 400w, /img/1F3qRYuAIR-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/1F3qRYuAIR-400.jpeg 400w, /img/1F3qRYuAIR-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/1F3qRYuAIR-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/DF_uYYJzJA-400.avif 400w, /img/DF_uYYJzJA-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/DF_uYYJzJA-400.webp 400w, /img/DF_uYYJzJA-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/DF_uYYJzJA-400.jpeg 400w, /img/DF_uYYJzJA-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/DF_uYYJzJA-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>While the kids all take bus tours to Lagos to party the night away, mellow baker couples book into a guest house in Tavira for three nights and stroll around the town square and along the river. And that's exactly what we did.</p>
+<figure><picture><source type="image/avif" srcset="/img/b4BWZW1n41-400.avif 400w, /img/b4BWZW1n41-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/b4BWZW1n41-400.webp 400w, /img/b4BWZW1n41-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/b4BWZW1n41-400.jpeg 400w, /img/b4BWZW1n41-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/b4BWZW1n41-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Our guest room was huge, with a balcony overlooking the Main Street and a large table to sit at. We had a shared bathroom and kitchen area but we were the only people in the entire guest house for two of the nights, so we had more space than we needed. The bed was firm and the WIFI was fast. This room will be the benchmark for many weeks to come.</p>
+<figure><picture><source type="image/avif" srcset="/img/99jENEAwMr-400.avif 400w, /img/99jENEAwMr-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/99jENEAwMr-400.webp 400w, /img/99jENEAwMr-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/99jENEAwMr-400.jpeg 400w, /img/99jENEAwMr-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/99jENEAwMr-400.jpeg" width="400" height="399" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>My love hanging out in our amazing room in Tavira</p></figcaption></figure>
+<p>For our first meal in Tavira we relied on our guidebook and the first &quot;single dollar sign&quot; suggestion was Churrasqueria O Manel and it did not disappoint. The specialty of the house is Piri-Piri chicken; Manel's been grilling it up, over charcoal, every night for over 30 years. We spoke with his daughter who said he developed the recipe from his travels in the Navy as a boy and let me tell you he knows what he's doing. We gorged ourselves and the next night picked up a bit takeaway for supper at the guest house. Yup, we ate at the same place two nights in a row. It was worth it.</p>
+<figure><picture><source type="image/avif" srcset="/img/OtyxKpsMIk-400.avif 400w, /img/OtyxKpsMIk-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/OtyxKpsMIk-400.webp 400w, /img/OtyxKpsMIk-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/OtyxKpsMIk-400.jpeg 400w, /img/OtyxKpsMIk-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/OtyxKpsMIk-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>We never ate at this place, but it was always full. It was the English pub and lots of English like to fly to Portugal for shepherd's pie, I guess.</p></figcaption></figure>
+<figure><picture><source type="image/avif" srcset="/img/z5N2YF1JmH-400.avif 400w, /img/z5N2YF1JmH-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/z5N2YF1JmH-400.webp 400w, /img/z5N2YF1JmH-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/z5N2YF1JmH-400.jpeg 400w, /img/z5N2YF1JmH-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/z5N2YF1JmH-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Tavira gets a lot of tourists and we had our first experience with 'tourist pricing' on the trip so far. Our usual breakfast, coffee for me, fresh orange juice for Cindy, and two pastries typically costs between 5 and 6 euros. But it was 10 euros on Tavira's sunny square. It was fun, but I'll take the tiny bar in a side street pastelaria any day.</p>
+<figure><picture><source type="image/avif" srcset="/img/l1r63KZPUk-400.avif 400w, /img/l1r63KZPUk-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/l1r63KZPUk-400.webp 400w, /img/l1r63KZPUk-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/l1r63KZPUk-400.jpeg 400w, /img/l1r63KZPUk-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/l1r63KZPUk-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Eating here is fun, but will cost you!</p></figcaption></figure>
+<p>The east side of the Algarve doesn't have the tall cliffs like the southwest coast. Instead, the coast is all marshland and salt flats. They do a nice trade in sea salt in Tavira and area. But they do have beaches, you just need to take a boat to the far side of the lagoon. In the high season there's a ferry right from the town square, but since this was winter and only a sunny 20c, we walked 2km to the outer ferry station to catch the hourly ferry to Ilha de Tavira. We had plenty of time to make the 11 o'clock ferry, but we decided to check out the market on the way and cut it a little close. We had to cover the last 1100 metres in exactly 11 minutes or wait an hour for the next ferry. We just made it, we walked on just as the pilot cast off from the dock. All it took was, as Cindy calls it, walking with purpose. I tied my loose shoelace on the other side.</p>
+<figure><picture><source type="image/avif" srcset="/img/2q8cS5nxpz-400.avif 400w, /img/2q8cS5nxpz-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/2q8cS5nxpz-400.webp 400w, /img/2q8cS5nxpz-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/2q8cS5nxpz-400.jpeg 400w, /img/2q8cS5nxpz-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/2q8cS5nxpz-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>The market that almost lost us our ferry ride.</p></figcaption></figure>
+<p>The beach at Tavira was excellent, but completely different than the high cliffs and heavy surf of the west coast. Ilha de Tavira is a big sand dune, 11km long and up to 1km wide, with a long, uninterrupted sandy beach on the ocean side.</p>
+<figure><picture><source type="image/avif" srcset="/img/E0oO3qJqW0-400.avif 400w, /img/E0oO3qJqW0-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/E0oO3qJqW0-400.webp 400w, /img/E0oO3qJqW0-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/E0oO3qJqW0-400.jpeg 400w, /img/E0oO3qJqW0-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/E0oO3qJqW0-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/TPVM5A2weh-400.avif 400w, /img/TPVM5A2weh-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/TPVM5A2weh-400.webp 400w, /img/TPVM5A2weh-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/TPVM5A2weh-400.jpeg 400w, /img/TPVM5A2weh-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/TPVM5A2weh-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/FHFq1tPU-D-400.avif 400w, /img/FHFq1tPU-D-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/FHFq1tPU-D-400.webp 400w, /img/FHFq1tPU-D-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/FHFq1tPU-D-400.jpeg 400w, /img/FHFq1tPU-D-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/FHFq1tPU-D-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>These fellows worked hard, but didn't catch very much this day</p></figcaption></figure>
+<p>We walked and walked along the beach, but there wasn't really that much variation, so we headed back to the section near the ferry station and sacked out on a pair of lounge chairs. We were just about finished the lunch we had packed when a man came by and told us the chairs required payment. Who knew? We apologized, blamed our Canadian-ness and left in a hurry!</p>
+<figure><picture><source type="image/avif" srcset="/img/gbA3hZ-jUQ-400.avif 400w, /img/gbA3hZ-jUQ-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/gbA3hZ-jUQ-400.webp 400w, /img/gbA3hZ-jUQ-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/gbA3hZ-jUQ-400.jpeg 400w, /img/gbA3hZ-jUQ-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/gbA3hZ-jUQ-400.jpeg" width="400" height="400" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>Ahh...very nice. For a short while.</p></figcaption></figure>
+<p>The rest of our time in Tavira was spent hanging around the town square and getting caught up in the rhythms of the town. We did laundry, watched a 5k run for cancer research, painted pictures in the park, and ate lots of gelato.</p>
+<figure><picture><source type="image/avif" srcset="/img/rfY8bSaAET-400.avif 400w, /img/rfY8bSaAET-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/rfY8bSaAET-400.webp 400w, /img/rfY8bSaAET-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/rfY8bSaAET-400.jpeg 400w, /img/rfY8bSaAET-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/rfY8bSaAET-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/msk-iFlLvL-400.avif 400w, /img/msk-iFlLvL-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/msk-iFlLvL-400.webp 400w, /img/msk-iFlLvL-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/msk-iFlLvL-400.jpeg 400w, /img/msk-iFlLvL-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/msk-iFlLvL-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/tooxRBFrXA-400.avif 400w, /img/tooxRBFrXA-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/tooxRBFrXA-400.webp 400w, /img/tooxRBFrXA-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/tooxRBFrXA-400.jpeg 400w, /img/tooxRBFrXA-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/tooxRBFrXA-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/ienAxdorFD-400.avif 400w, /img/ienAxdorFD-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/ienAxdorFD-400.webp 400w, /img/ienAxdorFD-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/ienAxdorFD-400.jpeg 400w, /img/ienAxdorFD-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/ienAxdorFD-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/lHXbkZsGwq-400.avif 400w, /img/lHXbkZsGwq-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/lHXbkZsGwq-400.webp 400w, /img/lHXbkZsGwq-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/lHXbkZsGwq-400.jpeg 400w, /img/lHXbkZsGwq-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/lHXbkZsGwq-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>On Sunday we heard a band playing off in the distance and saw a crowd gathering, so we wandered over to see what was going on. We got caught up in the first Easter procession of the season in Tavira - bands, town officials, church groups, Boy and Girl Scouts and two large floats went throughout the town, stopping at several stations along the way to the Cathedral. The stations were really interesting because they were permanently set up. The doors were opened just for the procession, but they are there on the street the rest of the year. But if you weren't from the town, you'd have no idea what was behind the wooden doors.</p>
+<figure><picture><source type="image/avif" srcset="/img/lam5eytvsE-400.avif 400w, /img/lam5eytvsE-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/lam5eytvsE-400.webp 400w, /img/lam5eytvsE-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/lam5eytvsE-400.jpeg 400w, /img/lam5eytvsE-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/lam5eytvsE-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/DA5M6aRsX1-400.avif 400w, /img/DA5M6aRsX1-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/DA5M6aRsX1-400.webp 400w, /img/DA5M6aRsX1-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/DA5M6aRsX1-400.jpeg 400w, /img/DA5M6aRsX1-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/DA5M6aRsX1-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/cI8qgAAtLj-400.avif 400w, /img/cI8qgAAtLj-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/cI8qgAAtLj-400.webp 400w, /img/cI8qgAAtLj-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/cI8qgAAtLj-400.jpeg 400w, /img/cI8qgAAtLj-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/cI8qgAAtLj-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/LdBegdylR4-400.avif 400w" sizes="100vw"><source type="image/webp" srcset="/img/LdBegdylR4-400.webp 400w" sizes="100vw"><source type="image/jpeg" srcset="/img/LdBegdylR4-400.jpeg 400w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/LdBegdylR4-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture><figcaption class="cluster font-display"><p>One of the stations throughout the town.</p></figcaption></figure>
+<p>Tavira is a wonderful little town and I highly recommend visiting, especially if you want to relax for a few days. It was the perfect way to end the Portuguese leg of our Great Adventure.</p>
+<figure><picture><source type="image/avif" srcset="/img/8SbbXC-f02-400.avif 400w, /img/8SbbXC-f02-700.avif 700w" sizes="100vw"><source type="image/webp" srcset="/img/8SbbXC-f02-400.webp 400w, /img/8SbbXC-f02-700.webp 700w" sizes="100vw"><source type="image/jpeg" srcset="/img/8SbbXC-f02-400.jpeg 400w, /img/8SbbXC-f02-700.jpeg 700w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/8SbbXC-f02-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>From Tavira, we got on a bus for the Spanish border and the delights of Andalusia. But we really, really loved Portugal. Great sites, great food and wonderful, friendly people, from the hustle and bustle of Lisbon to the tiniest villages of Monchique and Odeceixe. We loved every minute in this beautiful country and can't wait to visit again. There's so much more to see. We could've stayed longer in Lisbon. We never made it to Sintra, or even Setubol and Troia. Not to mention the northern cities of Porto and Coimbra, or the ruins at Conimbriga, or the Duoro valley. There's another long trip in there, for sure.</p>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/algarve-2-beaches-beaches-beaches-plus-a-very-interesting-bakery/">Algarve #2:  Beaches, Beaches, Beaches.  Plus, a very interesting bakery.</a></li><li>Next: <a href="/blog/brussels/">Brussels</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/algarve-3-chilling-out-in-tavira/ -->
+	</body>
+</html>

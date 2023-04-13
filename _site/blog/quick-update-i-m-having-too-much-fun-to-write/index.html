@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quick Update: I&#39;m Having Too Much Fun To Write!</title>
+		<meta name="description" content="Baker.  Podcaster. Confused Human.">
+
+    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
+         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
+
+    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
+    <!-- synchronous js / schema  -->
+   	 	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Mark Dyck",
+        "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    	
+    		<!-- include blogpost schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Quick Update: I&#39;m Having Too Much Fun To Write!",
+    "description": "This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.",
+    "image": "http://localhost:8080/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Dyck",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Mark Dyck"
+    },
+    "datePublished": "2016-04-11T17:00:00.000-07:00"
+  }
+</script>
+ 
+	    
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		
+		<style>* { box-sizing: border-box; }
+@font-face {
+	font-family: 'Bitter';
+    src: local(''), 
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
+		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display: swap;
+}	
+@font-face {
+	font-family: 'Bitter';
+	src: local(''),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
+	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+	
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}
+/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #212121;
+
+	--background-color: #f8f5d7;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+header:after {
+	display: table;
+	clear: both;
+}
+
+/* Page Header  */
+
+.page-header {
+	font-family: var(--font-family-display);
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* journal index subheaders */
+
+article.writing-index section > header {
+	display: flex;
+	flex-direction: row;
+	align-items: center ;
+	justify-content: space-between;
+	content: none
+}
+article.writing-index header > h2 {
+	margin-bottom: 0;
+}
+
+
+ol.post-list {
+    list-style: none;
+    padding:0;
+}
+ol.post-list-summary {
+    list-style: none;
+    padding:1em;
+	margin: 0;
+	
+}
+
+ol.post-list-summary li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+time.postlist-summary-date {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+ol.post-list hr{
+    display: none;
+}
+
+ol.post-list .content-type{
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 70%;
+    opacity: 0.8;
+}
+
+@media (min-width: 864px) {
+    ol.post-list hr{
+        flex-grow: 1;
+        margin:0;
+        display: block;
+    }
+    ol.post-list li{
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+/* blog posts */
+
+
+.blog img {
+	width: 100%;
+	height: auto;
+  }
+
+article.blog li {
+padding-bottom: 0.9em;
+}
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}</style>
+
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/blog/quick-update-i-m-having-too-much-fun-to-write/" />
+
+<meta
+  name="description"
+  content="
+  
+  This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.
+  
+  "
+/>
+
+<meta name="theme-color" content="#F0CB67" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/blog/quick-update-i-m-having-too-much-fun-to-write/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+<!-- Mastodon verified site -->
+<link rel="me" href="@madbaker@c.im" />
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/blog/quick-update-i-m-having-too-much-fun-to-write/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Quick Update: I&#39;m Having Too Much Fun To Write!"
+/>
+<meta
+  property="og:image"
+  content="http://localhost:8080/assets/images/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="Mark Dyck: making the good stuff and bringing it to the people
+"
+/>
+<meta
+  property="og:description"
+  content="This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect."
+/>
+<meta property="og:site_name" content="Mark Dyck" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Mark Dyck" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@madbaker66" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/site.webmanifest" />
+
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header class='page-header'>
+			<a href="/" class="logo site-head | no-underline" >
+    <img src="/logo.png" alt="" aria-hidden="true" width="24" height="24">
+          </a>
+			<a href="/" class="home-link">Mark Dyck</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Writing</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="/todo/">To Do</a></li>
+					<li class="nav-item"><a href="/colophon/">Colophon</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+
+
+
+<h1>Quick Update: I&#39;m Having Too Much Fun To Write!</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2016-04-12">12 April 2016</time></li>
+	<li><a href="/tags/europe-2016/" class="post-tag">Europe 2016</a>, </li>
+	<li><a href="/tags/travel/" class="post-tag">Travel</a>, </li>
+	<li><a href="/tags/arles/" class="post-tag">arles</a>, </li>
+	<li><a href="/tags/avignon/" class="post-tag">avignon</a>, </li>
+	<li><a href="/tags/barcelona/" class="post-tag">barcelona</a>, </li>
+	<li><a href="/tags/paris/" class="post-tag">paris</a></li>
+</ul>
+<article class='blog'>
+<p>Hi. I'm writing this from the smallest studio apartment I've ever stayed in. We figure it's 200 square feet, including the bathroom. Smaller than most people's bedrooms, I bet. But it's in the Montparnasse neighbourhood in Paris and we've never been happier. The power was out for 14 hours last night (just in our apartment). Didn't care. We just went out and when we got back, lit some candles.</p>
+<p>The last long story I wrote was about our week in Madrid. I'll get back to those longer stories, but here's a quick update.</p>
+<p>We took the train to Barcelona, which is the coolest city every. My favourite on the trip so far. We went out for tapas with our new friends Gillian and Brian (Gillian is the daughter of our friend Laverne) and had a great time. Then Cindy and I walked all over the place, from the Park Gaudi, through the Gracia neighbourhood and to the beach. Then we did it all over again.</p>
+<figure><picture><source type="image/avif" srcset="/img/qfXSZl-mHj-400.avif 400w, /img/qfXSZl-mHj-700.avif 700w, /img/qfXSZl-mHj-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/qfXSZl-mHj-400.webp 400w, /img/qfXSZl-mHj-700.webp 700w, /img/qfXSZl-mHj-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/qfXSZl-mHj-400.jpeg 400w, /img/qfXSZl-mHj-700.jpeg 700w, /img/qfXSZl-mHj-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/qfXSZl-mHj-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/syfun4Wym8-400.avif 400w, /img/syfun4Wym8-700.avif 700w, /img/syfun4Wym8-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/syfun4Wym8-400.webp 400w, /img/syfun4Wym8-700.webp 700w, /img/syfun4Wym8-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/syfun4Wym8-400.jpeg 400w, /img/syfun4Wym8-700.jpeg 700w, /img/syfun4Wym8-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/syfun4Wym8-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/ZZD98nQWEh-400.avif 400w, /img/ZZD98nQWEh-700.avif 700w, /img/ZZD98nQWEh-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/ZZD98nQWEh-400.webp 400w, /img/ZZD98nQWEh-700.webp 700w, /img/ZZD98nQWEh-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/ZZD98nQWEh-400.jpeg 400w, /img/ZZD98nQWEh-700.jpeg 700w, /img/ZZD98nQWEh-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/ZZD98nQWEh-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/e_0aaebfe7-400.avif 400w, /img/e_0aaebfe7-700.avif 700w, /img/e_0aaebfe7-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/e_0aaebfe7-400.webp 400w, /img/e_0aaebfe7-700.webp 700w, /img/e_0aaebfe7-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/e_0aaebfe7-400.jpeg 400w, /img/e_0aaebfe7-700.jpeg 700w, /img/e_0aaebfe7-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/e_0aaebfe7-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/pzjmCaAdQL-400.avif 400w, /img/pzjmCaAdQL-700.avif 700w, /img/pzjmCaAdQL-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/pzjmCaAdQL-400.webp 400w, /img/pzjmCaAdQL-700.webp 700w, /img/pzjmCaAdQL-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/pzjmCaAdQL-400.jpeg 400w, /img/pzjmCaAdQL-700.jpeg 700w, /img/pzjmCaAdQL-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/pzjmCaAdQL-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/HKfwFTsmiJ-400.avif 400w, /img/HKfwFTsmiJ-700.avif 700w, /img/HKfwFTsmiJ-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/HKfwFTsmiJ-400.webp 400w, /img/HKfwFTsmiJ-700.webp 700w, /img/HKfwFTsmiJ-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/HKfwFTsmiJ-400.jpeg 400w, /img/HKfwFTsmiJ-700.jpeg 700w, /img/HKfwFTsmiJ-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/HKfwFTsmiJ-400.jpeg" width="400" height="400" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>We're done going to cathedrals because we've been to the best. The Sagrada Familia is still under construction (started in 1882, should be done in 10 years or so) but is so amazing, so spectacular that I'm still overwhelmed by the beauty of the place.</p>
+<figure><picture><source type="image/avif" srcset="/img/mTpa5eMDAV-400.avif 400w, /img/mTpa5eMDAV-700.avif 700w, /img/mTpa5eMDAV-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/mTpa5eMDAV-400.webp 400w, /img/mTpa5eMDAV-700.webp 700w, /img/mTpa5eMDAV-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/mTpa5eMDAV-400.jpeg 400w, /img/mTpa5eMDAV-700.jpeg 700w, /img/mTpa5eMDAV-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/mTpa5eMDAV-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/ZXUSwtLyJb-400.avif 400w, /img/ZXUSwtLyJb-700.avif 700w, /img/ZXUSwtLyJb-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/ZXUSwtLyJb-400.webp 400w, /img/ZXUSwtLyJb-700.webp 700w, /img/ZXUSwtLyJb-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/ZXUSwtLyJb-400.jpeg 400w, /img/ZXUSwtLyJb-700.jpeg 700w, /img/ZXUSwtLyJb-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/ZXUSwtLyJb-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/8NW2dtpxoR-400.avif 400w, /img/8NW2dtpxoR-700.avif 700w, /img/8NW2dtpxoR-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/8NW2dtpxoR-400.webp 400w, /img/8NW2dtpxoR-700.webp 700w, /img/8NW2dtpxoR-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/8NW2dtpxoR-400.jpeg 400w, /img/8NW2dtpxoR-700.jpeg 700w, /img/8NW2dtpxoR-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/8NW2dtpxoR-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/DVEyzYwG1U-400.avif 400w, /img/DVEyzYwG1U-700.avif 700w, /img/DVEyzYwG1U-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/DVEyzYwG1U-400.webp 400w, /img/DVEyzYwG1U-700.webp 700w, /img/DVEyzYwG1U-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/DVEyzYwG1U-400.jpeg 400w, /img/DVEyzYwG1U-700.jpeg 700w, /img/DVEyzYwG1U-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/DVEyzYwG1U-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Bummer: on our last night in Barcelona, I walked into a coffee bar to watch the last 10 minutes of El Clasico on TV. Put my pack down to pay for coffee, took a sip, and my pack was gone. My passport was in the pack. That made things more interesting.</p>
+<p>After going to the police department and filing a report, we continued as normal, taking the train into France. First destination was Arles, in Provence.</p>
+<p>Arles was cold and rainy, but we had a large, warm, rustic apartment that was incredibly romantic. We hung out for a few days and took a vacation from our vacation.</p>
+<figure><picture><source type="image/avif" srcset="/img/bLNIEwAHCd-400.avif 400w, /img/bLNIEwAHCd-700.avif 700w, /img/bLNIEwAHCd-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/bLNIEwAHCd-400.webp 400w, /img/bLNIEwAHCd-700.webp 700w, /img/bLNIEwAHCd-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/bLNIEwAHCd-400.jpeg 400w, /img/bLNIEwAHCd-700.jpeg 700w, /img/bLNIEwAHCd-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/bLNIEwAHCd-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Arles is a neat city because they have a Roman Arena that is still being used for bullfights, and a Roman Theatre that is being restored too. (They backed Julius Caesar.)</p>
+<figure><picture><source type="image/avif" srcset="/img/CzUQef1hy0-400.avif 400w, /img/CzUQef1hy0-700.avif 700w, /img/CzUQef1hy0-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/CzUQef1hy0-400.webp 400w, /img/CzUQef1hy0-700.webp 700w, /img/CzUQef1hy0-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/CzUQef1hy0-400.jpeg 400w, /img/CzUQef1hy0-700.jpeg 700w, /img/CzUQef1hy0-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/CzUQef1hy0-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/pyELO0fIKw-400.avif 400w, /img/pyELO0fIKw-700.avif 700w, /img/pyELO0fIKw-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/pyELO0fIKw-400.webp 400w, /img/pyELO0fIKw-700.webp 700w, /img/pyELO0fIKw-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/pyELO0fIKw-400.jpeg 400w, /img/pyELO0fIKw-700.jpeg 700w, /img/pyELO0fIKw-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/pyELO0fIKw-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/5BiaiHC5I4-400.avif 400w, /img/5BiaiHC5I4-700.avif 700w, /img/5BiaiHC5I4-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/5BiaiHC5I4-400.webp 400w, /img/5BiaiHC5I4-700.webp 700w, /img/5BiaiHC5I4-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/5BiaiHC5I4-400.jpeg 400w, /img/5BiaiHC5I4-700.jpeg 700w, /img/5BiaiHC5I4-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/5BiaiHC5I4-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>In Arles, we realized this passport problem was going to throw a wrench into things. I thought we could get a new one at the consulate in Nice, but I had to go to the embassy in Paris instead. Ugh. So we pulled out the map and started tweaking our plans.</p>
+<figure><picture><source type="image/avif" srcset="/img/IpPAgInDVS-400.avif 400w, /img/IpPAgInDVS-700.avif 700w, /img/IpPAgInDVS-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/IpPAgInDVS-400.webp 400w, /img/IpPAgInDVS-700.webp 700w, /img/IpPAgInDVS-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/IpPAgInDVS-400.jpeg 400w, /img/IpPAgInDVS-700.jpeg 700w, /img/IpPAgInDVS-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/IpPAgInDVS-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/WZScQejFfI-400.avif 400w, /img/WZScQejFfI-700.avif 700w, /img/WZScQejFfI-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/WZScQejFfI-400.webp 400w, /img/WZScQejFfI-700.webp 700w, /img/WZScQejFfI-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/WZScQejFfI-400.jpeg 400w, /img/WZScQejFfI-700.jpeg 700w, /img/WZScQejFfI-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/WZScQejFfI-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>After spending the morning at the huge weekly market in Arles, we took the train to Avignon, 35km up the road. And the sun came out!</p>
+<figure><picture><source type="image/avif" srcset="/img/Rb7SS4T3Xi-400.avif 400w, /img/Rb7SS4T3Xi-700.avif 700w, /img/Rb7SS4T3Xi-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/Rb7SS4T3Xi-400.webp 400w, /img/Rb7SS4T3Xi-700.webp 700w, /img/Rb7SS4T3Xi-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/Rb7SS4T3Xi-400.jpeg 400w, /img/Rb7SS4T3Xi-700.jpeg 700w, /img/Rb7SS4T3Xi-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/Rb7SS4T3Xi-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/a6psh9xD-T-400.avif 400w, /img/a6psh9xD-T-700.avif 700w, /img/a6psh9xD-T-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/a6psh9xD-T-400.webp 400w, /img/a6psh9xD-T-700.webp 700w, /img/a6psh9xD-T-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/a6psh9xD-T-400.jpeg 400w, /img/a6psh9xD-T-700.jpeg 700w, /img/a6psh9xD-T-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/a6psh9xD-T-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>We had another great AirBnb apartment in Avignon. It was a great home base to get some laundry done and eat several roast chicken meals from the deli across the street.</p>
+<p>Both Avignon and Arles are on the banks of the Rhone River. One day in Avignon we walked across the bridge to an island in the middle of the Rhone, then rented bikes and rode the 16km around the island. We went through villages, farms, and acres and acres of orchards. The peach trees were blooming too!</p>
+<figure><picture><source type="image/avif" srcset="/img/W1LvF2fNy_-400.avif 400w, /img/W1LvF2fNy_-700.avif 700w, /img/W1LvF2fNy_-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/W1LvF2fNy_-400.webp 400w, /img/W1LvF2fNy_-700.webp 700w, /img/W1LvF2fNy_-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/W1LvF2fNy_-400.jpeg 400w, /img/W1LvF2fNy_-700.jpeg 700w, /img/W1LvF2fNy_-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/W1LvF2fNy_-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/bG_E75GfK--400.avif 400w, /img/bG_E75GfK--700.avif 700w, /img/bG_E75GfK--1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/bG_E75GfK--400.webp 400w, /img/bG_E75GfK--700.webp 700w, /img/bG_E75GfK--1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/bG_E75GfK--400.jpeg 400w, /img/bG_E75GfK--700.jpeg 700w, /img/bG_E75GfK--1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/bG_E75GfK--400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>We wandered around the town for a couple of days then took a bus ride out to Pont du Gard, an amazing triple decker Roman Aqueduct. The best aqueduct so far, and we've seen a few.</p>
+<figure><picture><source type="image/avif" srcset="/img/H7HyBPVo-P-400.avif 400w, /img/H7HyBPVo-P-700.avif 700w, /img/H7HyBPVo-P-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/H7HyBPVo-P-400.webp 400w, /img/H7HyBPVo-P-700.webp 700w, /img/H7HyBPVo-P-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/H7HyBPVo-P-400.jpeg 400w, /img/H7HyBPVo-P-700.jpeg 700w, /img/H7HyBPVo-P-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/H7HyBPVo-P-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/KMP_ca9KcG-400.avif 400w, /img/KMP_ca9KcG-700.avif 700w, /img/KMP_ca9KcG-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/KMP_ca9KcG-400.webp 400w, /img/KMP_ca9KcG-700.webp 700w, /img/KMP_ca9KcG-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/KMP_ca9KcG-400.jpeg 400w, /img/KMP_ca9KcG-700.jpeg 700w, /img/KMP_ca9KcG-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/KMP_ca9KcG-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Then we took the TGV train to Paris. Aw shucks. There's worse places to be stuck without a passport.</p>
+<figure><picture><source type="image/avif" srcset="/img/CesW_VSSSr-400.avif 400w, /img/CesW_VSSSr-700.avif 700w, /img/CesW_VSSSr-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/CesW_VSSSr-400.webp 400w, /img/CesW_VSSSr-700.webp 700w, /img/CesW_VSSSr-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/CesW_VSSSr-400.jpeg 400w, /img/CesW_VSSSr-700.jpeg 700w, /img/CesW_VSSSr-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/CesW_VSSSr-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>We're in love with Paris! Cindy is getting weepy she's smiling so much. The architecture. The parks. The amazing shops and bakeries and cafes.</p>
+<figure><picture><source type="image/avif" srcset="/img/YZN0VEi3-n-400.avif 400w, /img/YZN0VEi3-n-700.avif 700w, /img/YZN0VEi3-n-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/YZN0VEi3-n-400.webp 400w, /img/YZN0VEi3-n-700.webp 700w, /img/YZN0VEi3-n-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/YZN0VEi3-n-400.jpeg 400w, /img/YZN0VEi3-n-700.jpeg 700w, /img/YZN0VEi3-n-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/YZN0VEi3-n-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<figure><picture><source type="image/avif" srcset="/img/KqtTbCGPQx-400.avif 400w, /img/KqtTbCGPQx-700.avif 700w, /img/KqtTbCGPQx-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/KqtTbCGPQx-400.webp 400w, /img/KqtTbCGPQx-700.webp 700w, /img/KqtTbCGPQx-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/KqtTbCGPQx-400.jpeg 400w, /img/KqtTbCGPQx-700.jpeg 700w, /img/KqtTbCGPQx-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/KqtTbCGPQx-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>It's without a doubt the most expensive city we've ever seen, a real budget bomber, but we're eating well and zipping about on the metro. I think we'll splurge at one of the cafes tomorrow.</p>
+<figure><picture><source type="image/avif" srcset="/img/QBFbvUEJh9-400.avif 400w, /img/QBFbvUEJh9-700.avif 700w, /img/QBFbvUEJh9-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/QBFbvUEJh9-400.webp 400w, /img/QBFbvUEJh9-700.webp 700w, /img/QBFbvUEJh9-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/QBFbvUEJh9-400.jpeg 400w, /img/QBFbvUEJh9-700.jpeg 700w, /img/QBFbvUEJh9-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/QBFbvUEJh9-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>Quick note. Before we left we watched this great show <a href="http://www.pbs.org/wgbh/what-phils-having/">&quot;I'll have what Phil's having&quot;</a> on PBS. Awesome show. Romantic, interesting and compelling travel show. But it should be called &quot;I can't afford what Phil's having&quot;! We went to all his haunts in Paris but one (still need to find the falafel stand) and it's crazy what things cost. His favourite roast chicken will set you back $150. Vegetables, drinks, and likely plates and forks are extra. Jeez. But we're finding great food our own way.</p>
+<figure><picture><source type="image/avif" srcset="/img/2fPznQEBPf-400.avif 400w, /img/2fPznQEBPf-700.avif 700w, /img/2fPznQEBPf-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/2fPznQEBPf-400.webp 400w, /img/2fPznQEBPf-700.webp 700w, /img/2fPznQEBPf-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/2fPznQEBPf-400.jpeg 400w, /img/2fPznQEBPf-700.jpeg 700w, /img/2fPznQEBPf-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/2fPznQEBPf-400.jpeg" width="400" height="300" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>The passport issue is fixed (if you pay enough fees and penalties, things get done fast, and my friends Curt and Bob helped from back home) so we're heading back south on Thursday. Spring has sprung here, but it's still pretty chilly at night. Time for some Riviera sun.</p>
+<figure><picture><source type="image/avif" srcset="/img/fyK1jaLkbW-400.avif 400w, /img/fyK1jaLkbW-700.avif 700w, /img/fyK1jaLkbW-1280.avif 1280w" sizes="100vw"><source type="image/webp" srcset="/img/fyK1jaLkbW-400.webp 400w, /img/fyK1jaLkbW-700.webp 700w, /img/fyK1jaLkbW-1280.webp 1280w" sizes="100vw"><source type="image/jpeg" srcset="/img/fyK1jaLkbW-400.jpeg 400w, /img/fyK1jaLkbW-700.jpeg 700w, /img/fyK1jaLkbW-1280.jpeg 1280w" sizes="100vw"><img src="/assets/images/image-placeholder.png" data-src="/img/fyK1jaLkbW-400.jpeg" width="400" height="533" alt=" " loading="lazy" decoding="async"></picture></figure>
+<p>So you're all caught up. We're having so much fun and seeing so many amazing things that when we get back to the apartment we just fall into a heap. And it turns out I get motion sick on trains when I try to read or type (I thought I'd write on the train.)</p>
+<p>But I got a few emails where people were worried, so I had to get a quick dispatch out. We're good. Really, really good.</p>
+
+
+
+</article>
+<ul class="links-nextprev"><li>Previous: <a href="/blog/granada-hints-of-arabia-in-andalucia/">Granada:  Hints of Arabia in Andalucia</a></li><li>Next: <a href="/blog/post-with-podcast-embed/">Post with podcast embed</a></li>
+</ul>
+
+		</main>
+
+		
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Mark Dyck <small>v8.0.0</small> </a>
+
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+		    <!-- youtube if actvated in yaml -->
+    	
+
+		<!-- Current page: /blog/quick-update-i-m-having-too-much-fun-to-write/ -->
+	</body>
+</html>
