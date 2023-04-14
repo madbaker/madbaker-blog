@@ -2,28 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://markdyck.ca/blog/this-is-a-fifth-post-draft/</loc>
-		<lastmod>2000-01-23</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://markdyck.ca/blog/open-graph-images/</loc>
 		<lastmod>2000-01-25</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/blog/this-is-my-first-post/</loc>
-		<lastmod>2000-05-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/blog/this-is-my-second-post-with-a-much-longer-title/</loc>
-		<lastmod>2000-07-04</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/blog/this-is-my-third-post/</loc>
-		<lastmod>2000-08-24</lastmod>
 	</url>
 	
 	<url>
@@ -39,11 +19,6 @@
 	<url>
 		<loc>https://markdyck.ca/blog/post-with-some-code/</loc>
 		<lastmod>2000-09-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/blog/this-is-my-fourth-post/</loc>
-		<lastmod>2000-09-30</lastmod>
 	</url>
 	
 	<url>
@@ -263,26 +238,6 @@
 	
 	<url>
 		<loc>https://markdyck.ca/tags/podcast/</loc>
-		<lastmod>2023-03-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/tags/number-2/</loc>
-		<lastmod>2023-03-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/tags/second-tag/</loc>
-		<lastmod>2023-03-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/tags/posts-with-two-tags/</loc>
-		<lastmod>2023-03-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://markdyck.ca/tags/another-tag/</loc>
 		<lastmod>2023-03-21</lastmod>
 	</url>
 	
