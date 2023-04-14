@@ -4,8 +4,6 @@ title: "An Ode to My Thighs:  How Two Prairie Folk Spent The Day In Lisbon"
 summary: "Our first day walking around Lisbon"
 date: 2016-03-01
 tags: ['Europe 2016', 'Travel'] 
-coverImage: "img_0134.jpg"
-
 ---
 
 

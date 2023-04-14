@@ -5,10 +5,6 @@ date: 2016-04-12
 tags: 
   - "Europe 2016"
   - "Travel"
-  - "arles"
-  - "avignon"
-  - "barcelona"
-  - "paris"
 ---
 
 Hi. I'm writing this from the smallest studio apartment I've ever stayed in. We figure it's 200 square feet, including the bathroom. Smaller than most people's bedrooms, I bet. But it's in the Montparnasse neighbourhood in Paris and we've never been happier. The power was out for 14 hours last night (just in our apartment). Didn't care. We just went out and when we got back, lit some candles.

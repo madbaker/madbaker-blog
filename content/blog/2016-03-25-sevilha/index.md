@@ -3,10 +3,6 @@ title: "How Do You Leave A City Like Sevilha?"
 date: 2016-03-25
 categories: 
 tags: 
-  - "flamenco"
-  - "seville"
-  - "spain"
-  - "tapas"
   - "Travel"
   - "Europe 2016"
 ---

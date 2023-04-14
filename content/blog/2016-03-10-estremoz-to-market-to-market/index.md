@@ -1,12 +1,7 @@
 ---
 title: "Estremoz:  To Market, To Market"
 date: 2016-03-10
-categories: 
-  - "europe-2016"
-tags: 
-  - "estremoz"
-  - "farmers-market"
-  - "market"
+tags: ["Europe 2016", "Travel"]
 ---
 
 Although there was much more to see around Lisbon, it was Friday so it was time to move on.  We found our way along the metro to the bus station and booked our tickets to Estremoz.  

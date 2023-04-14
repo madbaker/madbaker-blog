@@ -3,8 +3,6 @@ title: "Brussels"
 date: 2016-03-23
 categories: 
 tags: 
-  - "Bombs"
-  - "Brussels"
   - "Travel"
   - "Europe 2016"
 ---
