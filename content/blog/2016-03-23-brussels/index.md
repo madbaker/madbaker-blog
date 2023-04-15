@@ -1,7 +1,6 @@
 ---
 title: "Brussels"
 date: 2016-03-23
-categories: 
 tags: 
   - "Travel"
   - "Europe 2016"

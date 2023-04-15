@@ -1,7 +1,6 @@
 ---
 title: "How Do You Leave A City Like Sevilha?"
-date: 2016-03-25
-categories: 
+date: 2016-03-25 
 tags: 
   - "Travel"
   - "Europe 2016"
