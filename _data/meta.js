@@ -9,7 +9,7 @@ module.exports = {
   skipContent: 'Skip to content',
   author: 'Mark Dyck', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: 'mark@madbaker.com', // i.e. hola@lenesaile.com - email of the author
-  authorWebsite: 'https://markdyck.co', // i.e. https.://www.lenesaile.com - the personal site of the author
+  authorWebsite: 'https://markdyck.ca', // i.e. https.://www.lenesaile.com - the personal site of the author
   themeColor: '#F0CB67', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
