@@ -2,7 +2,7 @@
 title: "Figuring Out Flour"
 date: 2008-03-12
 tags: 
-  - "bakery"
+  - "Bakery"
 ---
 
 [![](images/694856387_12c02ac1b0_m.jpg)](http://www.flickr.com/photos/romanlily/694856387/ "photo sharing")

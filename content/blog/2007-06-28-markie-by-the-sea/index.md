@@ -1,9 +1,7 @@
 ---
 title: "Markie-by-the-sea"
-date: "2007-06-28"
-categories: 
-  - "2007-vancouver-island"
-  - "family"
+date: 2007-06-28
+tags: ["Travel", "Vancouver Island 2007"]
 ---
 
 We went on a three hour sea kayaking tour yesterday along Porpoise Bay. What a great time! Although I admit I felt a little like that wooden model canoe from the children's cartoon at the start. A wee bit tippy and tough to steer. After a couple minutes though it was smooth going.

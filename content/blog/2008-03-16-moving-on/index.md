@@ -8,3 +8,5 @@ I'm consolidating hosts and websites in order to make all this easier to manage 
 That's [www.madbaker.com](http://madbaker.com/ "madbaker.com") 
 
 See you there!
+
+(_update: that was to hosted wordpress.  first on Hostpapa and later on Siteground_)

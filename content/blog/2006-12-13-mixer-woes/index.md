@@ -1,7 +1,7 @@
 ---
 title: "Mixer Woes"
 date: 2006-12-13
-tags: "bakery"
+tags: "Bakery"
 ---
 
 
