@@ -1,0 +1,29 @@
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body, img {
+	max-width: 65em;
+}
+img {
+	
+	height: min-content;
+	object-fit: contain;
+	
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}

@@ -7,15 +7,6 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
-/**
- * From Lena: I strive to keep the `.eleventy.js` file clean and uncluttered. Most adjustments must be made in:
- *  - `./config/collections/index.js`
- *  - `./config/filters/index.js`
- *  - `./config/plugins/index.js`
- *  - `./config/shortcodes/index.js`
- *  - `./config/transforms/index.js`
- */
-
 // get package.json
 const packageVersion = require('./package.json').version;
 
@@ -30,13 +21,13 @@ const {
     groupByYear,
     groupByMonth,
     padStart
-  } = require('./_config/filters.js');
+  } = require('./src/_11ty/filters.js');
 
-const {post, contentPaginatedByYearMonth} = require ('./_config/collections.js')
+const {post, contentPaginatedByYearMonth} = require ('./src/_11ty/collections.js')
 
 // module import shortcodes
-const imageShortcodePlaceholder = require('./_config/images.js');
-const liteYoutube = require('./_config/youtube-lite.js')
+const imageShortcodePlaceholder = require('./src/_11ty/images.js');
+const liteYoutube = require('./src/_11ty/youtube-lite.js')
 
 
 
@@ -47,7 +38,7 @@ module.exports = function(eleventyConfig) {
 	// NOTE:  the prismjs css is for syntax highlighting in code blocks`
 
 	eleventyConfig.addPassthroughCopy({
-		"./public/": "/",
+		"./src/assets/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 
@@ -55,7 +46,7 @@ module.exports = function(eleventyConfig) {
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
-	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+	eleventyConfig.addWatchTarget("./src/content/**/*.{svg,webp,png,jpeg}");
 
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
@@ -136,7 +127,7 @@ module.exports = function(eleventyConfig) {
 
 		// These are all optional:
 		dir: {
-			input: "content",         // default: "."
+			input: "./src/content",         // default: "."
 			includes: "../_includes",  // default: "_includes"
 			data: "../_data",          // default: "_data"
 			output: "_site"

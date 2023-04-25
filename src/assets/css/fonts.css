@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'atkinson_hyperlegible';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2)
+		format('woff2'),
+	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
+  }
+ 
+  @font-face {
+	font-family: 'RobotoMono';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+		format('woff2'),
+	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  }
+
+
+  
+
+/* Defaults */
+
+:root {
+	--font-family-base: sans-serif;
+	--font-family-display: 'atkinson_hyperlegible', sans-serif;
+	--font-family-monospace: monospace;
+}

@@ -6,10 +6,6 @@
 		<title>Writing</title>
 		<meta name="description" content="Baker.  Podcaster. Confused Human.">
 
-    <!-- MAD:  schemas tell search engines what the page is about.  So this is saying, use the website schema always, and the blogpost
-         schema if this is a blogpost.  The values in the schema markup are all controled by meta values -->
-
-    <!-- @TODO I don't know where the varlable 'schema' in the if statement is set. -->
     <!-- synchronous js / schema  -->
    	 	<script type="application/ld+json">
   {
@@ -30,28 +26,67 @@
     	
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mark Dyck">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mark Dyck">
+		<meta name="generator" content="Eleventy v2.0.0">
 		
 		<style>* { box-sizing: border-box; }
-@font-face {
-	font-family: 'Bitter';
-    src: local(''), 
-		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2-variations'),
-		 url(/fonts/bitter/Bitter-VariableFont_wght.woff2) format('woff2');
-		 font-weight: normal;
-		 font-style: normal;
-		 font-display: swap;
-}	
-@font-face {
-	font-family: 'Bitter';
-	src: local(''),
-	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2-variations'),
-	url(/fonts/bitter/Bitter-Italic-VariableFont_wght.woff2) format('woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+/**
+ * BASE SIZE
+ * All calculations are based on this. It’s recommended that
+ * you keep it at 1rem because that is the root font size. You
+ * can set it to whatever you like and whatever unit you like.
+ */
+ .root {
+    --base-size: 1rem;
+ }
+
+/**
+ * SIZE SCALE
+ * This is a Perfect Fourth scale that powers all the utilities that
+ * it is relevant for (font-size, margin, padding). All items are
+ * calcuated off the base size, so change that and cascade across
+ * your whole project.
+ */
+
+.root {
+    --size-300: var(--base-size) * 0.75;
+    --size-400: var(--base-size);
+    --size-500: var(--base-size) * 1.33;
+    --size-600: var(--base-size) * 1.77;
+    --size-700: var(--base-size) * 2.36;
+    --size-800: var(--base-size) * 3.15;
+    --size-900: var(--base-size) * 4.2;
+    --size-major: var(--base-size) * 5.6;
 }
-	
-  @font-face {
+
+/**
+ * COLORS
+ * Colors are shared between backgrounds and text by default. 
+ * You can also use them to power borders, fills or shadows, for example.
+ */
+ .root {
+    --dark: #38445b;
+    --dark-shade: #263147;
+    --dark-glare: #505c73;
+    --light: #f9f4e3;
+    --light-shade: #fff6d7;
+    --light-glare: #fdfbf3;
+    --primary: #513aa6;
+    --primary-shade: #432e92;
+    --primary-glare: #654ac9;
+    --secondary: #6ac2b6;
+    --secondary-shade: #35a495;
+    --secondary-glare: #98e2d8;
+    --tertiary: #ffd490;
+    --tertiary-shade: #ffca77;
+    --tertiary-glare: #ffdeaa;
+    --quaternary: #ff7f5c;
+    --quaternary-shade: #f96841;
+    --quaternary-glare: #fe9476;
+    --quinary: #fa576e;
+    --quinary-shade: #fc3e59;
+    --quinary-glare: #f26c7f;
+ }
+@font-face {
 	font-family: 'atkinson_hyperlegible';
 	font-weight: normal;
 	font-style: normal;
@@ -72,27 +107,7 @@
 		format('woff2'),
 	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102.woff) format('woff');
   }
-  @font-face {
-	font-family: 'atkinson_hyperlegible';
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2)
-		format('woff2'),
-	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102.woff) format('woff');
-  }
-  @font-face {
-	font-family: 'atkinson_hyperlegible';
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-	src: local(''),
-	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2)
-		format('woff2'),
-	  url(/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.woff) format('woff');
-  }
-
+ 
   @font-face {
 	font-family: 'RobotoMono';
 	font-weight: normal;
@@ -109,46 +124,11 @@
 
 /* Defaults */
 
-/* --font-family-base: 'Bitter', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ; */
-
 :root {
 	--font-family-base: sans-serif;
 	--font-family-display: 'atkinson_hyperlegible', sans-serif;
 	--font-family-monospace: monospace;
 }
-/* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
-/* Theme colors */
-:root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #212121;
-
-	--background-color: #f8f5d7;
-
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-
-		--background-color: #15202b;
-	}
-}
-
-
 /* Global stylesheet */
 * {
 	box-sizing: border-box;
@@ -177,260 +157,6 @@ img {
 figcaption {
 	font-style: italic;
 	text-align: center;
-}
-
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-p:last-child {
-	margin-bottom: 0;
-}
-p {
-	line-height: 1.5;
-}
-
-li {
-	line-height: 1.5;
-}
-
-a[href] {
-	color: var(--text-color-link);
-}
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
-a[href]:hover,
-a[href]:active {
-	color: var(--text-color-link-active);
-}
-
-main {
-	padding: 1rem;
-}
-main :first-child {
-	margin-top: 0;
-}
-
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-
-header:after {
-	display: table;
-	clear: both;
-}
-
-/* Page Header  */
-
-.page-header {
-	font-family: var(--font-family-display);
-
-}
-
-.links-nextprev {
-	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
-}
-
-table {
-	margin: 1em 0;
-}
-table td,
-table th {
-	padding-right: 1em;
-}
-
-pre,
-code {
-	font-family: var(--font-family-monospace);
-}
-pre:not([class*="language-"]) {
-	margin: .5em 0;
-	line-height: 1.375; /* 22px /16 */
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-}
-code {
-	word-break: break-all;
-}
-
-/* Header */
-header {
-	display: flex;
-	gap: 1em .5em;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 1em;
-}
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-	text-transform: uppercase;
-}
-
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
-/* Nav */
-.nav {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.nav-item {
-	display: inline-block;
-	margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
-}
-
-/* journal index subheaders */
-
-article.writing-index section > header {
-	display: flex;
-	flex-direction: row;
-	align-items: center ;
-	justify-content: space-between;
-	content: none
-}
-article.writing-index header > h2 {
-	margin-bottom: 0;
-}
-
-
-ol.post-list {
-    list-style: none;
-    padding:0;
-}
-ol.post-list-summary {
-    list-style: none;
-    padding:1em;
-	margin: 0;
-	
-}
-
-ol.post-list-summary li{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-time.postlist-summary-date {
-	font-size: 0.8em;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #666;
-}
-ol.post-list hr{
-    display: none;
-}
-
-ol.post-list .content-type{
-    background: var(--foreground);
-    color: var(--background);
-    padding: 0 6px;
-    display: inline-block;
-    font-size: 70%;
-    opacity: 0.8;
-}
-
-@media (min-width: 864px) {
-    ol.post-list hr{
-        flex-grow: 1;
-        margin:0;
-        display: block;
-    }
-    ol.post-list li{
-        flex-direction: row;
-        gap: 1em;
-        align-items: center;
-    }
-}
-
-/* blog posts */
-
-
-.blog img {
-	width: 100%;
-	height: auto;
-  }
-
-article.blog li {
-padding-bottom: 0.9em;
-}
-/* Tags */
-.post-tag {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: capitalize;
-	font-style: italic;
-}
-.postlist-item > .post-tag {
-	align-self: center;
-}
-
-/* Tags list */
-.post-metadata {
-	display: inline-flex;
-	flex-wrap: wrap;
-	gap: .5em;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	padding-bottom: 1em;
-}
-.post-metadata time {
-	margin-right: 1em;
-}
-
-/* Direct Links / Markdown Headers */
-.header-anchor {
-	text-decoration: none;
-	font-style: normal;
-	font-size: 1em;
-	margin-left: .1em;
-}
-a[href].header-anchor,
-a[href].header-anchor:visited {
-	color: transparent;
-}
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
-	text-decoration: underline;
-}
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
-	color: #aaa;
-}
-
-h2 + .header-anchor {
-	font-size: 1.5em;
 }</style>
 
 	 <!-- everything else: meta tags, icons, open graph etc.  -->
@@ -530,7 +256,7 @@ h2 + .header-anchor {
 <header>
   <section>
     <h1>Writing</h1>
-    <p><strong>268</strong> items published since January 25, 2000</p>
+    <p><strong>292</strong> items published since January 25, 2000</p>
   </section>
 </header>
 
@@ -3029,7 +2755,7 @@ h2 + .header-anchor {
     
 
 
-<ol reversed class="post-list-summary" style="counter-reset: start-from 49">
+<ol reversed class="post-list-summary" style="counter-reset: start-from 58">
 
 	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-12-03">December 3, 2008</time>
@@ -3164,8 +2890,20 @@ h2 + .header-anchor {
     </li>
 
 	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-03-02">March 2, 2008</time>
+		<a href="/blog/head-on-over-to-the-new-site/" class="postlist-link" title="Read Head on over to the new site!">Head on over to the new site!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-02-26">February 26, 2008</time>
 		<a href="/blog/baking-school-is-over-sniff/" class="postlist-link" title="Read Baking School is Over (sniff)">Baking School is Over (sniff)</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-02-26">February 26, 2008</time>
+		<a href="/blog/back-home-and-soon-to-bake-again/" class="postlist-link" title="Read Back Home, and Soon to Bake Again">Back Home, and Soon to Bake Again</a>
 		<summary></summary>
     </li>
 
@@ -3190,6 +2928,12 @@ h2 + .header-anchor {
 	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-02-17">February 17, 2008</time>
 		<a href="/blog/regional-shapes/" class="postlist-link" title="Read Regional Shapes">Regional Shapes</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-02-17">February 17, 2008</time>
+		<a href="/blog/the-magic-of-sourdough-bread/" class="postlist-link" title="Read The Magic of Sourdough Bread">The Magic of Sourdough Bread</a>
 		<summary></summary>
     </li>
 
@@ -3254,6 +2998,12 @@ h2 + .header-anchor {
     </li>
 
 	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-02-11">February 11, 2008</time>
+		<a href="/blog/orange-boot-update-artisan-baking-in-san-francisco/" class="postlist-link" title="Read Orange Boot Update: Artisan Baking in San Francisco">Orange Boot Update: Artisan Baking in San Francisco</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-02-09">February 9, 2008</time>
 		<a href="/blog/sfbi-day-5-back-to-the-baguette/" class="postlist-link" title="Read SFBI Day 5:  Back to the Baguette">SFBI Day 5:  Back to the Baguette</a>
 		<summary></summary>
@@ -3296,14 +3046,44 @@ h2 + .header-anchor {
     </li>
 
 	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-01-29">January 29, 2008</time>
+		<a href="/blog/orange-boot-update-time-to-learn/" class="postlist-link" title="Read Orange Boot Update:  Time to Learn">Orange Boot Update:  Time to Learn</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-01-28">January 28, 2008</time>
 		<a href="/blog/my-introduction-to-daring-bakers-lemon-meringue-pie/" class="postlist-link" title="Read My Introduction to Daring Bakers:  Lemon Meringue Pie">My Introduction to Daring Bakers:  Lemon Meringue Pie</a>
 		<summary></summary>
     </li>
 
 	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-01-22">January 22, 2008</time>
+		<a href="/blog/of-dough-and-wind-chill/" class="postlist-link" title="Read Of Dough and Wind Chill">Of Dough and Wind Chill</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-01-22">January 22, 2008</time>
+		<a href="/blog/flu-bugs-can-t-stop-us/" class="postlist-link" title="Read Flu bugs can&#39;t stop us!">Flu bugs can&#39;t stop us!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2008-01-09">January 9, 2008</time>
 		<a href="/blog/foolin-with-flickr/" class="postlist-link" title="Read Foolin with Flickr">Foolin with Flickr</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-01-08">January 8, 2008</time>
+		<a href="/blog/orange-boot-update-baking-in-january/" class="postlist-link" title="Read Orange Boot Update:  Baking in January">Orange Boot Update:  Baking in January</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2008-01-03">January 3, 2008</time>
+		<a href="/blog/happy-new-year-from-orange-boot-bakery/" class="postlist-link" title="Read Happy New Year from Orange Boot Bakery">Happy New Year from Orange Boot Bakery</a>
 		<summary></summary>
     </li>
 
@@ -3322,7 +3102,7 @@ h2 + .header-anchor {
 </ol>
 
 <!--
-<ol reversed class="post-list" style="counter-reset: start-from 49">
+<ol reversed class="post-list" style="counter-reset: start-from 58">
 
 
 	<li class="postlist-item">
@@ -3458,7 +3238,19 @@ h2 + .header-anchor {
 	</li>
 
 	<li class="postlist-item">
+		<a href="/blog/head-on-over-to-the-new-site/" class="postlist-link" title="Read Head on over to the new site!">Head on over to the new site!</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-03-02">March 2, 2008</time>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/baking-school-is-over-sniff/" class="postlist-link" title="Read Baking School is Over (sniff)">Baking School is Over (sniff)</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-02-26">February 26, 2008</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/back-home-and-soon-to-bake-again/" class="postlist-link" title="Read Back Home, and Soon to Bake Again">Back Home, and Soon to Bake Again</a>
 		<hr>
         <time class="postlist-date" datetime="2008-02-26">February 26, 2008</time>
 	</li>
@@ -3483,6 +3275,12 @@ h2 + .header-anchor {
 
 	<li class="postlist-item">
 		<a href="/blog/regional-shapes/" class="postlist-link" title="Read Regional Shapes">Regional Shapes</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-02-17">February 17, 2008</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/the-magic-of-sourdough-bread/" class="postlist-link" title="Read The Magic of Sourdough Bread">The Magic of Sourdough Bread</a>
 		<hr>
         <time class="postlist-date" datetime="2008-02-17">February 17, 2008</time>
 	</li>
@@ -3548,6 +3346,12 @@ h2 + .header-anchor {
 	</li>
 
 	<li class="postlist-item">
+		<a href="/blog/orange-boot-update-artisan-baking-in-san-francisco/" class="postlist-link" title="Read Orange Boot Update: Artisan Baking in San Francisco">Orange Boot Update: Artisan Baking in San Francisco</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-02-11">February 11, 2008</time>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/sfbi-day-5-back-to-the-baguette/" class="postlist-link" title="Read SFBI Day 5:  Back to the Baguette">SFBI Day 5:  Back to the Baguette</a>
 		<hr>
         <time class="postlist-date" datetime="2008-02-09">February 9, 2008</time>
@@ -3590,15 +3394,45 @@ h2 + .header-anchor {
 	</li>
 
 	<li class="postlist-item">
+		<a href="/blog/orange-boot-update-time-to-learn/" class="postlist-link" title="Read Orange Boot Update:  Time to Learn">Orange Boot Update:  Time to Learn</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-01-29">January 29, 2008</time>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/my-introduction-to-daring-bakers-lemon-meringue-pie/" class="postlist-link" title="Read My Introduction to Daring Bakers:  Lemon Meringue Pie">My Introduction to Daring Bakers:  Lemon Meringue Pie</a>
 		<hr>
         <time class="postlist-date" datetime="2008-01-28">January 28, 2008</time>
 	</li>
 
 	<li class="postlist-item">
+		<a href="/blog/of-dough-and-wind-chill/" class="postlist-link" title="Read Of Dough and Wind Chill">Of Dough and Wind Chill</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-01-22">January 22, 2008</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/flu-bugs-can-t-stop-us/" class="postlist-link" title="Read Flu bugs can&#39;t stop us!">Flu bugs can&#39;t stop us!</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-01-22">January 22, 2008</time>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/foolin-with-flickr/" class="postlist-link" title="Read Foolin with Flickr">Foolin with Flickr</a>
 		<hr>
         <time class="postlist-date" datetime="2008-01-09">January 9, 2008</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-update-baking-in-january/" class="postlist-link" title="Read Orange Boot Update:  Baking in January">Orange Boot Update:  Baking in January</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-01-08">January 8, 2008</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/happy-new-year-from-orange-boot-bakery/" class="postlist-link" title="Read Happy New Year from Orange Boot Bakery">Happy New Year from Orange Boot Bakery</a>
+		<hr>
+        <time class="postlist-date" datetime="2008-01-03">January 3, 2008</time>
 	</li>
 
 	<li class="postlist-item">
@@ -3629,12 +3463,12 @@ h2 + .header-anchor {
         
     
     
-        12
+        <a href="/blog/2007/12/">12</a>
     
 
     
     
-        11
+        <a href="/blog/2007/11/">11</a>
     
 
     
@@ -3694,11 +3528,95 @@ h2 + .header-anchor {
     
 
 
-<ol reversed class="post-list-summary" style="counter-reset: start-from 77">
+<ol reversed class="post-list-summary" style="counter-reset: start-from 92">
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-12-10">December 10, 2007</time>
+		<a href="/blog/orange-boot-11-final-bake-day-before-christmas/" class="postlist-link" title="Read Orange Boot #11:  Final Bake Day Before Christmas">Orange Boot #11:  Final Bake Day Before Christmas</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-11-27">November 27, 2007</time>
+		<a href="/blog/orange-boot-9-rider-pride-and-frozen-toes/" class="postlist-link" title="Read Orange Boot #9:  Rider Pride and Frozen Toes">Orange Boot #9:  Rider Pride and Frozen Toes</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-11-20">November 20, 2007</time>
+		<a href="/blog/orange-boot-week-8-snowy-but-warm-inside/" class="postlist-link" title="Read Orange Boot Week 8:  Snowy, but warm inside!">Orange Boot Week 8:  Snowy, but warm inside!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-11-12">November 12, 2007</time>
+		<a href="/blog/orange-boot-week-7-all-request-baking/" class="postlist-link" title="Read Orange Boot Week 7:  All-Request Baking!">Orange Boot Week 7:  All-Request Baking!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-11-06">November 6, 2007</time>
+		<a href="/blog/orange-boot-week-6-the-bread-is-back/" class="postlist-link" title="Read Orange Boot Week 6:  The Bread is Back!">Orange Boot Week 6:  The Bread is Back!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-23">October 23, 2007</time>
+		<a href="/blog/new-subscription-thingy-now-available/" class="postlist-link" title="Read New Subscription Thingy Now Available!">New Subscription Thingy Now Available!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-21">October 21, 2007</time>
+		<a href="/blog/orange-boot-week-4-return-of-some-old-friends/" class="postlist-link" title="Read Orange Boot Week 4:  Return of Some Old Friends">Orange Boot Week 4:  Return of Some Old Friends</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-21">October 21, 2007</time>
+		<a href="/blog/orange-boot-week-3-seeds-onions-and-the-search-for-mellow/" class="postlist-link" title="Read Orange Boot Week 3:  Seeds, Onions and the Search for Mellow">Orange Boot Week 3:  Seeds, Onions and the Search for Mellow</a>
+		<summary></summary>
+    </li>
 
 	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2007-10-18">October 18, 2007</time>
 		<a href="/blog/two-programmers-one-medium/" class="postlist-link" title="Read Two Programmers, One Medium">Two Programmers, One Medium</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-08">October 8, 2007</time>
+		<a href="/blog/orange-boot-week-2-the-adventure-continues/" class="postlist-link" title="Read Orange Boot Week 2:  The Adventure Continues">Orange Boot Week 2:  The Adventure Continues</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-08">October 8, 2007</time>
+		<a href="/blog/how-do-i-order/" class="postlist-link" title="Read How Do I Order?">How Do I Order?</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-10-03">October 3, 2007</time>
+		<a href="/blog/spam-filter-affects-local-nourishment/" class="postlist-link" title="Read Spam Filter Affects Local Nourishment">Spam Filter Affects Local Nourishment</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-09-29">September 29, 2007</time>
+		<a href="/blog/turkey-trouble/" class="postlist-link" title="Read Turkey Trouble?">Turkey Trouble?</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-09-29">September 29, 2007</time>
+		<a href="/blog/the-bakers/" class="postlist-link" title="Read The Bakers">The Bakers</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-09-29">September 29, 2007</time>
+		<a href="/blog/bob-dylan-likes-our-bread/" class="postlist-link" title="Read Bob Dylan likes our bread!">Bob Dylan likes our bread!</a>
 		<summary></summary>
     </li>
 
@@ -3711,6 +3629,12 @@ h2 + .header-anchor {
 	<li class="postlist-item">
         <time class="postlist-summary-date" datetime="2007-09-10">September 10, 2007</time>
 		<a href="/blog/community-registration-night-tuesday-september-12/" class="postlist-link" title="Read Community Registration Night! Tuesday, September 12!!">Community Registration Night! Tuesday, September 12!!</a>
+		<summary></summary>
+    </li>
+
+	<li class="postlist-item">
+        <time class="postlist-summary-date" datetime="2007-09-04">September 4, 2007</time>
+		<a href="/blog/the-bakery-what-we-re-about/" class="postlist-link" title="Read The Bakery - What We&#39;re About">The Bakery - What We&#39;re About</a>
 		<summary></summary>
     </li>
 
@@ -4155,13 +4079,97 @@ h2 + .header-anchor {
 </ol>
 
 <!--
-<ol reversed class="post-list" style="counter-reset: start-from 77">
+<ol reversed class="post-list" style="counter-reset: start-from 92">
 
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-11-final-bake-day-before-christmas/" class="postlist-link" title="Read Orange Boot #11:  Final Bake Day Before Christmas">Orange Boot #11:  Final Bake Day Before Christmas</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-12-10">December 10, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-9-rider-pride-and-frozen-toes/" class="postlist-link" title="Read Orange Boot #9:  Rider Pride and Frozen Toes">Orange Boot #9:  Rider Pride and Frozen Toes</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-11-27">November 27, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-8-snowy-but-warm-inside/" class="postlist-link" title="Read Orange Boot Week 8:  Snowy, but warm inside!">Orange Boot Week 8:  Snowy, but warm inside!</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-11-20">November 20, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-7-all-request-baking/" class="postlist-link" title="Read Orange Boot Week 7:  All-Request Baking!">Orange Boot Week 7:  All-Request Baking!</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-11-12">November 12, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-6-the-bread-is-back/" class="postlist-link" title="Read Orange Boot Week 6:  The Bread is Back!">Orange Boot Week 6:  The Bread is Back!</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-11-06">November 6, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/new-subscription-thingy-now-available/" class="postlist-link" title="Read New Subscription Thingy Now Available!">New Subscription Thingy Now Available!</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-23">October 23, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-4-return-of-some-old-friends/" class="postlist-link" title="Read Orange Boot Week 4:  Return of Some Old Friends">Orange Boot Week 4:  Return of Some Old Friends</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-21">October 21, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-3-seeds-onions-and-the-search-for-mellow/" class="postlist-link" title="Read Orange Boot Week 3:  Seeds, Onions and the Search for Mellow">Orange Boot Week 3:  Seeds, Onions and the Search for Mellow</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-21">October 21, 2007</time>
+	</li>
 
 	<li class="postlist-item">
 		<a href="/blog/two-programmers-one-medium/" class="postlist-link" title="Read Two Programmers, One Medium">Two Programmers, One Medium</a>
 		<hr>
         <time class="postlist-date" datetime="2007-10-18">October 18, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/orange-boot-week-2-the-adventure-continues/" class="postlist-link" title="Read Orange Boot Week 2:  The Adventure Continues">Orange Boot Week 2:  The Adventure Continues</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-08">October 8, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/how-do-i-order/" class="postlist-link" title="Read How Do I Order?">How Do I Order?</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-08">October 8, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/spam-filter-affects-local-nourishment/" class="postlist-link" title="Read Spam Filter Affects Local Nourishment">Spam Filter Affects Local Nourishment</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-10-03">October 3, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/turkey-trouble/" class="postlist-link" title="Read Turkey Trouble?">Turkey Trouble?</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-09-29">September 29, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/the-bakers/" class="postlist-link" title="Read The Bakers">The Bakers</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-09-29">September 29, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/bob-dylan-likes-our-bread/" class="postlist-link" title="Read Bob Dylan likes our bread!">Bob Dylan likes our bread!</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-09-29">September 29, 2007</time>
 	</li>
 
 	<li class="postlist-item">
@@ -4174,6 +4182,12 @@ h2 + .header-anchor {
 		<a href="/blog/community-registration-night-tuesday-september-12/" class="postlist-link" title="Read Community Registration Night! Tuesday, September 12!!">Community Registration Night! Tuesday, September 12!!</a>
 		<hr>
         <time class="postlist-date" datetime="2007-09-10">September 10, 2007</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/the-bakery-what-we-re-about/" class="postlist-link" title="Read The Bakery - What We&#39;re About">The Bakery - What We&#39;re About</a>
+		<hr>
+        <time class="postlist-date" datetime="2007-09-04">September 4, 2007</time>
 	</li>
 
 	<li class="postlist-item">
