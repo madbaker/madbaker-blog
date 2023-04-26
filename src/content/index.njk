@@ -1,5 +1,6 @@
 ---
 layout: layouts/home.njk
+permalink: /
 eleventyNavigation:
   key: Home
   order: 1
@@ -19,14 +20,14 @@ numberOfLatestPostsToShow: 4
 
 {% set postslistCounter = postsCount %}  {# used to number the posts being listed #}
 
-{% include "postslist.njk" %}
+{% include "partials/postslist.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
 <p>There are {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/blog/">the journal</a>.</p>
 {% endif %}
 
-<!--
+{#
 List every content page in the project 
 
 <ul>
@@ -35,6 +36,6 @@ List every content page in the project
 	{%- endfor %}
 </ul>
 
--->
+#}
 
 

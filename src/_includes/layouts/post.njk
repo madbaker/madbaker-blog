@@ -22,7 +22,7 @@ schema: blog
 {{ content | safe }}
 
 {% if podcastEpisodeId %}
-	{% include "../podcastplayer.njk" %}
+	{% include "partials/podcastplayer.njk" %}
 {% endif %}
 </article>
 

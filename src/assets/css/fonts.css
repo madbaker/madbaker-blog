@@ -31,13 +31,3 @@
 	  url(/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
   }
 
-
-  
-
-/* Defaults */
-
-:root {
-	--font-family-base: sans-serif;
-	--font-family-display: 'atkinson_hyperlegible', sans-serif;
-	--font-family-monospace: monospace;
-}
