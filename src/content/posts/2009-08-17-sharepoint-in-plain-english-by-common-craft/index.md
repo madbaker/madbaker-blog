@@ -5,9 +5,9 @@ tags:
   - "working"
 ---
 
-<iframe src="http://www.microsoft.com/video/en/us/player/embed/76e8d3af-c2bd-42a6-bb12-befcbd041bf1" frameborder="0" scrolling="no" width="430" height="326"></iframe>
+<iframe src="https://www.microsoft.com/video/en/us/player/embed/76e8d3af-c2bd-42a6-bb12-befcbd041bf1" frameborder="0" scrolling="no" width="430" height="326"></iframe>
 
-<br/>[SharePoint in Plain English](http://www.microsoft.com/video/en/us/details/76e8d3af-c2bd-42a6-bb12-befcbd041bf1?vp_evt=eref&vp_video=SharePoint+in+Plain+English)
+<br/>[SharePoint in Plain English](https://www.microsoft.com/video/en/us/details/76e8d3af-c2bd-42a6-bb12-befcbd041bf1?vp_evt=eref&vp_video=SharePoint+in+Plain+English)
 
  
 
@@ -17,4 +17,3 @@ I'm a big fan of Lee Lefever.  He's got the knack for explaining things in a wa
 
 He's got a new video out describing how Microsoft Sharepoint is useful.  I'm kinda forced into using Sharepoint at the day job so this helped me a lot.  It'll calm me down when I can't get the blog to work like Wordpress, or the document libraries to work like Stellent.
 
-[Posted via email](http://posterous.com) from [madbaker's posterous](http://madbaker.posterous.com/sharepoint-in-plain-english-by-common-craft)
