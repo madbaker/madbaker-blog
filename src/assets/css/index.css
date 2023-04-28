@@ -56,7 +56,7 @@ html {
 	overflow-y: scroll;
 }
 body, img {
-	max-width: 65em;
+	max-width: 50em;
 }
 img {
 	
@@ -91,45 +91,8 @@ li {
 	line-height: 1.5;
 }
 
-/* from Erik Kroes
+/* General links*/
 
-:focus {
-  box-shadow: 0 0 0 .25rem white;
-  outline: .375rem double black;
-  border-radius: .125rem;
-}
-
-a {
-  position: relative;
-  text-decoration: none;
-  color: var(--color-linkblue);
-  border-bottom: 0.125rem solid currentColor;
-  padding: 0 0.125rem 0.125rem;
-  border-radius: 0.125rem;
-  transition: all 0.2s ease-out;
-  touch-action: manipulation;
-}
-
-a:focus, a:hover, 
-input:focus, input:hover {
-  color: black;
-  background-color: var(--color-blue);
-}
-
-a:visited {
-  color: #623393;
-}
-
-h2 a:visited,
-h3 a:visited,
-h4 a:visited {
-  color: inherit;
-}
-
-a:focus:visited {
-  color: #38254E;
-}
-*/ 
 :focus {
 	box-shadow: 0 0 0 .25rem white;
 	outline: .375rem double black;
@@ -138,9 +101,6 @@ a:focus:visited {
 
 a[href] {
 	color: var(--text-color-link);
-	position: relative;
-	text-decoration: none;
-	border-radius: 0.125rem;
 	transition: all 0.3s ease-out;
 	touch-action: manipulation;
 }
@@ -156,7 +116,10 @@ a[href]:active {
 a:focus, a:hover, 
 input:focus, input:hover {
   background-color: var(--color-blue);
+  text-decoration: none;
 }
+
+
 
 
 main {
@@ -175,12 +138,6 @@ header:after {
 	clear: both;
 }
 
-/* Page Header  */
-
-.page-header {
-	font-family: var(--font-family-display);
-
-}
 
 .links-nextprev {
 	list-style: none;
@@ -217,99 +174,6 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
-}
-
-/* Header */
-header {
-	display: flex;
-	gap: 1em .5em;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 1em;
-}
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-	text-transform: uppercase;
-}
-
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
-
-/* Nav */
-.nav {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.nav-item {
-	display: inline-block;
-	margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-	border-bottom: none;
-}
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
-}
-
-/* journal index subheaders */
-
-article.writing-index section > header {
-	display: flex;
-	flex-direction: row;
-	align-items: center ;
-	justify-content: space-between;
-	content: none
-}
-article.writing-index header > h2 {
-	margin-bottom: 0;
-}
-
-
-ol.post-list {
-    list-style: none;
-    padding:0;
-}
-ol.post-list-summary {
-    list-style: none;
-    padding:1em;
-	margin: 0;
-	
-}
-
-ol.post-list-summary li{
-	display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-time.postlist-summary-date {
-	font-size: 0.8em;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #666;
-}
-ol.post-list hr{
-    display: none;
-}
-
-ol.post-list .content-type{
-    background: var(--foreground);
-    color: var(--background);
-    padding: 0 6px;
-    display: inline-block;
-    font-size: 70%;
-    opacity: 0.8;
-}
-
-summary {
-	font-size: 0.9rem;
 }
 
 @media (min-width: 864px) {

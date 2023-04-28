@@ -1,7 +1,7 @@
 ---
 title: 'Post with all the markdown'
 description: 'A lot of markdown packages are installed to help you write your posts. All presets are personal preference.'
-date: 2000-11-02
+date: 2006-11-02
 ---
 
 A lot of markdown packages are installed to help you write your posts. You can configure them in `config/plugins/markdown.js`.

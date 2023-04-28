@@ -34,7 +34,7 @@ The site began via the [Eleventy Base Blog](https://eleventy-base-blog.netlify.a
 
 - In the meantime, I'm cleaning up the base-blog css based on the ideas of Kev Quirk and [Simple.css](https://simplecss.org).  Plain old HTML without CSS classes.  Again, it's more a case of getting the styles back to the studs so I can learn as I go.  I'm using that as my base and adding on what I need to get to Andy's vision, as my knowledge grows.
 
-- Typography is sans-serif system fonts, in keeping with the simple.css philosophy.  But I may add [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible) to the stack which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  My focus on using semantic HTML also comes from reading Erik's work.
+- Typography is sans-serif system fonts, in keeping with the [Simple.css](https://simplecss.org) philosophy.  But I may add [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible) to the stack which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  My focus on using semantic HTML also comes from reading Erik's work.
 
 - However, if you see serifs, that means I switched back to Bitter.  And thanks to [Henry](https://henry.codes/writing/how-to-convert-variable-ttf-font-files-to-woff2/) I got Bitter installed as two compact variable webfont files.
 

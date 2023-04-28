@@ -29,15 +29,27 @@
 			#}
 	
 			{#- Add the contents of a file to the bundle #}
+
+			{# 
 			{%- css %}{% include "../../assets/css/fonts.css" %}{% endcss %}
 			{%- css %}{% include "../../assets/css/index.css" %}{% endcss %}
-			
+			{%- css %}{% include "../../assets/css/site-header.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/blog.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/postlist.css" %}{% endcss %}
+			#}
 			{#- Or add from node_modules #}
 			{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 	
 			{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-			
-			<style>{% getBundle "css" %}</style>
+			{% set css%}
+			{% include "../../assets/css/fonts.css" %}
+			{% include "../../assets/css/index.css" %}
+			{% include "../../assets/css/site-header.css" %}
+			{% include "../../assets/css/blog.css" %}
+			{% include "../../assets/css/postlist.css" %}
+			{% endset%}
+		
+			<style>{{ css | cssmin | safe }}</style>
 
 	 <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}

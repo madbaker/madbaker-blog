@@ -5643,7 +5643,7 @@ My name is Mark Dyck and I live in Regina, Saskatchewan, Canada.&lt;/p&gt;
 	<entry>
 		<title>Post with all the markdown</title>
 		<link href="https://markdyck.ca/blog/post-with-all-the-markdown/"/>
-		<updated>2000-11-02T00:00:00Z</updated>
+		<updated>2006-11-02T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/post-with-all-the-markdown/</id>
 		<content type="html">&lt;p&gt;A lot of markdown packages are installed to help you write your posts. You can configure them in &lt;code&gt;config/plugins/markdown.js&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;As of my personal preference, there are some presets. For example the automatic conversion of web pages to links (lenesaile.com) and the automatic addition of &lt;code&gt;target: &#39;_blank&#39;&lt;/code&gt; and &lt;code&gt;rel: &#39;noreferrer noopener&#39;&lt;/code&gt; for external links (all links with the pattern&lt;code&gt;/^https?:/&lt;/code&gt;).&lt;/p&gt;
@@ -5742,7 +5742,7 @@ and multiple paragraphs.&lt;/p&gt;
 	<entry>
 		<title>Post with a video </title>
 		<link href="https://markdyck.ca/blog/post-with-a-video/"/>
-		<updated>2000-10-31T00:00:00Z</updated>
+		<updated>2006-10-31T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/post-with-a-video/</id>
 		<content type="html">&lt;p&gt;This starter uses Justin Ribeiro&#39;s lite-youtube web component. Add &lt;code&gt;youtube: true&lt;/code&gt; to frontmatter to activate.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;youtube-embed&quot;&gt; &lt;lite-youtube videoid=&quot;qvrNwWaNVGo&quot; style=&quot;background-image: url(&#39;https://i.ytimg.com/vi/qvrNwWaNVGo/hqdefault.jpg&#39;);&quot;&gt;
@@ -5756,7 +5756,7 @@ and multiple paragraphs.&lt;/p&gt;
 	<entry>
 		<title>Post with some code</title>
 		<link href="https://markdyck.ca/blog/post-with-some-code/"/>
-		<updated>2000-09-01T00:00:00Z</updated>
+		<updated>2006-09-01T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/post-with-some-code/</id>
 		<content type="html">&lt;p&gt;This theme uses 11ty&#39;s &lt;a href=&quot;https://www.11ty.dev/docs/plugins/syntaxhighlight/&quot;&gt;Syntax Highlighting Plugin&lt;/a&gt;, a pack of Eleventy plugins for PrismJS syntax highlighting. No browser/client JavaScript, highlight transformations are all done at build-time.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; cards &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;.card&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;cards&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;card&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  card&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;cursor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;pointer&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; down&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    up&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    link &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; card&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  card&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onmousedown&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;down &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  card&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onmouseup&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    up &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;up &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; down &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;      link&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;// © Heydon Pickering&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -5768,7 +5768,7 @@ and multiple paragraphs.&lt;/p&gt;
 	<entry>
 		<title>Post with 301 redirects</title>
 		<link href="https://markdyck.ca/blog/post-with-301-redirects/"/>
-		<updated>2000-08-28T00:00:00Z</updated>
+		<updated>2006-08-28T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/post-with-301-redirects/</id>
 		<content type="html">&lt;p&gt;URLs usually change over time, as you use another CMS or optimizye your file structure.&lt;/p&gt;
 &lt;p&gt;A 301 is used when a page has permanently changed location.
@@ -5782,7 +5782,7 @@ Informing about this change is indispensable if you want to keep your incoming l
 	<entry>
 		<title>Post with fetched content</title>
 		<link href="https://markdyck.ca/blog/post-with-fetched-content/"/>
-		<updated>2000-08-28T00:00:00Z</updated>
+		<updated>2006-08-28T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/post-with-fetched-content/</id>
 		<content type="html">&lt;p&gt;&lt;a href=&quot;https://www.11ty.dev/docs/plugins/fetch/&quot;&gt;Eleventy Fetch&lt;/a&gt; fetches and caches resources - at configurable intervals.&lt;/p&gt;
 &lt;p&gt;This is an example of fetching external data.
@@ -5794,7 +5794,7 @@ In this case, my public repositories (with more than zero stargazer) and a cache
 	<entry>
 		<title>Open Graph images</title>
 		<link href="https://markdyck.ca/blog/open-graph-images/"/>
-		<updated>2000-01-25T00:00:00Z</updated>
+		<updated>2006-01-25T00:00:00Z</updated>
 		<id>https://markdyck.ca/blog/open-graph-images/</id>
 		<content type="html">&lt;p&gt;When you share your blog posts, a thumbnail image may appear - the image we define in our meta data as an Open Graph Image (&lt;code&gt;og:image&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;This starter now generates these images for your blog posts automatically.

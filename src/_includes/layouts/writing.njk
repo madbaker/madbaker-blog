@@ -1,13 +1,9 @@
 ---
-layout: layouts/home.njk
-title: Writing
-permalink: /writing/index.html
-eleventyNavigation:
-  key: Writing
-  order: 2
+layout: layouts/base.njk
 ---
 
-<header>
+{# layout for blog page.  List all posts by year with month links #}
+<header class='blog-page-header'>
   <section>
     <h1>{{ title }}</h1>
     <p><strong>{{collections.posts | length }}</strong> items published since {{collections.posts[0].data.date | readableDate("DDD")}}</p>
@@ -21,21 +17,24 @@ eleventyNavigation:
 {% set postsByYear = allPosts | groupByYear %}
 
 {% for year, items in postsByYear %}
-  <section>
-    <header>
+  <section class='year-header'>
+    <header class='year-index'>
       <h2>{{ year }}</h2>
-      <nav>
+
         {% set postsByMonth = items | groupByMonth %}                 
         {% set year = year %}
+      <nav>
         {% include 'partials/monthsOfYear.njk' %}
       </nav>
+
     </header>
 
     {% set postslist = items %}
+
     {% include "partials/postslist.njk" %}
+
   </section>
+
 {% endfor %}
 
 </article>
-
-

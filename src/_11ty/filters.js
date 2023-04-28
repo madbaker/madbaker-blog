@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const CleanCSS = require("clean-css");
 
 /**
  * Filters
@@ -54,46 +55,51 @@ const filterTagList = (tags) => {
   return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 };
 
-  /**
+/**
    * Group a collection by year.
    *
    * @param collection
    * @returns {*}
    */
   const groupByYear = (collection) => collection
-    .reduce((carry, post) => {
-      const year = post.date.getFullYear();
-      const group = carry.get(year) ?? [];
-      group.push(post);
+  .reduce((carry, post) => {
+    const year = post.date.getFullYear();
+    const group = carry.get(year) ?? [];
+    group.push(post);
       carry.set(year, group);
       return carry;
     }, new Map());
-
+    
   /**
    * Group a collection by month.
    * @param collection
    * @returns {*}
-   */
-  const groupByMonth = (collection) => collection
-    .reduce((carry, post) => {
-      const month = post.date.getMonth();
-      const group = carry.get(month) ?? [];
-      group.push(post);
+  */
+ const groupByMonth = (collection) => collection
+ .reduce((carry, post) => {
+   const month = post.date.getMonth();
+   const group = carry.get(month) ?? [];
+   group.push(post);
       carry.set(month, group);
       return carry;
     }, new Map());
 
-const padStart =  (str, len, filler) => String(str).padStart(len, filler);
-
-module.exports = {
-    readableDate,
-    htmlDateString,
-    toIsoString,
-    head,
-    min,
+    const padStart =  (str, len, filler) => String(str).padStart(len, filler);
+  
+  const cssmin = (code) => {
+    return new CleanCSS({}).minify(code).styles;
+  };
+    
+    module.exports = {
+      readableDate,
+      htmlDateString,
+      toIsoString,
+      head,
+      min,
     getAllTags,
     filterTagList,
     groupByYear,
     groupByMonth,
-    padStart
+    padStart,
+    cssmin
 };

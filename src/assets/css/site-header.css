@@ -1,0 +1,44 @@
+/* Page Header  */
+.page-header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+	font-family: var(--font-family-display);
+}
+
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+	text-transform: uppercase;
+	color: var(--text-color-link)
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+.nav-item a[href]:visited {
+	color: var(--text-color-link)
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}

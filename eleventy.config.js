@@ -1,6 +1,5 @@
 
 const markdownItAnchor = require("markdown-it-anchor");
-
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
@@ -20,7 +19,8 @@ const {
     filterTagList,
     groupByYear,
     groupByMonth,
-    padStart
+    padStart,
+	cssmin
   } = require('./src/_11ty/filters.js');
 
 const {post, contentPaginatedByYearMonth} = require ('./src/_11ty/collections.js')
@@ -74,6 +74,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('groupByYear', groupByYear);
 	eleventyConfig.addFilter('groupByMonth', groupByMonth);
 	eleventyConfig.addFilter('padStart', padStart);
+	eleventyConfig.addFilter('cssmin', cssmin);
 	
 		
 	// Collections

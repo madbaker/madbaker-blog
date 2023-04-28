@@ -8,10 +8,12 @@ numberOfLatestPostsToShow: 4
 ---
 <h1>Mark Dyck is a baker who writes.</h1>
 
+<p>Welcome.  I should likely say more, but for now, here is some recent writing.</p>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
-<h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
+<h2>Recent Posts</h2>
 
 
 {% set recentposts = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
@@ -24,7 +26,7 @@ numberOfLatestPostsToShow: 4
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>There are {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/blog/">the journal</a>.</p>
+<p>There are {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/writing/">the journal</a>.</p>
 {% endif %}
 
 {#
