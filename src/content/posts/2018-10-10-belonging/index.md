@@ -4,7 +4,6 @@ date: 2018-10-10
 
 ---
 
-# Belonging
 
 [Seth Godin](https:/sethgodin.com) has a new course out. This one is about [podcasting.](https://ticketbud.com/events/be3192fc-a2da-11e8-a062-c3808af35729) He announced it this morning and I already have the signup page in front of me, with the cursor hovering over the submit button.
 

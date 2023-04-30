@@ -10,14 +10,14 @@ permalink: /blog/{{ yearMonth.slug }}/index.html
 
 <h1>{{yearMonth.title}}</h1>
 
-{% block pageContent %}
+
   <section>
     {% set displayContentType = true %}
     {% set postslist = yearMonth.items %}
-    {% include "../_includes/postslist.njk" %}
+    {% include "partials/postslist.njk" %}
   </section>
 
-    {% include '../_includes/plantingTimes.njk' %}
+    {% include 'partials/plantingTimes.njk' %}
 
-{% endblock %}
+
 

@@ -1,3 +1,0 @@
-[11ty/eleventy-base-blog] Excluding drafts.
-[11ty/eleventy-base-blog] Excluding drafts.
-[11ty] Copied 42 files / Wrote 389 files in 13.31 seconds (34.2ms each, v2.0.0)
