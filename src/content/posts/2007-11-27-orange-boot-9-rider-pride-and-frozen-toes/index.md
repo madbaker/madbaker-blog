@@ -1,6 +1,6 @@
 ---
 title: "Orange Boot #9:  Rider Pride and Frozen Toes"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-11-27
 
 ---

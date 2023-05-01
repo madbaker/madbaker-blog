@@ -1,6 +1,6 @@
 ---
 title: "Orange Boot Update:  Baking in January"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2008-01-08
 ---
 

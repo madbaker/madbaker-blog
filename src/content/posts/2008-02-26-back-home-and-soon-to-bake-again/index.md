@@ -1,6 +1,6 @@
 ---
 title: "Back Home, and Soon to Bake Again"
-tags: ["Bakery", "Orange Boot at Home", "SFBI" ] 
+tags: ["Bakery", "Orange Boot At Home", "SFBI" ] 
 date: 2008-02-26
 ---
 

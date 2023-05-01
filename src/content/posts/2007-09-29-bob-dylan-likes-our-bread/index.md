@@ -1,6 +1,6 @@
 ---
 title: "Bob Dylan likes our bread!"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-09-29
 ---
 

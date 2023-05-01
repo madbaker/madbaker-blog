@@ -1,6 +1,6 @@
 ---
 title: "The Bakery - What We're About"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-09-04
 ---
 

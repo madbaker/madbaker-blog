@@ -1,6 +1,6 @@
 ---
 title: "Head on over to the new site!"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2008-03-02
 ---
 

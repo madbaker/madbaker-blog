@@ -1,6 +1,6 @@
 ---
 title: "Orange Boot Week 6:  The Bread is Back!"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-11-06
 ---
 

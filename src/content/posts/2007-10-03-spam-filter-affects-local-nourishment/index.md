@@ -1,6 +1,6 @@
 ---
 title: "Spam Filter Affects Local Nourishment"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-10-03
 ---
 

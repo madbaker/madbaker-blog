@@ -1,6 +1,6 @@
 ---
 title: "Orange Boot Week 8:  Snowy, but warm inside!"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-11-20
 
 ---

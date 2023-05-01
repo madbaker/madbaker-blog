@@ -1,6 +1,6 @@
 ---
 title: "New Subscription Thingy Now Available!"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-10-23
 ---
 

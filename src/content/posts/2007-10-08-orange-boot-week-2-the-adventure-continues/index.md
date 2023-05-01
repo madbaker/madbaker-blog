@@ -1,6 +1,6 @@
 ---
 title: "Orange Boot Week 2:  The Adventure Continues"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-10-08
 
 ---

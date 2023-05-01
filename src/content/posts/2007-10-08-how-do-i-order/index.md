@@ -1,6 +1,6 @@
 ---
 title: "How Do I Order?"
-tags: ["Bakery", "Orange Boot at Home" ] 
+tags: ["Bakery", "Orange Boot At Home" ] 
 date: 2007-10-08
 ---
 
