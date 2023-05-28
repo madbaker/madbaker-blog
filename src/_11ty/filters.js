@@ -11,11 +11,20 @@ const readableDate = (dateObj, format, zone) => {
   // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
   return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
 };
-
 const htmlDateString = (dateObj) => {
   // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
 };
+const RFC2822ToReadableDate = (dateObj, format, zone) => {
+  // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+  return DateTime.fromRFC2822(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+};
+
+const RFC2822ToHtmlDateString = (dateObj) => {
+  // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  return DateTime.fromRFC2822(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+};
+
 
 const toIsoString = (dateObj) => {
   // convert to an ISO 8601 string for schema 
@@ -93,6 +102,8 @@ const filterTagList = (tags) => {
     module.exports = {
       readableDate,
       htmlDateString,
+      RFC2822ToHtmlDateString,
+      RFC2822ToReadableDate,
       toIsoString,
       head,
       min,

@@ -1,0 +1,13 @@
+---
+title: "Orange Boot Bakery"
+permalink: "/orangeboot"
+layout: "layouts/home.njk"
+---
+<h1> {{ title }} </h1>
+
+<p>These posts are the core of the Orange Boot Bakery website (www.orangeboot.ca).  The bakery was on Gordon Road in Regina, Saskatchewan from 2011 - 2015. </p>
+<p>The retail bakery came after several winters </p>
+
+{% set postslist = collections[ 'Orange Boot Bakery' ] %}
+{% include "partials/postslist.njk" %}
+

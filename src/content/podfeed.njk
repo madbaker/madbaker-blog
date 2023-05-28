@@ -1,0 +1,22 @@
+---
+layout: layouts/home.njk
+pagination:
+    data: podfeed.rss.channel.item
+    size: 1
+    alias: episode
+permalink: "/riseuppod/{{ episode.title[0] | slugify }}/"
+---
+
+<h1>{{episode.title[0]}}</h1>
+
+<p><subtitle>{{episode.title[1]}}</subtitle><p>
+
+
+<p><time datetime="{{ episode.pubDate | RFC2822ToHtmlDateString }}">Published on: {{ episode.pubDate | RFC2822ToReadableDate }}</time><p>
+
+{{episode.description.__cdata | safe}}
+
+
+{% set podcastEpisodeId = episode.itemId %}
+
+{% include "partials/podcastplayer.njk" %}

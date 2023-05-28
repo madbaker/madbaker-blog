@@ -1,0 +1,22 @@
+---
+permalink: /podcast/index.html
+layout: layouts/home.njk
+eleventyNavigation:
+  key: "Rise Up! Podcast"
+  order: 7
+---
+<h1>Rise Up! The Baker Podcast</h1>
+
+
+<ul>
+{% for episode in podfeed.rss.channel.item %}
+	{% set episodeURL %}/riseuppod/{{ episode.title[0] | slugify }}/{% endset %}
+	<li>
+    <a href="{{ episodeURL }}" class="post-tag">{{ episode.title[0] }}</a>
+    <br/>{{ episode.title[1] }} 
+    <br/>{{ episode.pubDate | RFC2822ToReadableDate }}
+    
+
+    </li>
+{% endfor %}
+</ul>

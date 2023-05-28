@@ -12,6 +12,8 @@ const packageVersion = require('./package.json').version;
 const {
     readableDate,
     htmlDateString,
+	RFC2822ToHtmlDateString,
+	RFC2822ToReadableDate,
     toIsoString,
     head,
     min,
@@ -43,11 +45,6 @@ module.exports = function(eleventyConfig) {
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 
-	// Run Eleventy when these files change:
-	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
-
-	// Watch content images for the image pipeline.
-	eleventyConfig.addWatchTarget("./src/content/**/*.{svg,webp,png,jpeg}");
 
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
@@ -67,6 +64,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('readableDate', readableDate);
 	eleventyConfig.addFilter('htmlDateString', htmlDateString);
 	eleventyConfig.addFilter('toIsoString', toIsoString);
+	eleventyConfig.addFilter('RFC2822ToHtmlDateString', RFC2822ToHtmlDateString);
+	eleventyConfig.addFilter('RFC2822ToReadableDate', RFC2822ToReadableDate);
 	eleventyConfig.addFilter('head', head);
 	eleventyConfig.addFilter('min', min);
 	eleventyConfig.addFilter('getAllTags', getAllTags);
