@@ -10,10 +10,11 @@ eleventyNavigation:
 
 <ul>
 {% for episode in podfeed.rss.channel.item %}
-	{% set episodeURL %}/riseuppod/{{ episode.title[0] | slugify }}/{% endset %}
+	{% set episodeURL %}/riseuppod/{{ episode.title | slugify }}/{% endset %}
 	<li>
-    <a href="{{ episodeURL }}" class="post-tag">{{ episode.title[0] }}</a>
-    <br/>{{ episode.title[1] }} 
+    <a href="{{ episodeURL }}" class="post-tag">{{ episode.itunes_title }}</a>
+    <br/>
+{% include 'partials/podcastEpisode.njk' %}
     <br/>{{ episode.pubDate | RFC2822ToReadableDate }}
     
 

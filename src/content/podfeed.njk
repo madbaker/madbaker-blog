@@ -4,19 +4,19 @@ pagination:
     data: podfeed.rss.channel.item
     size: 1
     alias: episode
-permalink: "/riseuppod/{{ episode.title[0] | slugify }}/"
+tags: ["podcast", "riseuppod"]
+permalink: "/riseuppod/{{ episode.title | slugify }}/"
 ---
 
-<h1>{{episode.title[0]}}</h1>
+<h1>{{ episode.itunes_title }}</h1>
 
-<p><subtitle>{{episode.title[1]}}</subtitle><p>
+{% include "partials/podcastEpisode.njk" %}
+<br/>
+Published on: {{ episode.pubDate | RFC2822ToReadableDate }}
+
+{{episode.description | safe}}
 
 
-<p><time datetime="{{ episode.pubDate | RFC2822ToHtmlDateString }}">Published on: {{ episode.pubDate | RFC2822ToReadableDate }}</time><p>
-
-{{episode.description.__cdata | safe}}
-
-
-{% set podcastEpisodeId = episode.itemId %}
+{% set podcastEpisodeId = episode.libsyn_itemId %}
 
 {% include "partials/podcastplayer.njk" %}
