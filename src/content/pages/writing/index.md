@@ -4,7 +4,7 @@ title: Writing
 permalink: /writing/index.html
 eleventyNavigation:
   key: Writing
-  order: 2
+  order: 3
 ---
 
 

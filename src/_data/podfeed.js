@@ -1,6 +1,5 @@
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const {XMLParser} = require('fast-xml-parser');
-const { forEach } = require("lodash");
 
 module.exports = async function() {
 
@@ -16,13 +15,11 @@ const options = {
     ignoreAttributes: false,
     attributeNamePrefix : "@_",
     transformTagName: (tagName) => tagName.replace(':', '_')
-    //removeNSPrefix: true
     } ;
 
 // Create a JSON object
 
 const parser = new XMLParser(options);
-
 
 let json = parser.parse(xml);
 

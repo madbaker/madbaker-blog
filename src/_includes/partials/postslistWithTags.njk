@@ -1,0 +1,23 @@
+{# THIS IS OLD AND NOT USED #}
+{# posts are already provided in reverse order#}
+
+{% for post in postslist  %}
+
+<article>
+	<h3>
+		<a href="{{ post.url }}" class="postlist-link" title="Read {{ post.data.title }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+	</h3>
+	
+	{% if post.data.summary %}<summary class='post-summary'>{{post.data.summary}}</summary>{%endif%}
+    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("DDD") }}</time>
+
+    <p class="visually-hidden">A list of tags for this post.</p>
+	<ul class='tag-list'>
+			{%- for tag in post.data.tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li class='tag-list-item'><a href="{{ tagUrl }}" class='tag-list-link'>{{ tag }}</a></li>
+		{%- endfor %}
+	</ul>
+</article>
+{% endfor %}
+

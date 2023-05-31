@@ -1,8 +1,8 @@
       {% if episode.itunes_episodeType == 'bonus' %}
-            Bonus episode
+            [Bonus]
       {% elif episode.itunes_season %}
-            Season {{episode.itunes_season}}  Episode {{episode.itunes_episode}}
+           [S{{episode.itunes_season}}E{{episode.itunes_episode}}]
       {% else %}
-            Episode {{episode.itunes_episode}}
+            [EP{{episode.itunes_episode}}]
       {% endif %}
 

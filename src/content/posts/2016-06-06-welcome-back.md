@@ -28,4 +28,4 @@ I'll keep writing, here, there and everywhere. I'll keep you posted.
 
 PS. I just realized Cindy filmed that crazy hand-crank Dutch bike ferry [I told you about](../holland/). Here it is...
 
-<iframe frameborder="0" scrolling="no" width="640" height="360" src="http://api.smugmug.com/services/embed/4976049190_kd7HWFx?width=640&amp;height=360&amp;albumId=60033149&amp;albumKey=8Dbm7K"></iframe>
+<iframe frameborder="0" scrolling="no" width="640" height="360" src="https://api.smugmug.com/services/embed/4976049190_kd7HWFx?width=640&amp;height=360&amp;albumId=60033149&amp;albumKey=8Dbm7K"></iframe>

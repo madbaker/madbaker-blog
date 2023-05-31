@@ -3,7 +3,7 @@ layout: layouts/base.njk
 permalink: /about/index.html
 eleventyNavigation:
   key: About
-  order: 3
+  order: 2
 ---
 # About Me
 

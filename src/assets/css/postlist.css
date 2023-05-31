@@ -1,21 +1,23 @@
 /* style post titles in a list */
 
-
-
-ol.post-list {
+ul.post-list {
     list-style: none;
     padding:1em;
 	margin: 0;
 	
 }
 
-ol.post-list li{
+ul.post-list li{
     margin-bottom: 1em;
 }
 
 
 .postlist-date {
     font-size: smaller;
+}
+
+summary.post-summary {
+    font-style: italic;
 }
 
 .tag-list {
@@ -35,6 +37,4 @@ ol.post-list li{
     text-transform: capitalize;
     text-decoration: none;
     font-size: 0.9rem;
-
-
 }
