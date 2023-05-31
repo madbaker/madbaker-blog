@@ -6,6 +6,7 @@ module.exports = async function() {
 // get the feed: https://riseuppod.com/rss/?include-libsyn-metadata=true
 
 let xml = await EleventyFetch("https://riseuppod.com/rss/?include-libsyn-metadata=true", {
+    duration: '0s',
     type: "text" // also supports 'json' or 'buffer'
 });
 
