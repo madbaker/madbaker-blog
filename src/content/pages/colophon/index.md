@@ -32,11 +32,11 @@ The site began via the [Eleventy Base Blog](https://eleventy-base-blog.netlify.a
 
 - As I learn more about CSS, I want to add the flowing space as deployed in Lena Saile's [Eleventy Excellent](https://eleventy-excellent.netlify.app/) starter, which is based on the ideas of [Andy Bell](https://buildexcellentwebsit.es/). But I'm adding it bit by bit because my CSS skills are rudimentary and I want to understand what I'm doing.
 
-- In the meantime, I'm cleaning up the base-blog css based on the ideas of Kev Quirk and [Simple.css](https://simplecss.org).  Plain old HTML without CSS classes.  Again, it's more a case of getting the styles back to the studs so I can learn as I go.  I'm using that as my base and adding on what I need to get to Andy's vision, as my knowledge grows.
+- In the meantime, I'm cleaning up the base-blog css based on the ideas of Kev Quirk and [Simple.css](https://simplecss.org).  Plain old HTML without CSS classes.  Again, it's more a case of getting the styles back to the studs so I can learn as I go.  I'm using that as my base and adding on what I need to get to Andy's vision, as my knowledge grows.  Right now, every time I dive into the CSS files I'm wondering what I was doing the last time!  This is going to take a while.
 
-- Typography is sans-serif system fonts, in keeping with the [Simple.css](https://simplecss.org) philosophy.  But I may add [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible) to the stack which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  My focus on using semantic HTML also comes from reading Erik's work.
+- Typography is every changing.  If you're seeing serifs, it's likely the Newsreader font.  But I switch between that and [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  
 
-- However, if you see serifs, that means I switched back to Bitter.  And thanks to [Henry](https://henry.codes/writing/how-to-convert-variable-ttf-font-files-to-woff2/) I got Bitter installed as two compact variable webfont files.
+- Thanks to [Henry](https://henry.codes/writing/how-to-convert-variable-ttf-font-files-to-woff2/) I got Newsreader installed as two compact variable webfont files.
 
 ## Perpetual Construction
 

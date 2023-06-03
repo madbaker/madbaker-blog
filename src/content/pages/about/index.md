@@ -19,7 +19,17 @@ Hi, I'm Mark and I'm a baker.  I also write things and I talk a whole bunch too.
 
 ## Things I've done
 
-Lots!  
+If you're inclined to dig through my [writing archives](/writing/) you'll uncover a few layers of past projects and adventures.  Some work highlights from front to back:
+
+- I was a coach at [Seth Godin's altMBA](https://altmba.com) program and head coach of Akimbo's [Story Skills Workshop](https://storyrepublic.com/#workshop) from 2017 through 2022.
+  
+- My friend Bernadette and I launched [the Right Company](https://therightcompany.co) in 2018 and I was the Chief Community Advocate there until the end of 2021.
+  
+- I've run a few bakeries.  Cindy and I opened Orange Boot Bakery in 2011 and ran it for five years.  There was a proto-Orange Boot, run out of my garage, starting around 2008. And there was a post-Orange Boot, called (creatively) The Backyard Bakery, back in the garage, after we closed Orange Boot in 2015.
+  
+- And before all of that, I had a career in Telecom from 1989 - 2010.   I tried to get folks turned on to blogging early on, starting a small local community blog and an example business blog.  Some of those posts are here too.
+
+But outside of all the projects and businesses and community building and coaching work, I keep coming back to writing about three things: connection, community and collaboration.  As in, working together, human to human, to make our lives inwardly rich and our world healthy and vibrant.  
 
 ## About this website
 
