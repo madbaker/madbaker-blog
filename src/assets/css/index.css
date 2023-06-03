@@ -1,9 +1,15 @@
 /* Defaults */
 
-
+/*
 :root {
 	--font-family-base: 'Newsreader', serif;
-	--font-family-display: 'Newsreader', sans-serif;
+	--font-family-display: 'Newsreader', serif;
+	--font-family-monospace: monospace;
+}
+*/
+:root {
+	--font-family-base: 'Newsreader','Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+	--font-family-display: 'Newsreader','Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	--font-family-monospace: monospace;
 }
 /* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
