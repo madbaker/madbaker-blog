@@ -8,7 +8,7 @@
 }
 */
 :root {
-	--font-family-base: 'Newsreader','Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+	--font-family-base: 'Newsreader', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	--font-family-display: 'Newsreader','Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	--font-family-monospace: monospace;
 }
@@ -57,7 +57,7 @@
  * centers the contents
  */
  .wrapper {
-    max-width: 50rem;
+    max-width: 55rem;
     padding: 0 1.33rem;
     margin-left: auto;
     margin-right: auto;
