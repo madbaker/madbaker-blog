@@ -2,8 +2,8 @@
 title: 'Take a day trip around Victoria like a local'
 summary: "Avoid the Butchart hoards"
 date: "2023-05-21"
-draft: true
 ---
+_I originally wrote this for my friend Lisa, who was visiting with her mom.  But maybe it will help you too if you come visit!_
 
 Want to visit Victoria but get off the beaten track? Want to avoid the hoards of cruise ship tour busses and t-shirt shoppes? 
 

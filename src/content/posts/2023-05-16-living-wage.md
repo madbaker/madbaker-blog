@@ -2,7 +2,6 @@
 title: 'Thoughts on the Living Wage Campaign'
 summary: "It's complicated"
 date: "2023-05-16"
-draft: true
 ---
 
 I attended a panel at Bakery Showcase yesterday about the [Living Wage program in BC](https://www.livingwageforfamilies.ca).  While I was looking forward to the talk all week, I left feeling troubled.
@@ -19,7 +18,7 @@ Here's my issue.  Let's say in 2021, the living wage in Victoria was $20 per hou
 
 Now let's say you own a bakery and want to do right by your employees.  So you commit to paying a living wage to all employees.  Junior employees make $20 per hour, senior employees might make more.  
 
-$20/hr starting wage is a big commitment for many small business, especially in food service, where workers are traditionally underpaid.  Go into any bakery or coffee shop in Canada and look at the people standing on either side of the counter.  The ones in front of the counter - the customers - are far, far more likely to be making a living wage than the folks behind the counter.  
+$20/hr starting wage is a big commitment for many small businesses, especially in food service, where workers are traditionally underpaid.  Go into any bakery or coffee shop in Canada and look at the people standing on either side of the counter.  The ones in front of the counter - the customers - are far, far more likely to be making a living wage than the folks behind the counter.  
 
 But let's say the business commits to a living wage.  Other costs are cut, prices go up, and the targets are met.  It's nowhere near that easy but several food service businesses made that commitment in 2021 and I applaud them for it.
 
