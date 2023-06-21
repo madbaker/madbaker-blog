@@ -1,6 +1,6 @@
 module.exports = {
 	"title": "Mark Dyck",
-	"url": "https://markdyck.ca/",
+	"url": "https://madbaker.com/",
 	"language": "en",
 	"description": "Baker.  Podcaster. Confused Human.",
 	"author": {

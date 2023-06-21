@@ -24,5 +24,7 @@ const parser = new XMLParser(options);
 
 let json = parser.parse(xml);
 
+// console.log(json.rss.channel.item[0]);
+
 return json;
 };

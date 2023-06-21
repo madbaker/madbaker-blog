@@ -2,14 +2,14 @@ module.exports = {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Mark Dyck',
   siteDescription:
-    'This is the home base of Mark Dyck - writer, speaker, podcaster, baker, coach and traveler. Explore. Discover. Connect.',
+    'This is the home base of Mark Dyck - baker, writer, coach and podcast host.',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
   skipContent: 'Skip to content',
   author: 'Mark Dyck', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: 'mark@madbaker.com', // i.e. hola@lenesaile.com - email of the author
-  authorWebsite: 'https://markdyck.ca', // i.e. https.://www.lenesaile.com - the personal site of the author
+  authorWebsite: 'https://madbaker.com', // i.e. https.://www.lenesaile.com - the personal site of the author
   themeColor: '#F0CB67', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
@@ -24,7 +24,7 @@ module.exports = {
     // this is for the rss feed
     name: "Mark Dyck's Blog",
     description:
-      'The Good Stuff.'
+      'making the good stuff and bringing it to the people.'
   },
   pagination: {
     itemsPerPage: 20
@@ -38,7 +38,7 @@ module.exports = {
     zip: 'V8V 0B6',
     mobileDisplay: ' ',
     mobileCall: ' ',
-    email: 'hello@markdyck.co',
+    email: 'mark@madbaker.com',
     cif: ''
   },
   menu: {
