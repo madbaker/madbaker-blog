@@ -21,18 +21,15 @@ numberOfLatestPostsToShow: 6
 <p>Now let's get to the good stuff.</p>
 
 {# Show latest podcast episode #}
-{% set episode = podfeed.rss.channel.item[0] %}
-{% set podcastEpisodeId = episode.libsyn_itemId %}
 
+{% set episode = podfeed.rss.channel.item[0] %}
 
 <h2>Latest Podcast Episode</h2>
 
 <p></p>
 
 
-<h3>{% include "partials/podcastEpisode.njk" %} {{ episode.itunes_title }}</h3>
-
-{% include "partials/podcastplayer.njk" %}
+<h3><a href="/riseuppod/{{ episode.title | slugify }}/">{% include "partials/podcastEpisode.njk" %} {{ episode.itunes_title }}</a></h3>
 
 <p>All episodes of Rise Up! The Baker Podcast are in the <a href="/podcast/">podcast</a> area.</p>
 
