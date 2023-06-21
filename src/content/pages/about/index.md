@@ -33,7 +33,7 @@ But outside of all the projects and businesses and community building and coachi
 
 ## About this website
 
-This is where all my writing goes.  From at least five disparate blogs and websites going back to 2006.  I have a website problem, you see.  I start them, and fill them up, then abandon them for a new project.  But in the spring of 2023 I finally pulled them all into one spot.  Or will be soon.  I think I'm up to ~~2012~~ ~~2013~~ 2014 now.  Blogs you've never heard of, like:
+This is where all my writing goes.  From at least five disparate blogs and websites going back to 2006.  I have a website problem, you see.  I start them, and fill them up, then abandon them for a new project.  But in the spring of 2023 I finally pulled them all into one spot. Blogs you've never heard of, like:
 
 - _My Voice is in here somewhere_, my first wordpress blog from 2006 - 2010 or so, including two awesome family vacation memoirs and my formative baking education at the San Francisco Baking Institute
 - _Orange Boot Bakery (at home edition)_, the first iteration of our bakery
@@ -41,13 +41,13 @@ This is where all my writing goes.  From at least five disparate blogs and websi
 - _The Backyard Bakery_, my return to the brick oven and a more connective, personal baking experience
 - _Ready With Shoes On_, a travel blog with field updates from a three month trip to Europe
 
-And more recent posts from my time coaching, storytelling and community-building work.
+And more recent posts from my coaching, storytelling and community-building work.
 
 Onward!
 
 ## Contact
 
-I've got email!  send me a note at mark [at] madbaker [dot] com
+I've got email!  Send me a note at mark@madbaker.com 
 
 
 

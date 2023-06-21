@@ -6,11 +6,39 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 6
 ---
-<h1>Mark Dyck is avoiding labels.</h1>
+<h1>Mark Dyck is a baker who writes.</h1>
 
-<p>Welcome.  I should likely say more, but for now, here is some recent writing.</p>
+<p>Welcome to my personal website, where I share stories, conversations, thoughts, rants and love notes.</p>
 
-<p>This site is being built in the open, as I bring over 15 years of content from my old sites.  You're likely to find a few glitches here and there. More details are in my <a href='/about/'>the about page</a> and the <a href='/colophon/'>colophon</a>.</p>
+<h2>Built in the open.</h2>
+
+<p>You know how, when a new shop opens, the windows are covered in brown paper or in soap so you can't see the renovations?  I never understood that.  How does the excitement and anticipation build? When we opened our bakery in 2011, we didn't cover the windows either.  Folks could look in while we painted the walls and built our walk-in refrigerator.</p>
+
+<p>This website is being built by in the open too.  I'm <a href=''>showing my work</a> as I go.</p>
+
+<p>I'm using this space to tinker, to experiment with design and layout, and to learn more about accessibility.  You're likely to find a few glitches here and there.  If this grabs you, there's more detail in my <a href='/about/'>about page</a> and the <a href='/colophon/'>colophon</a>.</p>
+
+<p>Now let's get to the good stuff.</p>
+
+{# Show latest podcast episode #}
+{% set episode = podfeed.rss.channel.item[0] %}
+{% set podcastEpisodeId = episode.libsyn_itemId %}
+
+
+<h2>Latest Podcast Episode</h2>
+
+<p></p>
+
+
+<h3>{% include "partials/podcastEpisode.njk" %} {{ episode.itunes_title }}</h3>
+
+{% include "partials/podcastplayer.njk" %}
+
+<p>All episodes of Rise Up! The Baker Podcast are in the <a href="/podcast/">podcast</a> area.</p>
+
+
+
+{# Show latest blog posts #}
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
