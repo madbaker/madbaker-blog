@@ -1,5 +1,6 @@
 
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
@@ -101,6 +102,11 @@ module.exports = function(eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify")
 		});
 	});
+
+	eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItFootnote));
+
+
+
 
 	// Features to make your build faster (when you need them)
 

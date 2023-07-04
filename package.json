@@ -1,5 +1,5 @@
 {
-	"name": "Mark Dyck's Website",
+	"name": "madbaker-website",
 	"version": "1.0.0",
 	"description": "A personal website built using the Eleventy base blog starter ver 8.0.0.",
 	"scripts": {
@@ -40,6 +40,7 @@
 		"dayjs": "^1.11.7",
 		"fast-xml-parser": "^4.2.2",
 		"html-minifier-terser": "^7.1.0",
-		"lodash": "^4.17.21"
+		"lodash": "^4.17.21",
+		"markdown-it-footnote": "^3.0.3"
 	}
 }

@@ -11,19 +11,19 @@ Hi, I'm Mark and I'm a baker.  I also write things and I talk a whole bunch too.
 
 ## Things I'm doing
 
-- I'm mixing scones, rolling cinnamon buns and stuffing croissants most mornings at [Union Pacific Coffee](https://www.unionpacificcoffee.ca/) in Victoria, BC.
-  
 - My podcast, [Rise Up! The Baker Podcast](http://riseuppod.com) has been going since 2018.  I have conversations with professional bakers and bakery owners from around the world.
 
 - I founded an online community for professional bakers and bakery owners in 2020, called [Bakers4Bakers](https://bakers4bakers.org)
 
+- I'm mixing scones, rolling cinnamon buns and stuffing croissants most mornings at [Union Pacific Coffee](https://www.unionpacificcoffee.ca/) in Victoria, BC.
+  
 ## Things I've done
 
 If you're inclined to dig through my [writing archives](/writing/) you'll uncover a few layers of past projects and adventures.  Some work highlights from front to back:
 
 - I was a coach at [Seth Godin's altMBA](https://altmba.com) program and head coach of Akimbo's [Story Skills Workshop](https://storyrepublic.com/#workshop) from 2017 through 2022.
   
-- My friend Bernadette and I launched [the Right Company](https://therightcompany.co) in 2018 and I was the Chief Community Advocate there until the end of 2021.
+- My friend Bernadette Jiwa and I launched [the Right Company](https://therightcompany.co) in 2018 and I was the Chief Community Advocate there until the end of 2021.
   
 - I've run a few bakeries.  Cindy and I opened Orange Boot Bakery in 2011 and ran it for five years.  There was a proto-Orange Boot, run out of my garage, starting around 2008. And there was a post-Orange Boot, called (creatively) The Backyard Bakery, back in the garage, after we closed Orange Boot in 2015.
   
