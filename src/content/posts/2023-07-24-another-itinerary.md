@@ -14,7 +14,7 @@ That's enough to start.  Let's see...
 
 Let's assume they are on foot.  Either coming off the boat or a tour bus.  Either way, they should be able to get to Tourist Ground Zero, aka the corner of Government St. and Belleville St., where the Provincial Legislature, the Empress Hotel and Inner Harbour meet.  It's a nice walk (20 minutes) through James Bay from the cruise ship terminal, or there are motor coaches that will take you from the boat.  
 
-But say you're at Ground Zero, the sun is shining, it's Friday night and you're raring to go.  What to do?
+But say you're at Ground Zero, the sun is shining, it's Friday evening and you're raring to go.  What to do?
 
 ## Food
 
