@@ -4,12 +4,14 @@
   <div class="wrapper">
     <div class="site-foot__inner">
       <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+        <ul>
+          <li> &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} <small>{% packageVersion %}</small> </a></li>
 
-        &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} <small>{% packageVersion %}</small> </a>
+          <li> <a href='colophon/'>Colophon</a> </li>
 
         {% for item in navigation.bottom %}
 
-        <a
+        <li> <a
           href="{{ item.url }}"
           {{
           helpers.getLinkActiveState(item.url,
@@ -19,8 +21,9 @@
           }}
           >{{ item.text }}</a
         >
-
+        </li>
         {% endfor %}
+        </ul>
       </nav>
 
       <nav id="social" class="site-foot__inner" aria-label="Social links">

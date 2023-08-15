@@ -2,9 +2,9 @@
 layout: layouts/home.njk
 title: Colophon
 permalink: /colophon/index.html
-eleventyNavigation:
-  key: Colophon
-  order: 6
+#eleventyNavigation:
+#  key: Colophon
+#  order: 6
 ---
 
 This is at least the fifth iteration of my personal website, going back to 2006 or so.  
