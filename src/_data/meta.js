@@ -16,8 +16,6 @@ module.exports = {
     opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
     opengraph_default_alt:
       'Mark Dyck: making the good stuff and bringing it to the people', // alt text for default meta image
-    twitterSite: '@madbaker66', // i.e. @site - twitter profile of the site
-    twitterCreator: '', // i.e. @author -  twitter profile of the site
     mastodonProfile: '@madbaker@c.im' // i.e. https://front-end.social/@lene - url to your mastodon instance/profile
   },
   blog: {
@@ -43,5 +41,12 @@ module.exports = {
   },
   menu: {
     closedText: 'Menu'
-  }
+  },
+  feed: {
+    subtitle: "Baker. Writer. Confused Human.",
+    filename: "feed.xml",
+    path: "/feed/feed.xml",
+    url: "https://conr.dev/feed/feed.xml",
+    id: "https://conr.dev/"
+   },
 };
