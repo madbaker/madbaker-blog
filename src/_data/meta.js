@@ -27,18 +27,6 @@ module.exports = {
   pagination: {
     itemsPerPage: 20
   },
-  address: {
-    // edit all presets or leave empty. They are being used in the pages for privacy.md and imprint.md
-    firma: 'Mark Dyck Community Projects',
-    street: '#404, 655 Douglas Street',
-    city: 'Victoria',
-    state: 'BC',
-    zip: 'V8V 0B6',
-    mobileDisplay: ' ',
-    mobileCall: ' ',
-    email: 'mark@madbaker.com',
-    cif: ''
-  },
   menu: {
     closedText: 'Menu'
   },

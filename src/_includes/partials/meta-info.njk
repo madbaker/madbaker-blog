@@ -2,14 +2,7 @@
 
 <meta
   name="description"
-  content="
-  {% if seo.description %} {{ seo.description }}
-  {% elif description %}
-  {{ description }}
-  {% else %}
-  {{ meta.siteDescription }}
-  {% endif %}
-  "
+  content=" {{ site.siteDescription }} "
 />
 
 <meta name="theme-color" content="{{ meta.themeColor }}" />
