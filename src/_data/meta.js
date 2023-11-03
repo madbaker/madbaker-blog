@@ -46,7 +46,7 @@ module.exports = {
     subtitle: "Baker. Writer. Confused Human.",
     filename: "feed.xml",
     path: "/feed/feed.xml",
-    url: "https://conr.dev/feed/feed.xml",
-    id: "https://conr.dev/"
+    url: "https://madbaker.com/feed/feed.xml",
+    id: "https://madbaker.com/"
    },
 };
