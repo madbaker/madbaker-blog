@@ -1,3 +1,12 @@
-_site/
 node_modules/
 .cache/
+package-lock.json
+
+# Site content generated at build
+_site/
+
+# Local Netlify folder
+.netlify
+
+# search data file is generated at build
+netlify/edge-functions/_generated

@@ -1,17 +1,17 @@
 ---
 layout: layouts/home.njk
+permalink: /search/index.html
 eleventyNavigation:
   key: Search
   order: 7
 ---
 <h1>Search</h1>
-<h2>** UNDER CONSTRUCTION! **</h2>
-{#{% edge "njk,md" %}#}
+
+{% edge "liquid,md" %}
 <form action="/search/" method="get">
 <label>Search for <input type="search" name="q" value="{{ eleventy.edge.query.q | escape }}"></label>
 <button type="submit">Search</button>
 </form>
-{#
 {% if eleventy.edge.query.q %}
 <h2>Searching for “{{ eleventy.edge.query.q | escape }}”</h2>
 
@@ -25,4 +25,3 @@ eleventyNavigation:
   {% unless found %}_No results found._{% endunless %}
 {% endif %}
 {% endedge %}
-#}

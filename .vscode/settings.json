@@ -1,4 +1,11 @@
 {
-    "git.ignoreLimitWarning": true,
-    "cSpell.language": "en,en-CA"
+  "git.ignoreLimitWarning": true,
+  "cSpell.language": "en,en-CA",
+  "deno.enable": true,
+  "deno.enablePaths": [
+    "netlify/edge-functions"
+  ],
+  "deno.unstable": true,
+  "deno.importMap": ".netlify/edge-functions-import-map.json",
+  "deno.path": "/home/marko/.config/netlify/deno-cli/deno"
 }

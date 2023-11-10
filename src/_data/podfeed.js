@@ -1,3 +1,10 @@
+//
+//
+//  Right now, this parses the rss feed and makes a JSON file with all the feed info.  
+//  In future, it might make more sense to turn this into a collection, like blog posts are a collection.  
+//  That would involve mapping the dozens of rss fields into more of a blog post set of data.
+//
+//
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const {XMLParser} = require('fast-xml-parser');
 
