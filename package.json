@@ -40,7 +40,6 @@
 		"fast-xml-parser": "^4.2.2",
 		"html-minifier-terser": "^7.1.0",
 		"lodash": "^4.17.21",
-		"markdown-it-footnote": "^3.0.3",
-		"netlify-cli": "^17.2.1"
+		"markdown-it-footnote": "^3.0.3"
 	}
 }
