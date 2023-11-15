@@ -1,6 +1,6 @@
 ---
 title: "Sandy's Lentil Soup"
-date: 2023-11-12
+date: 2023-11-13
 tags: ["Notes","recipes"]
 ---
 
