@@ -1,6 +1,6 @@
 ---
 title: "Telling, not selling"
-date: 2023-11-23
+date: 2023-11-24
 tags: ["Notes"]
 ---
 
