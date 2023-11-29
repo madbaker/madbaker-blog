@@ -10,3 +10,8 @@ _site/
 
 # search data file is generated at build
 netlify/edge-functions/_generated
+
+# debug files
+debug.txt
+debugAll.txt
+benchmark.txt
