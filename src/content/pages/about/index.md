@@ -15,7 +15,7 @@ Hi, I'm Mark and I'm a baker.  I also write things and I talk a whole bunch too.
 
 - I founded an online community for professional bakers and bakery owners in 2020, called [Bakers4Bakers](https://bakers4bakers.org)
 
-- I'm mixing scones, rolling cinnamon buns and stuffing croissants most mornings at [Union Pacific Coffee](https://www.unionpacificcoffee.ca/) in Victoria, BC.
+- I'm currently looking for part-time work in my new hometown of Victoria, BC.  Something where I can help people directly; there is such a thing as too much Zoom.
   
 ## Things I've done
 
