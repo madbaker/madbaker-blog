@@ -43,6 +43,7 @@
 		"html-minifier-terser": "^7.1.0",
 		"lodash": "^4.17.21",
 		"markdown-it-footnote": "^4.0.0",
-		"node": "^22.2.0"
+		"node": "^22.2.0",
+		"sharp": "^0.33.4"
 	}
 }
