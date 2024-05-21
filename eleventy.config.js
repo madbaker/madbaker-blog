@@ -33,6 +33,7 @@ import imageShortcodePlaceholder from './src/_11ty/images.js';
 import liteYoutube from './src/_11ty/youtube-lite.js';
 
 
+import draft from './eleventy.config.drafts.js';
 
 // Eleventy 3.0 supports async configuration callbacks:
 export default async function(eleventyConfig) {
@@ -51,7 +52,7 @@ export default async function(eleventyConfig) {
 
 
 	// App plugins
-	//eleventyConfig.addPlugin(require("./eleventy.config.drafts.cjs"));
+	eleventyConfig.addPlugin(draft);
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
