@@ -5,8 +5,7 @@
     <div class="site-foot__inner">
       <nav id="footernav" class="site-foot__inner" aria-label="Footer">
         <ul>
-          {# I need to remove the packageversion shortcode until I figure out ESM JSON syntax in 11ty config. #}
-          {# <li> &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} <small>{% packageVersion %}</small> </a></li> #}
+
           <li> &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} </a></li>
 
           <li> <a href='colophon/'>Colophon</a> </li>

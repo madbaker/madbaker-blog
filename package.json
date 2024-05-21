@@ -4,6 +4,7 @@
 	"description": "A personal website built using the Eleventy base blog starter ver 8.0.0.",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
+		"trace": "NODE_OPTIONS='--trace-deprecation' npx @11ty/eleventy --serve --quiet ",
 		"start": "npx @11ty/eleventy --serve --quiet ",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy 2> debug.txt",
 		"debugAll": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet 2> debugAll.txt",

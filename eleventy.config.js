@@ -1,4 +1,4 @@
-//import { DateTime } from "luxon";
+
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItFootnote from "markdown-it-footnote";
 import pluginRss from "@11ty/eleventy-plugin-rss";
@@ -7,9 +7,7 @@ import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 
-
-// get package.json
-//import packageVersion from './package.json' with { type: 'json' };
+// importing the drafts stuff to use in a plugin
 
 import {
     readableDate,
@@ -27,7 +25,8 @@ import {
 	cssmin
   } from './src/_11ty/filters.js';
 
-import {post, contentPaginatedByYearMonth}from './src/_11ty/collections.js'
+import {post, contentPaginatedByYearMonth} from './src/_11ty/collections.js'
+
 
 // module import shortcodes
 import imageShortcodePlaceholder from './src/_11ty/images.js';
@@ -92,7 +91,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
 	eleventyConfig.addShortcode('youtube', liteYoutube);
 	eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
-//	eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
+
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
