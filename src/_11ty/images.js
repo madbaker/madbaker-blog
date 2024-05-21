@@ -1,6 +1,6 @@
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
-const htmlmin = require('html-minifier-terser');
+import Image from '@11ty/eleventy-img';
+import path from 'path';
+import htmlmin from 'html-minifier-terser';
 
 const imageShortcodePlaceholder = async function (src, alt, caption, sizes = '100vw') {
   if (!alt) {
@@ -71,4 +71,4 @@ const imageShortcodePlaceholder = async function (src, alt, caption, sizes = '10
   );
 };
 
-module.exports = imageShortcodePlaceholder;
+export default imageShortcodePlaceholder;

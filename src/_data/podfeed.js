@@ -5,10 +5,10 @@
 //  That would involve mapping the dozens of rss fields into more of a blog post set of data.
 //
 //
-const EleventyFetch = require("@11ty/eleventy-fetch");
-const {XMLParser} = require('fast-xml-parser');
+import EleventyFetch from "@11ty/eleventy-fetch";
+import {XMLParser} from 'fast-xml-parser';
 
-module.exports = async function() {
+export default async function() {
 
 // get the feed: https://riseuppod.com/rss/?include-libsyn-metadata=true
 

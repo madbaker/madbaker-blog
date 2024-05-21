@@ -6,6 +6,7 @@ eleventyNavigation:
   order: 7
 ---
 <h1>Search</h1>
+{#
 
 {% edge "liquid,md" %}
 <form action="/search/" method="get">
@@ -25,3 +26,5 @@ eleventyNavigation:
   {% unless found %}_No results found._{% endunless %}
 {% endif %}
 {% endedge %}
+
+#}

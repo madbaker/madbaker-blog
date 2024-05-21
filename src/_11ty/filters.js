@@ -1,5 +1,5 @@
-const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
+import { DateTime } from "luxon";
+import CleanCSS from "clean-css";
 
 /**
  * Filters
@@ -99,7 +99,7 @@ const filterTagList = (tags) => {
     return new CleanCSS({}).minify(code).styles;
   };
     
-    module.exports = {
+    export {
       readableDate,
       htmlDateString,
       RFC2822ToHtmlDateString,

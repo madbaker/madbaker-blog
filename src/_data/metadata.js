@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	"title": "Mark Dyck",
 	"url": "https://madbaker.com/",
 	"language": "en",

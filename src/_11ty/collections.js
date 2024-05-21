@@ -21,4 +21,4 @@
       return carry;
     }, new Map()).values());
 
-    module.exports = {post, contentPaginatedByYearMonth};
+    export {post, contentPaginatedByYearMonth};

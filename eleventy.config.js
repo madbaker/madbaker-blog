@@ -1,17 +1,17 @@
-
-const markdownItAnchor = require("markdown-it-anchor");
-const markdownItFootnote = require("markdown-it-footnote");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin, EleventyEdgePlugin } = require("@11ty/eleventy");
+//import { DateTime } from "luxon";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItFootnote from "markdown-it-footnote";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { HtmlBasePlugin } from "@11ty/eleventy";
 
 
 // get package.json
-const packageVersion = require('./package.json').version;
+//import packageVersion from './package.json' with { type: 'json' };
 
-const {
+import {
     readableDate,
     htmlDateString,
 	RFC2822ToHtmlDateString,
@@ -25,17 +25,19 @@ const {
     groupByMonth,
     padStart,
 	cssmin
-  } = require('./src/_11ty/filters.js');
+  } from './src/_11ty/filters.js';
 
-const {post, contentPaginatedByYearMonth} = require ('./src/_11ty/collections.js')
+import {post, contentPaginatedByYearMonth}from './src/_11ty/collections.js'
 
 // module import shortcodes
-const imageShortcodePlaceholder = require('./src/_11ty/images.js');
-const liteYoutube = require('./src/_11ty/youtube-lite.js')
+import imageShortcodePlaceholder from './src/_11ty/images.js';
+import liteYoutube from './src/_11ty/youtube-lite.js';
 
 
 
-module.exports = function(eleventyConfig) {
+// Eleventy 3.0 supports async configuration callbacks:
+export default async function(eleventyConfig) {
+
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/
@@ -50,7 +52,7 @@ module.exports = function(eleventyConfig) {
 
 
 	// App plugins
-	eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
+	//eleventyConfig.addPlugin(require("./eleventy.config.drafts.cjs"));
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -58,9 +60,9 @@ module.exports = function(eleventyConfig) {
 		preAttributes: { tabindex: 0 }
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
-	eleventyConfig.addPlugin(EleventyEdgePlugin);
+//	eleventyConfig.addPlugin(EleventyEdgePlugin);
 
 	
 	// Filters
@@ -90,7 +92,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
 	eleventyConfig.addShortcode('youtube', liteYoutube);
 	eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
-	eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
+//	eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
