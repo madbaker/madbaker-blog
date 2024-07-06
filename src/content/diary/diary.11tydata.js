@@ -1,6 +1,6 @@
 export default {
 	tags: [
-		"diary"
+		"diary", "posts"
 	],
 	"layout": "layouts/post.njk",
 	"permalink": "/diary/{{title | slugify}}/",

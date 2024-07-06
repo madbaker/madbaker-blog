@@ -1,6 +1,6 @@
 export default {
 	tags: [
-		"dispatches"
+		"dispatches", "posts"
 	], 
 	"layout": "layouts/post.njk",
 	"permalink": "/dispatches/{{date | htmlDateString}}-{{title | slugify}}/",
