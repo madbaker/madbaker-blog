@@ -15,6 +15,8 @@ Hi, I'm Mark and I'm a baker.  I also write things and I talk a whole bunch too.
 
 - I founded an online community for professional bakers and bakery owners in 2020, called [Bakers4Bakers](https://bakers4bakers.org)
 
+- In 2024, I co-founded a workshop  with the Bread Bakers Guild of America called [The Bakery Leadership Circle](https://bbga.org/bakery-leadership-circle), where a small cohort of bakery owners and leaders work together to tackle their biggest business decisions and leadership challenges.
+
 - I'm currently looking for part-time work in my new hometown of Victoria, BC.  Something where I can help people directly; there is such a thing as too much Zoom.
   
 ## Things I've done

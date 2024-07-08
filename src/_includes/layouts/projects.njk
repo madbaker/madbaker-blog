@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+{# layout for my projects page.  List all projects, with a description and the three most recent posts #}
+
+<header class='blog-page-header'>
+
+    <h1>{{ title }}</h1>
+    <p>These are some smaller writing collections that may be of interest</p>
+
+</header>
+
+<article class="writing-index">
+
+{# loop through projects collection#}
+  {# Display the project title and description #}
+  {# display first post date and latest post date #}
+  {# Display the latest three posts #}
+  {# Display a link to the rest of the projects #}
+
+
+{% set allPosts = collections.posts | reverse %}
+
+{% set postsByYear = allPosts | groupByYear %}
+
+{% for year, items in postsByYear %}
+  <section class='year-header'>
+    <header class='year-index'>
+      <h2>{{ year }}</h2>
+
+        {% set postsByMonth = items | groupByMonth %}                 
+        {% set year = year %}
+      <nav>
+        {% include 'partials/monthsOfYear.njk' %}
+      </nav>
+
+    </header>
+
+    {% set postslist = items %}
+
+    {% include "partials/postslist.njk" %}
+
+  </section>
+
+{% endfor %}
+
+</article>
