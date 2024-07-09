@@ -8,6 +8,7 @@
     <span>
     <a href="{{ post.url }}" class="postlist-link" title="Read {{ post.data.title }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 	</span>
+    <span class="post-tag"><em>{{post.data.tags[0]}}</em></span>
     <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("DDD") }}</time>
 	</div>
 </li>
