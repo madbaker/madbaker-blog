@@ -7,6 +7,7 @@ import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 
+
 // importing the drafts stuff to use in a plugin
 
 import {
@@ -62,7 +63,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
-//	eleventyConfig.addPlugin(EleventyEdgePlugin);
+
 
 	
 	// Filters
