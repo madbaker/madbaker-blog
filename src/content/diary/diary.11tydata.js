@@ -1,6 +1,6 @@
 export default {
 	tags: [
-		"nature diary", "posts"
+		"diary"
 	],
 	"layout": "layouts/post.njk",
 	"permalink": "/diary/{{title | slugify}}/",
