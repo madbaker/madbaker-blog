@@ -1,18 +1,15 @@
----
-layout: layouts/base.njk
----
 
-{# layout for blog page.  List all posts by year with month links #}
+{# List all posts by year with month links #}
 <header class='blog-page-header'>
 
     <h1>{{ title }}</h1>
-    <p><strong>{{collections.posts | length }}</strong> items published since {{collections.posts[0].data.date | readableDate("DDD")}}</p>
+    <p><strong>{{currentCollection | length }}</strong> items published since {{currentCollection[0].data.date | readableDate("DDD")}}</p>
 
 </header>
 
 <article class="writing-index">
 
-{% set allPosts = collections.posts | reverse %}
+{% set allPosts = currentCollection | reverse %}
 
 {% set postsByYear = allPosts | groupByYear %}
 

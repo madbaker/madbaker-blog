@@ -31,6 +31,27 @@ numberOfLatestPostsToShow: 6
 
 <p>All episodes of Rise Up! The Baker Podcast are in the <a href="/podcast/">podcast</a> area.</p>
 
+{# Show latest diary posts #}
+
+
+{% set postsCount = collections.diary | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h2> Latest Nature Diary Posts </h2>
+
+<p>In July 2024, I started a year long project to keep a daily diary of my walks and other outdoor activities.</p>
+
+{% set recentposts = collections.diary | head(-1 * numberOfLatestPostsToShow) %}
+
+{% set postslist = recentposts | reverse %}  {# postslists.njk displays posts in the order you provide them#}
+
+{% set postslistCounter = postsCount %}  {# used to number the posts being listed #}
+
+{% include "partials/postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>There are {{ morePosts }} more diary entries{% if morePosts != 1 %}s{% endif %} in the <a href="/tags/diary/">nature diary</a> area.</p>
+{% endif %}
 
 
 {# Show latest blog posts #}
@@ -38,8 +59,7 @@ numberOfLatestPostsToShow: 6
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
-<h2>Recent Posts</h2>
-
+<h2>Recent Blog Posts</h2>
 
 {% set recentposts = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 
@@ -53,6 +73,7 @@ numberOfLatestPostsToShow: 6
 {% if morePosts > 0 %}
 <p>There are {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in the <a href="/writing/">writing</a> area.</p>
 {% endif %}
+
 
 <h2>Built in the open.</h2>
 
