@@ -26,9 +26,22 @@ schema: blog
 {% endif %}
 </article>
 
-{%- if collections.posts %}
-	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-	{%- set nextPost = collections.posts | getNextCollectionItem %}
+{# scroll by diary entry, by post, or not at all #}
+
+{%- set scrollableCollection = null %}
+{%- for tag in tags %}
+	{%- if tag == 'posts' %}
+		{%- set scrollableCollection = collections.posts %}
+	{%- endif %}
+
+	{%- if tag == 'diary' %}
+		{%- set scrollableCollection = collections.diary %}
+	{%- endif %}
+{%- endfor %}
+
+{%- if scrollableCollection %}
+	{%- set previousPost = scrollableCollection | getPreviousCollectionItem %}
+	{%- set nextPost = scrollableCollection | getNextCollectionItem %}
 	{%- if nextPost or previousPost %}
 	<ul class="links-nextprev">
 		{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
