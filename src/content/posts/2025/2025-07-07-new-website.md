@@ -45,8 +45,8 @@ So here are my new goals:
 ## Eleventy
 
 - Optimized images using the updated Eleventy-img plugin
-- more structured documents and more rigourous use of front matter like how [Miriam]() does it.
-- create pages for major project tags
+- more structured documents and more rigourous use of front matter like how [Miriam](https://www.miriamsuzanne.com/) does it.
+- create pages for major project tags (again, sort of like how Miriam does it.)
 - implement search without using Netlify functions
 
 ## CSS
