@@ -1,6 +1,6 @@
 {
 	"name": "madbaker-website",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A personal website built using the Eleventy base blog starter ver 8.0.0.",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
