@@ -5,7 +5,8 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
-import { HtmlBasePlugin } from "@11ty/eleventy";
+import { HtmlBasePlugin, InputPathToUrlTransformPlugin } from "@11ty/eleventy";
+
 
 
 // importing the drafts stuff to use in a plugin
@@ -63,6 +64,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 
 	

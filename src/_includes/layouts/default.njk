@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+	data-inputpath="{{ page.inputPath }}"
+>
+	{% include 'partials/head.njk' %}
+<body>
+
+	{% include "partials/site-header.njk" %}
+
+	<main id="main-content" class="content">
+		{{ content | safe }}
+	</main>
+
+	{% include "partials/footer.njk" %}
+
+</body>
+</html>
