@@ -49,7 +49,6 @@ export default async function(eleventyConfig) {
 		"./src/assets/": "/",
 		"./src/static/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
-		"./src/content/robots.txt": "/robots.txt"
 	});
 
 
