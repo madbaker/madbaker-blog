@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/default.njk
 title: Nature Diary
 permalink: /diary/index.html
 ---

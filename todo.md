@@ -1,12 +1,13 @@
 Version 2.x Todo List
 
 [x]  Move navigation to a JSON file like 11tybundle.dev
+[]  Get all pages using default.njk for layout
+[]  Search page
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
 []  Tagged posts sorted by quantity, with quantity listed
 []  Introduction pages for major tags
 []  structuring content topologically vs. date (garden vs blog)
-[]  Search page
 []  Contact page
 []  projects page
 []  improve the podcast episode list page
