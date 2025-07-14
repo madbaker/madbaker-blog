@@ -3,5 +3,20 @@
     "url": "https://madbaker.com",
     "siteName": "Madbaker dot com",
     "siteDescription": "Personal website of Mark Dyck, a baker who writes",
-    "homepageTitle": "Mark Dyck -- a baker who writes"
+    "homepageTitle": "Mark Dyck -- a baker who writes",
+    "mainSiteNav":  [
+      { "url": "/", "text": "Home" },
+      { "url": "/about/", "text": "About" },
+      { "url": "/diary/", "text": "Nature Diary", "count": "diaryCount" },
+      { "url": "/writing/", "text": "Writing", "count": "writingCount" },
+      { "url": "/podcast/", "text": "Podcast", "count": "podcastCount" },
+      { "url": "/tags/", "text": "Tags", "count": "tagCount" },
+      { "url": "/search/", "text": "Search" }
+	  ],
+    "footerNav":  [
+      { "url": "/", "text": "Home" },
+      { "url": "/subscribe/", "text": "Subscribe" },
+      { "url": "/contact/", "text": "Contact" },
+      { "url": "/colophon/", "text": "Colophon" }
+	  ]
   }
