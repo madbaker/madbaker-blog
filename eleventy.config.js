@@ -6,6 +6,7 @@ import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { HtmlBasePlugin, InputPathToUrlTransformPlugin } from "@11ty/eleventy";
+import { execSync } from 'child_process';
 
 
 
@@ -112,9 +113,11 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItFootnote));
 
+	// build the search index file (pagefind)  COULD BE SLOW!
 
-
-
+	eleventyConfig.on('eleventy.after', () => {
+    execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+  })
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
