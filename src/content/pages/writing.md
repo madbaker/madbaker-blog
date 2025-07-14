@@ -2,9 +2,6 @@
 layout: layouts/base.njk
 title: Writing
 permalink: /writing/index.html
-eleventyNavigation:
-  key: Writing
-  order: 3
 ---
 
 

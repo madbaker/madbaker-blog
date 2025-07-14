@@ -1,6 +1,6 @@
 Version 2.x Todo List
 
-[]  Move navigation to a JSON file like 11tybundle.dev
+[x]  Move navigation to a JSON file like 11tybundle.dev
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
 []  Tagged posts sorted by quantity, with quantity listed
