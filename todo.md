@@ -3,8 +3,9 @@ Version 2.x Todo List
 [x]  Move navigation to a JSON file like 11tybundle.dev
 [x]  Get all pages using default.njk for layout
 [x]  Search page
-[]  rewrite _data/site.json as site.js
+[x]  rewrite _data/site.json as site.js
 []  Condense / reduce site metadata files into _data/site.js
+[]  calculate post counts and add to site navigation (cf. Mossaur)
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
 []  Tagged posts sorted by quantity, with quantity listed
