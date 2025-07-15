@@ -28,7 +28,7 @@ export default {
   skipContent: 'Skip to content',
   themeColor: '#F0CB67', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
-  meta_data: {
+  og_data: {
     opengraph_default: '/mad-logo.svg', // fallback/default meta image
     opengraph_default_alt:
       'The home base of Mark Dyck, a baker who writes', // alt text for default meta image

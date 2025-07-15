@@ -5,6 +5,14 @@
 		<title>{{ title or site.siteName }}</title>
 		<meta name="description" content="{{ description or site.siteDescription }}">
 
+    <!-- synchronous js / schema  -->
+    	{% if schema == 'blog' %}
+    		<!-- include blogpost schema  -->
+   			 {%- include "schema/blogpost-schema.html" %} 
+	    {% else %}
+   	 		{% include "schema/base-schema.html" %} 
+	    {% endif %}
+		
     	{#- RSS Feeds #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ site.siteDescription }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ site.siteDescription}}">

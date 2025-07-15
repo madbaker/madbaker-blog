@@ -9,15 +9,15 @@
     "isPartOf": {
       "@id": "{{ site.url }}#website"
     },
-    "@id": "{{ url }}",
+    "@id": "{{ page.url }}",
     "headline": "{{ title or site.siteName }}",
     "description": "{{ seo.description or description or site.siteDescription }}",
-    "image": "{{ site.url }}{% if seo.image %}/assets/images/{{ seo.image }}{% else %}{{ site.site_data.opengraph_default }}{% endif %}",
+    "image": "{{ site.url }}{{ site.og_data.opengraph_default }}",
     "inLanguage": "{{ site.locale }}",
     "publisher": {
       "@type": "{{ site.siteType }}",
       "name": "{{ site.author }}",
-      "url": "{{ site.url }}"
+      "url": "{{ site.authorUrl }}"
     },
     "author": {
       "@type": "Person",

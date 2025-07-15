@@ -31,15 +31,11 @@
 />
 <meta
   property="og:image"
-  content="{{ site.url }}{% if (layout == 'post') %}/assets/images/social-preview/{{
-    title | slugify
-  }}-preview.jpeg
-  {% else %}{{ site.meta_data.opengraph_default }}
-  {% endif %}"
+  content="{{ site.url }}{{ site.og_data.opengraph_default }}"
 />
 <meta
   property="og:image:alt"
-  content="{% if (layout == 'post') %}{% else %}{{ site.meta_data.opengraph_default_alt }}
+  content="{% if (layout == 'post') %}{% else %}{{ site.og_data.opengraph_default_alt }}
 {% endif %}"
 />
 <meta
