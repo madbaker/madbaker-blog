@@ -29,9 +29,9 @@ export default {
   themeColor: '#F0CB67', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
-    opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
+    opengraph_default: '/mad-logo.svg', // fallback/default meta image
     opengraph_default_alt:
-      'Mark Dyck: making the good stuff and bringing it to the people', // alt text for default meta image
+      'The home base of Mark Dyck, a baker who writes', // alt text for default meta image
     mastodonProfile: '@madbaker@c.im' // i.e. https://front-end.social/@lene - url to your mastodon instance/profile
   },
   pagination: {
@@ -41,16 +41,16 @@ export default {
     closedText: 'Menu'
   },
   outposts: {
-    "twitterHandle": "@madbaker66",
-    "twitterUrl": "https://twitter.com/madbaker66",
-    "instagramHandle": "madbaker",
-    "instagramUrl": "http://instagram.com/madbaker",
-    "githubUrl": "https://github.com/madbaker/",
-    "smugmugUrl": "https://madbaker.smugmug.com",
-    "mastodonUrl": "https://c.im/@madbaker",
-    "linkedInUrl": "https://www.linkedin.com/in/markdyck/",
-    "myPodcastTitle": "Rise Up! the Baker Podcast",
-    "myPodcastUrl": "https://riseuppod.com"
+    twitterHandle: "@madbaker66",
+    twitterUrl: "https://twitter.com/madbaker66",
+    instagramHandle: "madbaker",
+    instagramUrl: "http://instagram.com/madbaker",
+    githubUrl: "https://github.com/madbaker/",
+    smugmugUrl: "https://madbaker.smugmug.com",
+    mastodonUrl: "https://c.im/@madbaker",
+    linkedInUrl: "https://www.linkedin.com/in/markdyck/",
+    myPodcastTitle: "Rise Up! the Baker Podcast",
+    myPodcastUrl: "https://riseuppod.com"
   }
 };
 

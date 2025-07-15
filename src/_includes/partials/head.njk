@@ -2,12 +2,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>{{ title or metadata.title }}</title>
+		<title>{{ title or site.siteName }}</title>
 		<meta name="description" content="{{ description or site.siteDescription }}">
 
     	{#- RSS Feeds #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ site.siteDescription }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ site.siteDescription}}">
 
 
 		{#-

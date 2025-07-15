@@ -5,59 +5,60 @@
   content=" {{ site.siteDescription }} "
 />
 
-<meta name="theme-color" content="{{ meta.themeColor }}" />
-<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="theme-color" content="{{ site.themeColor }}" />
+<meta name="robots" content="index,follow, noai, noimageai" /><!-- All Search Engines -->
 <meta name="googlebot" content="index,follow" /><!-- Google Specific -->
 <meta name="generator" content="{{ eleventy.generator }}" /><!-- thank you, Zach -->
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no" />
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="{{ meta.url }}{{ page.url }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
 <!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt" />
 
-{% if meta.meta_data.mastodonProfile %}
+{% if site.meta_data.mastodonProfile %}
 <!-- Mastodon verified site -->
-<link rel="me" href="{{ meta.meta_data.mastodonProfile }}" />
+<link rel="me" href="{{ site.meta_data.mastodonProfile }}" />
 {% endif %}
 
 <!-- Open Graph meta  -->
-<meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
 <meta
   property="og:title"
-  content="{% if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif %}"
+  content="{% if title %}{{ title }}{% else %}{{ site.siteName }}{% endif %}"
 />
 <meta
   property="og:image"
-  content="{{ meta.url }}{% if (layout == 'post') %}/assets/images/social-preview/{{
+  content="{{ site.url }}{% if (layout == 'post') %}/assets/images/social-preview/{{
     title | slugify
   }}-preview.jpeg
-  {% else %}{{ meta.meta_data.opengraph_default }}
+  {% else %}{{ site.meta_data.opengraph_default }}
   {% endif %}"
 />
 <meta
   property="og:image:alt"
-  content="{% if (layout == 'post') %}{% else %}{{ meta.meta_data.opengraph_default_alt }}
+  content="{% if (layout == 'post') %}{% else %}{{ site.meta_data.opengraph_default_alt }}
 {% endif %}"
 />
 <meta
   property="og:description"
   content="{% if description %}{{ description }}{% else %}{{
-    meta.siteDescription
+    site.siteDescription
   }}{% endif %}"
 />
-<meta property="og:site_name" content="{{ meta.siteName }}" />
-<meta property="og:locale" content="{{ meta.locale }}" />
-<meta property="article:author" content="{{ meta.author }}" />
+<meta property="og:site_name" content="{{ site.siteName }}" />
+<meta property="og:locale" content="{{ site.locale }}" />
+<meta property="article:author" content="{{ site.author }}" />
 
 <!-- Twitter meta -->
 <meta name="twitter:card" content="summary_large_image" />
-{% if meta.meta_data.twitterSite %}
-<meta name="twitter:site" content="{{ meta.meta_data.twitterSite }}" />
-{% endif %} {% if meta.meta_data.twitterCreator %}
-<meta name="twitter:creator" content="{{ meta.meta_data.twitterCreator }}" />
+{% if site.outposts.twitterUrl %}
+<meta name="twitter:site" content="{{ site.outposts.twitterUrl }}" />
+{% endif %} 
+{% if site.outposts.twitterHandle %}
+<meta name="twitter:creator" content="{{ site.outposts.twitterHandle }}" />
 {% endif %}
 <meta name="twitter:dnt" content="on" />
 
