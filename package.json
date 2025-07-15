@@ -4,12 +4,14 @@
 	"description": "A personal website built using the Eleventy base blog starter ver 8.0.0.",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
-		"trace": "NODE_OPTIONS='--trace-deprecation' npx @11ty/eleventy --serve --quiet ",
+		"postbuild": "npx -y pagefind --site _site",
 		"start": "npx @11ty/eleventy --serve --quiet ",
+		"buildSearch": "npx pagefind --site _site --glob \"**/*.html\"",
+		"clean": "rimraf ./_site",
+		"trace": "NODE_OPTIONS='--trace-deprecation' npx @11ty/eleventy --serve --quiet ",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy 2> debug.txt",
 		"debugAll": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet 2> debugAll.txt",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy 2> benchmark.txt",
-		"clean": "rimraf ./_site"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy 2> benchmark.txt"
 	},
 	"repository": {
 		"type": "git",

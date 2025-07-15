@@ -115,9 +115,9 @@ export default async function(eleventyConfig) {
 
 	// build the search index file (pagefind)  COULD BE SLOW!
 
-	eleventyConfig.on('eleventy.after', () => {
-    execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
-  })
+//	eleventyConfig.on('eleventy.after', () => {
+//    execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+//  })
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line

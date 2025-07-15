@@ -32,9 +32,6 @@
 			{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 					
 			<style>{% getBundle "css" %}</style>
-		{# I don't think this file is created until after 11ty processes, so
-			I am putting it in straight #}
-			<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 
 	 <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
