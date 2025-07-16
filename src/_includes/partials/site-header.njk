@@ -12,10 +12,13 @@
         {%- for link in site.mainSiteNav %}
             <li class="nav-item">
                 <a href="{{ link.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ link.text }}</a>
+                {% if link.tag %} ({{collections[link.tag].length}}) {%endif%}
+            
             </li>
         {%- endfor %}
         
         </ul>
+        
     </nav>
 
 </header>

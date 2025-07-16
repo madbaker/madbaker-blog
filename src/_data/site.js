@@ -1,3 +1,5 @@
+import pf from './podfeed.js'
+
 export default {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Mark Dyck',
@@ -10,9 +12,9 @@ export default {
   mainSiteNav:  [
     { url: "/", text: "Home" },
     { url: "/about/", text: "About" },
-    { url: "/diary/", text: "Nature Diary" },
-    { url: "/writing/", text: "Writing" },
-    { url: "/podcast/", text: "Podcast" },
+    { url: "/diary/", text: "Nature Diary", tag:'diary' },
+    { url: "/writing/", text: "Writing", tag: 'post' },
+    { url: "/podcast/", text: "Podcast", tag: 'podcastEpisodes' },
     { url: "/tags/", text: "Tags" },
     { url: "/search/", text: "Search" }
   ],
