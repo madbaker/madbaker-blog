@@ -5,8 +5,8 @@ Version 2.x Todo List
 [x]  Search page
 [x]  rewrite _data/site.json as site.js
 [x]  Condense / reduce site metadata files into _data/site.js
-[]  calculate post counts and add to site navigation (cf. Mossaur)
-    - to do this, I think I need a data file that calculates all the counts and exports them so I can reference them in site.js and later in the templates
+[x]  calculate post counts and add to site navigation (cf. Mossaur)
+[]  fix podcast feed so it acts as an actual 11ty collection
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
 []  Tagged posts sorted by quantity, with quantity listed

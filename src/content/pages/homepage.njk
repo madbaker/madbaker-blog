@@ -7,17 +7,15 @@ numberOfLatestPostsToShow: 6
 
 <p>Welcome to my personal website, where I share conversations, thoughts, rants and love notes. The site also holds every episode of my long running podcast, <a href="/podcast/">Rise Up! The Baker Podcast</a>.</p>
 
-<h3>Post Count: {{podfeed.rss.channel.item.length}}</h3>
 
 {# Show latest podcast episode #}
 
-{% set episode = podfeed.rss.channel.item[0] %}
+{% set episode = podfeed[0]%}
 {% set podcastEpisodeId = episode.libsyn_itemId %}
 
 <h2>Latest Podcast Episode</h2>
 
 <p></p>
-
 
 <h3><a href="/riseuppod/{{ episode.title | slugify }}/">{{ episode.title }}</a></h3>
 

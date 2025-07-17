@@ -1,11 +1,13 @@
 ---
 layout: layouts/default.njk
 pagination:
-    data: podfeed.rss.channel.item
+    data: podfeed
     size: 1
     alias: episode
-tags: ["podcast", "riseuppod"]
+    addAllPagesToCollections: true 
+tags: ["riseuppod"]
 permalink: "/riseuppod/{{ episode.title | slugify }}/"
+
 ---
 
 <h1>{{ episode.itunes_title }}</h1>

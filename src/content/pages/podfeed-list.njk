@@ -6,13 +6,13 @@ layout: layouts/default.njk
 
 
 <ul class='post-list'>
-{% for episode in podfeed.rss.channel.item %}
+{% for episode in podfeed %}
 	{% set episodeURL %}/riseuppod/{{ episode.title | slugify }}/{% endset %}
 	
   <li>
    {% include 'partials/podcastEpisode.njk' %}  <a href="{{ episodeURL }}">{{ episode.itunes_title }}</a> 
     <br/>
-{{ episode.pubDate | RFC2822ToReadableDate }}
+ {{ episode.pubDate | RFC2822ToReadableDate }} 
     
 
     </li>

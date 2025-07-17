@@ -14,7 +14,7 @@ export default {
     { url: "/about/", text: "About" },
     { url: "/diary/", text: "Nature Diary", tag:'diary' },
     { url: "/writing/", text: "Writing", tag: 'post' },
-    { url: "/podcast/", text: "Podcast", tag: 'podcastEpisodes' },
+    { url: "/podcast/", text: "Podcast", tag: 'riseuppod' },
     { url: "/tags/", text: "Tags" },
     { url: "/search/", text: "Search" }
   ],
