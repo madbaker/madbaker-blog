@@ -6,7 +6,7 @@ Version 2.x Todo List
 [x]  rewrite _data/site.json as site.js
 [x]  Condense / reduce site metadata files into _data/site.js
 [x]  calculate post counts and add to site navigation (cf. Mossaur)
-[]  fix podcast feed so it acts as an actual 11ty collection
+[x]  fix podcast feed so it acts as an actual 11ty collection
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
 []  Tagged posts sorted by quantity, with quantity listed

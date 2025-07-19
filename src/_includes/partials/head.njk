@@ -34,13 +34,15 @@
 			{%- css %}{% include "../../assets/css/blog.css" %}{% endcss %}
 			{%- css %}{% include "../../assets/css/postlist.css" %}{% endcss %}
 						
-			{#- Or add from node_modules #}
-			{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
-	
-			{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 					
 			<style>{% getBundle "css" %}</style>
-
+		{#- I do so little syntax highlighting that I may as well bring this in later #}
+		
+		<link
+			href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+			rel="stylesheet"
+		/>
 	 <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
 

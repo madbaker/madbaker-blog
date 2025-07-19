@@ -9,7 +9,6 @@ tags: ["riseuppod"]
 permalink: "/riseuppod/{{ episode.title | slugify }}/"
 eleventyComputed:
     title: "{{episode.itunes_title}}"
-    description: "{{episode.description }}" 
     pubDate: "{{episode.pubDate | RFC2822ToReadableDate}}" 
     libsynEpisodeID: "{{episode.libsyn_itemId}}"
     episodeType: "{{episode.itunes_episodeType}}"
@@ -18,12 +17,8 @@ eleventyComputed:
     audioPlayer: "{{episode.enclosure.@_url}}"
     episodeID:    "{{episode.episodeID}}"     
 
-    
-
-
 ---
-{# REMEMBER THAT THERE IS MUCH MORE DATA IN THE PODFEED DATA OBJECT! #}
-{# i JUST TOOK THE INFO I USE AND PUT IT IN ELEVENTYCOMPUTED ABOVE #}
+
 
 <h1>{{ episode.itunes_title }}</h1>
 
