@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/default.njk
 schema: blog
 ---
 
@@ -18,7 +18,7 @@ schema: blog
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
-<article class='blog'>
+<article data-pagefind-body class='blog'>
 {{ content | safe }}
 
 {% if podcastEpisodeId %}

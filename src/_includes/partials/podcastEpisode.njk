@@ -1,8 +1,0 @@
-      {% if episode.itunes_episodeType == 'bonus' %}
-            [Bonus]
-      {% elif episode.itunes_season %}
-           [S{{episode.itunes_season}}E{{episode.itunes_episode}}]
-      {% else %}
-            [EP{{episode.itunes_episode}}]
-      {% endif %}
-

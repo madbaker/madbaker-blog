@@ -1,10 +1,7 @@
 ---
-layout: layouts/base.njk
+layout: layouts/default.njk
 title: Writing
 permalink: /writing/index.html
-eleventyNavigation:
-  key: Writing
-  order: 3
 ---
 
 

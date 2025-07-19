@@ -1,0 +1,8 @@
+      {% if episode.data.episodeType == 'bonus' %}
+            [Bonus]
+      {% elif episode.data.episodeSeason %}
+           [S{{episode.data.episodeSeason}}E{{episode.data.episodeNumber}}]
+      {% else %}
+            [EP{{episode.data.episodeNumber}}]
+      {% endif %}
+

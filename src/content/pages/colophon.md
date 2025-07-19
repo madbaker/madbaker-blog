@@ -1,10 +1,7 @@
 ---
-layout: layouts/home.njk
+layout: layouts/default.njk
 title: Colophon
 permalink: /colophon/index.html
-#eleventyNavigation:
-#  key: Colophon
-#  order: 6
 ---
 
 This is at least the fifth iteration of my personal website, going back to 2006 or so.  
@@ -13,7 +10,7 @@ The pendulum keeps swinging back and forth, from wordpress.com to self-hosted wo
 
 But the trend towards block based editors makes me frustrated.  More and more, I just want to publish words.  Write a markdown file, proofread, and ship. 
 
-A nostalgic afternoon reading all I could find on the Indieweb, the return (?) to personal websites and hand crafted pages re-ignited a fire that was smouldering inside me.  So it's a return to basics for me - minimal design and a focus on writing.
+A nostalgic afternoon reading all I could find on the [Indieweb](https://indieweb.org/), the return (?) to personal websites and hand crafted pages re-ignited a fire that was smouldering inside me.  So it's a return to basics for me - minimal design and a focus on writing.
 
 I took much more inspiration than made it into this iteration of the site, but here's where I'm at:
 
@@ -22,7 +19,7 @@ I took much more inspiration than made it into this iteration of the site, but h
 
 The site is built with [Eleventy](https://11ty.dev) and deployed on [Netlify](https://netlify.com).   Eleventy lets me write markdown and publish with a single command and I am so grateful for that.  And its creator, leader, chief maintainer [Zach Leatherman](https://www.zachleat.com/) is earnest and funny in equal measure.
 
-The site began via the [Eleventy Base Blog](https://eleventy-base-blog.netlify.app/) starter but with some interesting (to me) additions:
+The site began via the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) starter but with some interesting (to me) additions:
 
 - the way blog posts are listed are inspired by [Simon at Photogabble](https://photogabble.co.uk)
 - I started adding short post descriptions after reading [Dana Byerly's](https://danabyerly.com/) blog and her [junk drawer](https://danabyerly-junkdrawer.website/)
@@ -34,7 +31,7 @@ The site began via the [Eleventy Base Blog](https://eleventy-base-blog.netlify.a
 
 - In the meantime, I'm cleaning up the base-blog css based on the ideas of Kev Quirk and [Simple.css](https://simplecss.org).  Plain old HTML without CSS classes.  Again, it's more a case of getting the styles back to the studs so I can learn as I go.  I'm using that as my base and adding on what I need to get to Andy's vision, as my knowledge grows.  Right now, every time I dive into the CSS files I'm wondering what I was doing the last time!  This is going to take a while.
 
-- Typography is every changing.  If you're seeing serifs, it's likely the Newsreader font.  But I switch between that and [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  
+- Typography is ever changing.  If you're seeing serifs, it's likely the Newsreader font.  But I switch between that and [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), which I learned about via [Erik Kroes](https://www.erikkroes.nl/).  
 
 - Thanks to [Henry](https://henry.codes/writing/how-to-convert-variable-ttf-font-files-to-woff2/) I got Newsreader installed as two compact variable webfont files.
 

@@ -1,0 +1,19 @@
+---
+permalink: /podcast/index.html
+layout: layouts/default.njk
+---
+<h1>Rise Up! The Baker Podcast</h1>
+
+
+<ul class='post-list'>
+{% for episode in collections.riseuppod %}
+	
+  <li>
+   {{episode.data.episodeID}}  <a href="{{ episode.url }}">{{ episode.data.title }}</a> 
+    <br/>
+ {{ episode.data.pubDate }} 
+    
+
+    </li>
+{% endfor %}
+</ul>

@@ -31,7 +31,29 @@ const parser = new XMLParser(options);
 
 let json = parser.parse(xml);
 
-// console.log(json.rss.channel.item[0]);
+const episodes = json.rss.channel.item;
 
-return json;
+// construct an episode ID from my mess of episode types
+
+const feed = episodes.map((episode) => {
+
+    let episodeID = ""
+    let result
+    if (episode.itunes_episodeType == 'bonus') {  result = "[Bonus]" }
+    else {
+        if (episode.itunes_season) {
+            result = episodeID.concat("[S", episode.itunes_season, "E", episode.itunes_episode, "]")
+        }
+
+        else {  result = episodeID.concat("[EP", episode.itunes_episode , "]")}
+    }
+    return {...episode, episodeID: result}
+      
+});
+
+
+//console.log(feed[1])
+
+return feed;
+
 };

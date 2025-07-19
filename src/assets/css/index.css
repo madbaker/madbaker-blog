@@ -1,10 +1,10 @@
 /* Defaults */
-
+/* 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
 
 :root {
-	--font-family-base: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-	--font-family-display: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-	--font-family-monospace: 'RobotoMono', monospace;
+	--font-family-base:  'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	--font-family-display:  'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	--font-family-monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 /* try #f8f5d7 (slightly brighter) instead of #f6e8c6 */
 /* Theme colors */

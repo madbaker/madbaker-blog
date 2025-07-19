@@ -1,0 +1,49 @@
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ title or site.siteName }}</title>
+		<meta name="description" content="{{ description or site.siteDescription }}">
+
+    <!-- synchronous js / schema  -->
+    	{% if schema == 'blog' %}
+    		<!-- include blogpost schema  -->
+   			 {%- include "schema/blogpost-schema.html" %} 
+	    {% else %}
+   	 		{% include "schema/base-schema.html" %} 
+	    {% endif %}
+		
+    	{#- RSS Feeds #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ site.siteDescription }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ site.siteDescription}}">
+
+
+		{#-
+			CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+			1. You can add to them using `{% css %}`
+			2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+			3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+			4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+			#}
+	
+			{#- Add the contents of a file to the bundle #}
+			
+			{%- css %}{% include "../../assets/css/reset.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/index.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/site-header.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/blog.css" %}{% endcss %}
+			{%- css %}{% include "../../assets/css/postlist.css" %}{% endcss %}
+						
+		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+					
+			<style>{% getBundle "css" %}</style>
+		{#- I do so little syntax highlighting that I may as well bring this in later #}
+		
+		<link
+			href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+			rel="stylesheet"
+		/>
+	 <!-- everything else: meta tags, icons, open graph etc.  -->
+    {% include "partials/meta-info.njk" %}
+
+	</head>

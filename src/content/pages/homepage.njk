@@ -1,9 +1,6 @@
 ---
-layout: layouts/home.njk
+layout: layouts/default.njk
 permalink: /
-eleventyNavigation:
-  key: Home
-  order: 1
 numberOfLatestPostsToShow: 6
 ---
 <h1>Mark Dyck is a baker who writes.</h1>
@@ -13,19 +10,18 @@ numberOfLatestPostsToShow: 6
 
 {# Show latest podcast episode #}
 
-{% set episode = podfeed.rss.channel.item[0] %}
-{% set podcastEpisodeId = episode.libsyn_itemId %}
+{% set episode = collections.riseuppod[0]%}
+
 
 <h2>Latest Podcast Episode</h2>
 
 <p></p>
 
-
-<h3><a href="/riseuppod/{{ episode.title | slugify }}/">{{ episode.title }}</a></h3>
+<h3><a href="/riseuppod/{{ episode.data.title | slugify }}/">{{ episode.data.title }}</a></h3>
 
 <figure>
 	<audio controls>
-		<source src="{{episode.enclosure.@_url}}" type="audio/mpeg" />
+		<source src="{{episode.data.audioPlayer}}" type="audio/mpeg" />
 	</audio>
 </figure>
 

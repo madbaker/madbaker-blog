@@ -8,7 +8,7 @@
 
           <li> &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} </a></li>
 
-          <li> <a href='colophon/'>Colophon</a> </li>
+          <li> <a href="/colophon">Colophon</a> </li>
 
         {% for item in navigation.bottom %}
 
@@ -26,9 +26,11 @@
         {% endfor %}
         </ul>
       </nav>
+{# This all needs to be re-written with reference to metadata in site.js, if I ever 
+want to include social links!
 
       <nav id="social" class="site-foot__inner" aria-label="Social links">
-        {% for item in social %}
+        {% for item in site.socials %}
 
         {% if item.platform == "rss" %}
         <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
@@ -41,8 +43,8 @@
           >
         {% endfor %}
 
-
         </nav>
+#}
     </div>
   </div>
 
