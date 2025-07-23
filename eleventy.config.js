@@ -28,7 +28,7 @@ import {
 	cssmin
   } from './src/_11ty/filters.js';
 
-import {post, contentPaginatedByYearMonth} from './src/_11ty/collections.js'
+import {post, contentPaginatedByYearMonth, bySize} from './src/_11ty/collections.js'
 
 
 // module import shortcodes
@@ -89,6 +89,7 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addCollection('post', post);
 	eleventyConfig.addCollection('contentPaginatedByYearMonth', contentPaginatedByYearMonth);
+	eleventyConfig.addCollection('bySize', bySize);
 
 // Custom Shortcodes
 

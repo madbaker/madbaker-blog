@@ -2,17 +2,18 @@
 permalink: /tags/index.html
 layout: layouts/default.njk
 ---
-<h1>Tags</h1>
+<h1>Browse by Tags</h1>
 
 
 <ul>
-{% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li>
-    <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
-    {% if tagData[tag] %} {{ tagData[tag].intro }} {% endif %}
+{% for tag, count in collections.bySize | filterTagList %}
+    {% if tag !== 'posts' %}
+        {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+        <li>
+        <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a> ({{count}} pages)
+        {% if tagData[tag] %} {{ tagData[tag].intro }} {% endif %}
     
-
-    </li>
+        </li>
+    {% endif%}
 {% endfor %}
 </ul>

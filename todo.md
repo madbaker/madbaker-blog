@@ -7,9 +7,10 @@ Version 2.x Todo List
 [x]  Condense / reduce site metadata files into _data/site.js
 [x]  calculate post counts and add to site navigation (cf. Mossaur)
 [x]  fix podcast feed so it acts as an actual 11ty collection
+[x]  Tagged posts sorted by quantity, with quantity listed
+[] modify bySize in collections.js to omit internal tags from the counts, then remove the hard fix in tags-list.njk
 []  Page layout like Miriam (Summary, Hero, etc.)
 []  Expanded YAML for posts
-[]  Tagged posts sorted by quantity, with quantity listed
 []  Introduction pages for major tags
 []  structuring content topologically vs. date (garden vs blog)
 []  Contact page
