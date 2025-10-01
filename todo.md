@@ -15,5 +15,6 @@ Version 2.x Todo List
 []  Contact page
 []  projects page
 []  improve the podcast episode list page
+[]  change podcast host and make madbaker.com the main show site
 []  review / condense CSS
 []  move CSS out of inline and into files?
