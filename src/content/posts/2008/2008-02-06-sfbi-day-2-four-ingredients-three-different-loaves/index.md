@@ -6,7 +6,7 @@ tags:
 ---
 
 
-{% imagePlaceholder "https://live.staticflickr.com/2312/2245959124_f1f2997d32_o.jpg","short mix baguettes", "Short mix baguettes" %}
+{% imagePlaceholder "images/2245959124_dd02203245_m.jpg","short mix baguettes", "Short mix baguettes" %}
 
 Another great learning day at the San Francisco Baking Institute. Today we focused on how to manipulate one factor, mixing method, to create three completely different baguettes. The story behind these three baguettes is as interesting as the loaves themselves:
 

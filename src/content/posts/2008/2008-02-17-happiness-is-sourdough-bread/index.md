@@ -20,4 +20,4 @@ Until next week!
 
 Mark
 
-PS -- For those of you who can't get enough dough -- Daily updates from San Francisco are at my madbaker blog. More photos are [on flickr](http://flickr.com/photos/orangeboot/sets/72157603855278075/). Click the links for more.
+PS -- For those of you who can't get enough dough -- Daily updates from San Francisco are at my madbaker blog. More photos are [on SmugMug](https://madbaker.smugmug.com/Bread/SFBI-2008). Click the links for more.

@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2294/2270951721_16c3751cb6_o.jpg", "Mark posing in front of the oven" %}
+{% imagePlaceholder "images/2270951721_16249b8798_m.jpg", "Mark posing in front of the oven" %}
 
 That's me looking tired and weak-armed, holding a massive boule I made to wrap up my second week at the San Francisco Baking Institute. I forgot to weigh it but I'm pretty sure it's 5kg.
 

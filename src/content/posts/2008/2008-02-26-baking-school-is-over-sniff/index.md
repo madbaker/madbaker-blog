@@ -4,7 +4,7 @@ date: 2008-02-26
 tags: 
   ["baking", "SFBI"]
 ---
-{% imagePlaceholder "https://live.staticflickr.com/3051/2285293406_1b0a7c0765_o.jpg", "final bread display from the SFBI whole grain course", "Whole grain bread display" %}
+{% imagePlaceholder "images/2285293406_c4e3dcc886_m.jpg", "final bread display from the SFBI whole grain course", "Whole grain bread display" %}
 
 *Sigh* Well, the SFBI Whole Grain course is over and I'm back in snowy Regina. It's great to be home but I'm fighting as hard as I can to keep the bread vibe alive. It'll be hard to do that from my cubicle at work but I'm more determined than ever to get our shop opened up sooner rather than later. In fact, I'm meeting with a local SFBI grad tomorrow to keep the process going.
 

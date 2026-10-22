@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2375/2270953633_307b757b99_o.jpg" , "regional bread shapes" %} 
+{% imagePlaceholder "images/2270953633_9f814e6755_m.jpg" , "regional bread shapes" %} 
 
 We wrapped up the Artisan II course on Friday by spending some time creating decorative bread shapes. Each shape represents a regional variety that is made in a specific French town. For example, you'd find Pain d'Aix in Aix.
 

@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2359/2264432974_1d90858af0_k.jpg", "Multigrain Sourdough loaf", "Multigrain Sourdough" %}
+{% imagePlaceholder "images/2264432974_1d90858af0_k.jpg", "Multigrain Sourdough loaf", "Multigrain Sourdough" %}
 
 Yesterday was the same flour, with different levains. Today was different flours with the same levain (for the most part.) It was a very challenging day since the doughs were especially tricky to work with.
 

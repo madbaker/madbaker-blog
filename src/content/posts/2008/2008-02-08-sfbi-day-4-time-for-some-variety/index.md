@@ -4,7 +4,7 @@ date: 2008-02-08
 tags:   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2273/2250071156_ac321c6ab4_o.jpg", "several loaves on display" %}
+{% imagePlaceholder "images/2250071156_74b1554486_m.jpg", "several loaves on display" %}
 
 What a day! Whereas we've been making several subtle changes to our baguette formula for the past three days, today we branched out! Five very different varieties with only one thing in common -- each contained a healthy amount of pre-ferment. We used an old dough preferment which is also known as pate fermente.
 

@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2190/2264428302_a7f161bfdd_o.jpg","an exhausted looking Mark posing in front of a bench full of bread","Happiness is sourdough bread" %}
+{% imagePlaceholder "images/2264428302_b1a80b321b_m.jpg","an exhausted looking Mark posing in front of a bench full of bread","Happiness is sourdough bread" %}
 
 Man am I tired. It's been a long week so far but a pike of fun too. The loaves in the picture were made on Tuesday, for Day 2 of the Artisan 2 course. It was an interesting exercise since each shape contains a different sourdough starter.
 

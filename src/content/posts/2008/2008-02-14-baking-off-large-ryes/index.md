@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2147/2264429492_e84eb0ae72_o.jpg","two massive rye loaves in the oven","Baking off large ryes"%}
+{% imagePlaceholder "images/2264429492_8ac6646e86_m.jpg","two massive rye loaves in the oven","Baking off large ryes"%}
 
 When we are working with dough we always make extra so that we're sure everyone has enough to practice with. This means that there are always leftovers, which we make into really large loaves and bake off at the end of the day.
 

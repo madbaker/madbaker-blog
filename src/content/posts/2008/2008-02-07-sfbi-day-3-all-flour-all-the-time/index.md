@@ -4,7 +4,7 @@ date: 2008-02-07
 tags: 
   ["baking", "SFBI"]
 ---
-{% imagePlaceholder "https://live.staticflickr.com/2411/2245163343_bb581ed5f7_b.jpg","Crumb structure: Improved Mix", "Crumb structure: Improved Mix" %}
+{% imagePlaceholder "images/2245163343_bb581ed5f7_m.jpg","Crumb structure: Improved Mix", "Crumb structure: Improved Mix" %}
 
 It was Flour Day today, where we learned everything we possibly could about the main ingredient in your bread. Everything from the different types of wheat and their properties to the different type of flours that can be milled and _their_ properties. I've been doing a lot of reading on this topic ([Maggie Glezer's book](http://www.amazon.ca/Artisan-Baking-Maggie-Glezer/dp/1579652913/ref=pd_bbs_sr_2?ie=UTF8&s=gateway&qid=1202349152&sr=8-2) explains it very well) but it sure helped to talk about this with a knowledgeable chef and instructor.
 

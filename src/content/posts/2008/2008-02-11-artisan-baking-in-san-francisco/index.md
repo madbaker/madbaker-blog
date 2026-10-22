@@ -4,7 +4,7 @@ tags: ["Bakery", "Orange Boot At Home", "SFBI" ]
 date: 2008-02-11
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2273/2250071156_ac321c6ab4_o.jpg", "bench full of loaves from SFBI baking class" %}
+{% imagePlaceholder "images/2250071156_74b1554486_m.jpg", "bench full of loaves from SFBI baking class" %}
 
 Hi Everyone,
 

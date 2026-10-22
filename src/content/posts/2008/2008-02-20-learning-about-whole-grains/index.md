@@ -5,7 +5,7 @@ tags:
   ["baking", "SFBI"]
 ---
 
-{% imagePlaceholder "https://live.staticflickr.com/2396/2278085145_7aab3d1305_o.jpg", "bread display from Day 2", "Bread from Day 2" %}
+{% imagePlaceholder "images/2278085145_1896baaf3b_m.jpg", "bread display from Day 2", "Bread from Day 2" %}
 
 My final week at the San Francisco Baking Institute is underway and this week it's an advanced course on whole grains. There is a lot to learn and we're clipping along at a quick pace.
 
